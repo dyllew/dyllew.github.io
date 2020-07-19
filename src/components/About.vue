@@ -1,5 +1,5 @@
 <template>
-    <div class="row pt-5 about-me">
+    <div class="row pt-3 pt-md-5 about-me">
         <div class="col-5 col-md-5 col-lg-5 col-xl-3 mx-auto my-auto">
             <img
               id="leo-and-dylan-pic"
@@ -15,7 +15,7 @@
             </p>
             <p>
               I'm interested in Software Engineering, Data Science & Machine Learning, and Web Development! 
-              You can contact through email, add me on LinkedIn & GitHub!
+              You can contact me through email, add me on LinkedIn & GitHub!
             </p>
             <p>
               In my freetime, I love to explore nature, make and experiment with different forms of art,

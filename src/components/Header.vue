@@ -1,7 +1,7 @@
 <template>
     <div class="row justify-content-end">
         <div id="website-title" class="col-12 col-md-4 col-lg-4">
-            <h1 id="name animate__fadeInDown"> Dylan Lewis </h1>
+            <h1 v-on:click="goHome" id="name animate__fadeInDown"> Dylan Lewis </h1>
         </div>
         <div id="logos-col" class="col-md-4 my-auto">
             <div class="d-flex flex-row justify-content-center justify-content-md-end">
@@ -26,6 +26,11 @@
 export default {
   name: 'Header',
   components: {
+  },
+  methods: {
+      goHome() {
+          this.$router.push('/');
+      }
   }
 }
 </script>
@@ -33,7 +38,10 @@ export default {
 <style scoped>
 h1 {
     font-size: 50px;
+}
 
+h1:hover {
+    cursor: pointer;
 }
 
 a {
