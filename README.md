@@ -1,24 +1,3 @@
-# hello-world
+# Dylan's Personal Portfolio Website
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Hey! Thanks for coming to my personal website repository, this website is currently under construction, but stay tuned I'll be going live with it very soon
