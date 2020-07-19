@@ -1,10 +1,8 @@
 <template>
-  <div id="app" class="container-fluid h-100">
+  <div id="app" class="container-fluid p-3 min-vh-100">
     <Header />
     <NavBar v-if="this.$route.path !== `/`" />
-    <div class="row align-items-stretch p-4">
-      <router-view></router-view>
-    </div>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -16,14 +14,21 @@ export default {
   name: 'App',
   components: {
     Header,
-    NavBar,
+    NavBar
   }
 }
 </script>
 
 <style>
-html, body {
-  height: 100%;
+
+html {
+  height: 100vh;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 #app {

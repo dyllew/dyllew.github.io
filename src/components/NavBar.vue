@@ -1,6 +1,6 @@
 <template>
-    <div class="row">
-      <div id="nav-bar" class="col-md-6 offset-md-3">
+    <div class="row pt-2 justify-content-center">
+      <div id="nav-bar" class="col-md-12">
           <router-link class="router-link" to="/about">About</router-link> |
           <router-link class="router-link" to="/projects">Projects</router-link> |
           <router-link class="router-link" to="/artwork">Artwork</router-link> |
@@ -24,9 +24,9 @@ export default {
   font-size: 30px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     #nav-bar {
-      font-size: 18px;
+      font-size: 21px;
     }
 }
 
