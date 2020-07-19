@@ -1,3 +1,5 @@
 # Dylan's Personal Portfolio Website
 
-Hey! Thanks for coming to my personal website repository, this website is currently under construction, but stay tuned I'll be going live with it very soon
+Hey! Thanks for coming to my personal website repository.
+
+I wrote it in Vue.js & Bootstrap. I wanted to do make this website as my first personal project and to get more experience using Bootstrap.
