@@ -8,8 +8,8 @@
                 <p class="card-text">Boomerang is a full-stack web application where users can efficiently and reliably
                     borrow items from others within their communities</p>
                 <div id="button-holder">
-                    <a href="https://team-aesthetech-boomerang.herokuapp.com/" class="btn btn-light">Go to the Boomerang website</a>
-                    <a v-on:click="goToBoomerangPage" class="btn btn-info text-light">See Project Details</a>
+                    <a href="https://team-aesthetech-boomerang.herokuapp.com/" target="_blank" class="btn btn-light">Go to the Boomerang website</a>
+                    <a v-on:click="goToBoomerangProjectPage" class="btn btn-info text-light">See Project Details</a>
                 </div>
             </div>
         </div>
@@ -35,7 +35,7 @@
 export default {
   name: 'Artwork',
   methods: {
-      goToBoomerangPage() {
+      goToBoomerangProjectPage() {
           this.$router.push("/projects/boomerang");
       },
       goToTrumpSpeechPage() {

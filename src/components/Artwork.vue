@@ -15,7 +15,7 @@
         />
     </div>
     <div class="col-8 pt-4 pt-md-2 col-md-3">
-        <h4>Monster Mash</h4>
+        <h4>4-in-1</h4>
         <img
           class="rounded img-fluid"
           src="../../public/assets/feelings.jpg"
