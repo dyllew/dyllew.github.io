@@ -1,4 +1,3 @@
 module.exports = {
-    outputDir: "dist",
-    baseUrl: ""
+    outputDir: "dist"
 }

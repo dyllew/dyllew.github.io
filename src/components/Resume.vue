@@ -1,7 +1,7 @@
 <template>
   <div class="resume row align-items-center justidy-content-center">
     <div class="col-12">
-      <a target="_blank" href="/public/assets/Dylan_Lewis_Resume.pdf">Dylan Lewis's Resume PDF</a>
+      <a target="_blank" href="../../public/assets/Dylan_Lewis_Resume.pdf">Dylan Lewis's Resume PDF</a>
     </div>
   </div>    
 </template>
