@@ -25,8 +25,6 @@
 <script>
 export default {
   name: 'Header',
-  components: {
-  },
   methods: {
       goHome() {
           this.$router.push('/');

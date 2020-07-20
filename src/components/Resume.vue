@@ -1,27 +1,25 @@
 <template>
-  <div class="resume row align-items-center">
+  <div class="resume row align-items-center justidy-content-center">
+    <div class="col-12">
+      <a target="_blank" href="/public/assets/Dylan_Lewis_Resume.pdf">Dylan Lewis's Resume PDF</a>
+    </div>
   </div>    
 </template>
 
 <script>
 
 export default {
-  name: 'About',
-  components: {
-  }
+  name: 'About'
 }
 </script>
 
-<style>
-#leo-and-dylan-pic  {
-  border: 4px solid turquoise;
+<style scoped>
+a {
+  color: rgb(238, 130, 238)
 }
 
-#about-description {
-  font-family: Georgia, Cambria, Cochin, Times, 'Times New Roman', serif;
-  font-size: 30px;
-  font-size-adjust: 0.5;
-  color: white;
+a:hover {
+  color: turquoise;
 }
 
 </style>

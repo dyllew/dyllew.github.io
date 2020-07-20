@@ -11,9 +11,7 @@
 
 <script>
 export default {
-  name: 'NavBar',
-  components: {
-  }
+  name: 'NavBar'
 }
 </script>
 
