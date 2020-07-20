@@ -4,9 +4,7 @@ cd dist
 
 cp -a . ..
 
+cd ..
+
 git add .
-git commit -m 'deploy'
-
-git push origin master
-
-cd -
+git commit -m 'deploy' && git push origin master
