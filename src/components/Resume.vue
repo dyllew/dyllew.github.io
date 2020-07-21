@@ -2,11 +2,9 @@
   <div class="resume row align-items-center justify-content-center">
     <div class="col-12">
       <a target="_blank" href="./assets/Dylan_Lewis_Resume.pdf">View PDF</a>
-      <div class="resume-container container-fluid">
-        <div class="page-header bg-info">
-          <h1>Example page header <small>Subtext for header</small></h1>
-        </div>
-      </div>
+    </div>
+    <div class="col-12 mt-2">
+      <embed class="pdf" src="./assets/Dylan_Lewis_Resume.pdf"/>
     </div>
   </div>    
 </template>
@@ -21,16 +19,32 @@ export default {
 <style scoped>
 a {
   color: rgb(238, 130, 238);
-  font-size: 20px;
+  font-size: 30px;
 }
 
 a:hover {
   color: turquoise;
 }
 
-.resume-container {
-  overflow-y: scroll;
-  color: white;
+@media (max-width: 700px) {
+  .pdf {
+    width: 100%;
+    height: 450px;
+  }
+}
+
+@media  (min-width: 700px) and (max-width: 1200px) {
+  .pdf {
+    width: 600px;
+    height: 600px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .pdf {
+    width: 800px;
+    height: 800px;
+  }
 }
 
 </style>
