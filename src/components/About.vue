@@ -39,9 +39,7 @@ export default {
 }
 
 #about-description {
-  font-family: Georgia, Cambria, Cochin, Times, 'Times New Roman', serif;
   font-size: 25px;
-  color: white;
   text-align: left;
 }
 

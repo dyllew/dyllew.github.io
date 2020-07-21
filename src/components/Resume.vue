@@ -1,7 +1,7 @@
 <template>
   <div class="resume row align-items-center justify-content-center">
     <div class="col-12">
-      <a target="_blank" href="./assets/Dylan_Lewis_Resume.pdf">View PDF</a>
+      <a target="_blank" class="btn-info" href="./assets/Dylan_Lewis_Resume.pdf">View PDF</a>
     </div>
     <div class="col-12 mt-2">
       <embed class="pdf" src="./assets/Dylan_Lewis_Resume.pdf"/>
