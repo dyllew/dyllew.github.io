@@ -18,7 +18,7 @@ export default {
 
 <style scoped>
 a {
-  color: rgb(238, 130, 238);
+  color: turquoise;
   font-size: 30px;
 }
 
