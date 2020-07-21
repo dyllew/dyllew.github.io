@@ -11,6 +11,7 @@ import Artwork from './components/Artwork';
 import Resume from './components/Resume';
 import Boomerang from './components/Boomerang';
 import TrumpSpeechAnalysis from './components/TrumpSpeechAnalysis';
+import NotFoundComponent from './components/NotFoundComponent';
 
 // store router -> components mappings
 const router = [
@@ -41,12 +42,15 @@ const router = [
     {
         path: '/resume',
         component: Resume
+    },
+    {
+        path: '*',
+        component: NotFoundComponent
     }
 ];
 
 const vueRouter = new VueRouter({
     mode: 'history',
-    base: 'dyllew.github.io',
     routes: router
 });
 
