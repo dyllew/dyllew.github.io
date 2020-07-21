@@ -50,7 +50,7 @@ const router = [
 ];
 
 const vueRouter = new VueRouter({
-    mode: 'history',
+    mode: 'hash',
     routes: router
 });
 
