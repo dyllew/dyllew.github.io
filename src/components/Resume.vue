@@ -28,8 +28,7 @@ a:hover {
 
 @media (max-width: 700px) {
   .pdf {
-    width: 100%;
-    height: 450px;
+    display: none;
   }
 }
 
