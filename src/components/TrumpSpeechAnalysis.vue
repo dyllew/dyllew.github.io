@@ -16,10 +16,10 @@
                         <div class="carousel-text">
                             <h5>Main Puzzle</h5>
                             <p>
-                                There have been concerns that nationalist, right-wing sentiments have gained momentum over the past three and a half years of the Trump presidency. 
+                                There have been concerns that nationalist, right-wing sentiments have gained momentum over the years of the Trump presidency. 
                                 Our group was interested in understanding how Trump’s rhetoric may influence public sentiment on a regional level. 
-                                To this end, we analyzed tweets from 4 cities and Florida where Trump gave speeches during his campaign. 
-                                We focused particularly on how words’ frequencies in tweets by locals are affected by Trump’s speeches.
+                                To this end, we analyzed Trump's campaign speeches and the tweets by locals from 4 cities he visited on his campaign and Florida,
+                                a swing state.
                             </p>
                         </div>
                     </div>

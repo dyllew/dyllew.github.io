@@ -10,7 +10,7 @@
         <div id="about-description" class="col-10 col-md-6 col-lg-5 col-xl-6 mx-auto my-auto">
             <p id="intro-paragraph">
               Hey there! I'm a Masters student at MIT studying
-              Computer Science. But more importantly, I am a proud dog dad
+              Computer Science. But more importantly, I am a proud dad
               to my son, Leo 🐶
             </p>
             <p>
