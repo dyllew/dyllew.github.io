@@ -43,10 +43,15 @@ const router = [
         path: '/resume',
         component: Resume
     },
+    { 
+        path: '/404', 
+        component: NotFoundComponent
+    },  
     {
         path: '*',
-        component: NotFoundComponent
+        redirect: '/404'
     }
+
 ];
 
 const vueRouter = new VueRouter({

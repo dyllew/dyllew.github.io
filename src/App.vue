@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="container-fluid p-3 min-vh-100">
     <Header />
-    <NavBar v-if="this.$route.path !== `/`" />
+    <NavBar v-if="this.$route.path !== `/` && this.$route.path !== `/404`" />
     <router-view></router-view>
   </div>
 </template>
