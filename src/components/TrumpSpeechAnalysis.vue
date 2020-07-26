@@ -17,7 +17,7 @@
                             <h5>Main Puzzle</h5>
                             <p>
                                 There have been concerns that nationalist, right-wing sentiments have gained momentum over the years of the Trump presidency. 
-                                Our group was interested in understanding how Trump’s rhetoric may influence public sentiment on a regional level. 
+                                Our group wanted to investigate how Donald Trump’s rhetoric may have influenced public sentiment on a regional level. 
                                 To this end, we analyzed Trump's campaign speeches and the tweets by locals from 4 cities he visited on his campaign and Florida,
                                 a swing state.
                             </p>
@@ -34,8 +34,8 @@
                         </div>
                     </div>
                     <div class="carousel-item trump-carousel-item">
-                        <img class="rounded img-fluid" src="../../public/assets/RelativeWordFrequencyDiff.png">
-                        <img class="rounded img-fluid" src="../../public/assets/RelativeWordFreqDiffFlorida.png">
+                        <img class="col-12 rounded img-fluid" src="../../public/assets/RelativeWordFrequencyDiff.png">
+                        <img class="col-12 rounded img-fluid pt-4" src="../../public/assets/RelativeWordFreqDiffFlorida.png">
                         <div class="carousel-text">
                             <h5>Trump's Most Frequently Used Words Across his Entire Campaign & Across Florida Campaign</h5>
                             <p> 

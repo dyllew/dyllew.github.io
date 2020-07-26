@@ -18,7 +18,6 @@ export default {
 <style scoped>
 
 #nav-bar {
-  font-family: Helvetica, Arial, sans-serif;
   font-size: 30px;
 }
 
