@@ -15,7 +15,9 @@
             </p>
             <p>
               I'm interested in Software Engineering, Data Science & Machine Learning, and Web Development! 
-              You can contact me through email, add me on LinkedIn, or checkout my GitHub!
+              You can contact me through <a href="mailto: drlewis@mit.edu">email,</a>
+              add me on <a href="https://www.linkedin.com/in/dylan-lewis-2020/" target="_blank">LinkedIn,</a> 
+              or checkout my<a href="https://github.com/dyllew/" target="_blank">GitHub!</a>
             </p>
             <p>
               In my freetime, I love to explore nature, make and experiment with different forms of art,
@@ -33,6 +35,15 @@ export default {
 </script>
 
 <style scoped>
+a {
+    color: pink;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+a:hover {
+    color: white;
+}
 
 #leo-and-dylan-pic  {
   border: 4px solid turquoise;
