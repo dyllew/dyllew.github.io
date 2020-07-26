@@ -1,21 +1,21 @@
 <template>
-    <div class="row pt-3 pt-md-5 about-me">
-        <div class="col-5 col-md-5 col-lg-5 col-xl-3 mx-auto my-auto">
+    <div class="row pt-3 pt-md-5 justify-content-center align-items-center">
+        <div class="col-6 col-md-5 col-lg-5 col-xl-3 mr-xl-5">
             <img
               id="leo-and-dylan-pic"
               src="../../public/assets/leo_n_me.jpg" 
               class="rounded img-fluid"
               alt="Leo and Dylan" />
         </div>
-        <div id="about-description" class="col-10 col-md-6 col-lg-5 col-xl-6 mx-auto my-auto">
+        <div id="about-description" class="col-10 col-md-6 col-lg-5 col-xl-5">
             <p id="intro-paragraph">
               Hey there! I'm a Masters student at MIT studying
               Computer Science. But more importantly, I am a proud dad
-              to my son, Leo 🐶
+              to my son, Leo 🐕
             </p>
             <p>
               I'm interested in Software Engineering, Data Science & Machine Learning, and Web Development! 
-              You can contact me through email, add me on LinkedIn & GitHub!
+              You can contact me through email, add me on LinkedIn, or checkout my GitHub!
             </p>
             <p>
               In my freetime, I love to explore nature, make and experiment with different forms of art,
@@ -62,7 +62,7 @@ export default {
 @media (min-width: 1200px) {
 
     #about-description p {
-      font-size: 30px;
+      font-size: 25px;
     }
 }
 

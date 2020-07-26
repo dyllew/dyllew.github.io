@@ -1,6 +1,6 @@
 <template>
   <div class="resume row align-items-center justify-content-center">
-    <div class="col-12 mt-5 mt-sm-0">
+    <div class="col-12 mt-4">
       <a target="_blank" class="btn btn-info text-light" href="./assets/Dylan_Lewis_Resume.pdf">View PDF</a>
     </div>
     <div class="col-12 mt-2">

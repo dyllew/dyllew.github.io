@@ -1,6 +1,6 @@
 <template>
   <div class="projects row align-items-center justify-content-center">
-    <div class="col-12 col-md-3 pt-3">
+    <div class="col-12 col-md-5 col-lg-4 pt-3">
         <div class="card border-info bg-transparent">
             <h5 class="card-header">Boomerang</h5>
             <img id="boomerang-img" class="card-img-top" src="../../public/assets/boomerang-home.jpg" alt="Card image cap">
@@ -14,10 +14,10 @@
             </div>
         </div>
     </div>
-    <div class="col-12 col-md-3 pt-3">
+    <div class="col-12 col-md-6 col-lg-4 pt-3">
         <div class="card border-info bg-transparent">
             <h5 class="card-header">Trump Campaign Speech Analysis</h5>
-            <img id="boomerang-img" class="card-img-top" src="../../public/assets/FrequencyPlot.png" alt="Card image cap">
+            <img id="trump-img" class="card-img-top" src="../../public/assets/FrequencyPlot.png" alt="Card image cap">
             <div class="card-body">
                 <p class="card-text">
                     Data Science project which investigated how Donald Trump's 2016 campaign speeches may have influenced
@@ -48,6 +48,13 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+
+@media (min-width: 900px) {
+    #trump-img {
+        height: 350px;
+        width: auto
+    }
+}
 
 </style>
