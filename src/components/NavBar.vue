@@ -28,7 +28,7 @@ export default {
 }
 
 .router-link {
-  color: turquoise;
+  color: #61DAFB;
 }
 
 .router-link:hover {

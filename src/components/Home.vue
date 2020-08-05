@@ -88,17 +88,17 @@ export default {
     opacity: 0;
     position: absolute;
     z-index: 1;
-    background: aqua;
+    background: #61DAFB;
 }
 
 .screen:hover {
     opacity: 0.3;
     cursor: pointer;
-    border: 4px solid aqua;
+    border: 4px solid #61DAFB;
 }
 
 .img-container:hover {
-    border: 1px solid aqua;
+    border: 1px solid #61DAFB;
     border-radius: 2px;
 }
 

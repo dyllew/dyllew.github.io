@@ -43,7 +43,7 @@ h1:hover {
 }
 
 a {
-    color: turquoise;
+    color: #61DAFB;
     margin-left: 15px;
     margin-right: 15px;
 }

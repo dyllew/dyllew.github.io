@@ -46,7 +46,7 @@ a:hover {
 }
 
 #leo-and-dylan-pic  {
-  border: 4px solid turquoise;
+  border: 4px solid #61DAFB;
 }
 
 #about-description {

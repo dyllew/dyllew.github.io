@@ -14,7 +14,7 @@ export default {
 <style scoped>
 
 .router-link {
-  color: turquoise;
+  color: #61DAFB;
   font-size: 30px;
 }
 

@@ -1,7 +1,7 @@
 <template>
   <div class="resume row align-items-center justify-content-center">
     <div class="col-12 mt-4">
-      <a target="_blank" class="btn btn-info text-light" href="./assets/Dylan_Lewis_Resume.pdf">View PDF</a>
+      <a target="_blank" class="btn btn-primary text-light" href="./assets/Dylan_Lewis_Resume.pdf">View PDF</a>
     </div>
     <div class="col-12 mt-2">
       <embed class="pdf" src="./assets/Dylan_Lewis_Resume.pdf"/>
@@ -18,12 +18,12 @@ export default {
 
 <style scoped>
 a {
-  color: turquoise;
+  color: #61DAFB;
   font-size: 30px;
 }
 
 a:hover {
-  color: turquoise;
+  color: #61DAFB;
 }
 
 @media (max-width: 700px) {
