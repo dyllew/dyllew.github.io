@@ -39,9 +39,9 @@
                         <div class="carousel-text">
                             <h5>Trump's Most Frequently Used Words Across his Entire Campaign & Across Florida Campaign</h5>
                             <p> 
-                                In Trump's speeches across the entire campaign, his most frequent words, normalized on Romney's campaign speeches, include, "don't",
-                                "hillary", "great", "deal", as well as words related to his election platform such as "border", "wall", "mexico", "isis", "trade", 
-                                and "china". Words used to thwart Hillary Clinton's campaign such as "hillary", "email", "lies", "corrupt", "crook", and "fbi" in regards to Clinton's email scandal 
+                                In Trump's speeches across the entire campaign, his most frequent words, normalized on Romney's campaign speeches, include
+                                "Hillary", "don't" "great", "deal", as well as words related to his election platform such as "border", "wall", "Mexico", "ISIS", "trade", 
+                                and "China". Words used to thwart Hillary Clinton's campaign such as "Hillary", "email", "lies", "corrupt", "crook", and "FBI" in regards to Clinton's email scandal 
                                 appear more frequently in Trump's Florida campaign speeches than across all of his campaign speeches, showing that in swing states, 
                                 Trump strategizes to mention the scandal more frequently to win voters to tip the scale.
                             </p>
@@ -61,6 +61,14 @@ export default {
 </script>
 
 <style scoped>
+
+h1 {
+    color: white;
+}
+
+h5 {
+    color: white;
+}
 
 .carousel-text {
     margin-top: 10px;

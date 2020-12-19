@@ -1,5 +1,5 @@
 <template>
-    <div class="row pt-3 pt-md-5 justify-content-center align-items-center">
+    <div id="home-container" class="row pt-3 justify-content-center align-items-center">
         <div class="col-6 col-md-5 col-lg-5 col-xl-3 mr-xl-5">
             <img
               id="leo-and-dylan-pic"
@@ -15,9 +15,7 @@
             </p>
             <p>
               I'm interested in Software Engineering, Data Science & Machine Learning, and Web Development! 
-              You can contact me through <a href="mailto: drlewis@mit.edu">email,</a>
-              add me on <a href="https://www.linkedin.com/in/dylan-lewis-2020/" target="_blank">LinkedIn,</a> 
-              or checkout my<a href="https://github.com/dyllew/" target="_blank">GitHub!</a>
+              You can contact me through<a href="mailto: drlewis@mit.edu">email,</a>add me on<a href="https://www.linkedin.com/in/dylan-lewis-2020/" target="_blank">LinkedIn,</a>or checkout my<a href="https://github.com/dyllew/" target="_blank">GitHub!</a>
             </p>
             <p>
               In my freetime, I love to explore nature, make and experiment with different forms of art,

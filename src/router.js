@@ -9,8 +9,9 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Artwork from './components/Artwork';
 import Resume from './components/Resume';
-import Boomerang from './components/Boomerang';
+import GNNsTaxiPrediction from './components/GNNsTaxiPrediction';
 import TrumpSpeechAnalysis from './components/TrumpSpeechAnalysis';
+import Boomerang from './components/Boomerang';
 import NotFoundComponent from './components/NotFoundComponent';
 
 // store router -> components mappings
@@ -34,6 +35,10 @@ const router = [
     {
         path: '/projects/trump-speech-analysis',
         component: TrumpSpeechAnalysis
+    },
+    {
+        path: '/projects/gnns-taxi-prediction',
+        component: GNNsTaxiPrediction
     },
     {
         path: '/artwork',

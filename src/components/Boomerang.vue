@@ -62,6 +62,10 @@ export default {
 
 <style scoped>
 
+h1, h5 {
+    color: white;
+}
+
 .carousel-text {
     margin-top: 10px;
     margin-bottom: 40px;
