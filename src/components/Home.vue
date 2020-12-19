@@ -1,5 +1,5 @@
 <template>
-    <div class="row pt-5 mt-5 justify-content-around min-vh-md-100">
+    <div class="row pt-4 pt-md-5 mt-md-5 justify-content-around min-vh-md-100">
         <div id="about" class="col-4 col-md-2">
             <div class="img-container">
                 <h4>About</h4>
@@ -24,8 +24,7 @@
                 </div>
             </div>
         </div>
-        <!-- <div id="divider" class="divider w-100"></div> -->
-        <div id="artwork" class="col-5 pt-5 pt-md-0 col-md-3">
+        <div id="artwork" class="col-5 pt-5 pt-md-0 col-md-2">
             <div class="img-container">
                 <h4>Artwork</h4>
                 <div v-on:click="goToArtwork" class="img-holder">
