@@ -2,7 +2,7 @@
   <div class="row pt-4 justify-content-around min-vh-md-100">
     <div id="about" class="col-4 col-md-3 pt-md-5">
       <div class="img-container">
-        <h4>About</h4>
+        <h4>About Me</h4>
         <div v-on:click="goToAbout" class="img-holder">
           <img
             class="rounded img-fluid upper-img"
