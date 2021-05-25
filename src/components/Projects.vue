@@ -32,7 +32,7 @@ export default {
                 link: "/projects/climate-change-news", 
                 src: "final-project-overview.png",
                 title: "Evolution of the U.S. TV News Narrative on Climate Change", 
-                desc: "Data Science & NLP project in Python that investigated the evolution of climatechange coverage frequency & content between popular U.S. TV News Networks CNN, Fox News, and MSNBC over July 2009-January 2020.",
+                desc: "Data Science & NLP project in Python that investigated the evolution of climate change coverage frequency & content between popular U.S. TV News Networks CNN, Fox News, and MSNBC over July 2009-January 2020.",
                 projectWebsite: {
                     id: "button-holder",
                     buttonText: "Poster PDF",
