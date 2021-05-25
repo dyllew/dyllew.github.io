@@ -1,7 +1,7 @@
 <template>
   <div class="artwork row align-items-center justify-content-center justify-content-xl-around">
     <div class="col-8 pt-3 pt-md-0 col-md-4">
-      <h4 class="header">Introspect</h4>
+      <h4 class="header">Ethereality</h4>
       <img
         class="rounded img-fluid"
         src="../../public/assets/portrait.jpg"

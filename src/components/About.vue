@@ -1,5 +1,5 @@
 <template>
-    <div id="home-container" class="row pt-3 justify-content-center align-items-center">
+    <div id="home-container" class="row pt-3 pt-lg-5 justify-content-center align-items-center">
         <div class="col-6 col-md-5 col-lg-5 col-xl-3 mr-xl-5">
             <img
               id="leo-and-dylan-pic"
@@ -10,7 +10,8 @@
         <div id="about-description" class="col-10 col-md-6 col-lg-5 col-xl-5">
             <p id="intro-paragraph">
               Hey there! I'm a Masters student at MIT studying
-              Computer Science. But more importantly, I am a proud dad
+              Computer Science, specifically Artificial Intelligence.
+              But more importantly, I am a proud dad
               to my son, Leo 🐕
             </p>
             <p>
@@ -34,9 +35,9 @@ export default {
 
 <style scoped>
 a {
-    color: pink;
-    margin-left: 15px;
-    margin-right: 15px;
+    color: hotpink;
+    margin-left: 1vw;
+    margin-right: 1vw;
 }
 
 a:hover {
@@ -44,48 +45,63 @@ a:hover {
 }
 
 #leo-and-dylan-pic  {
-  border: 4px solid #61DAFB;
+  max-height: 40vw;
+  border: 0.25vw solid #61DAFB;
 }
 
 #about-description {
-  font-size: 25px;
+  font-size: 1.75vw;
   text-align: left;
 }
 
-@media (max-width: 900px) {
+@media (min-width: 0px) and (max-width: 500px) {
 
     #leo-and-dylan-pic {
-      max-height: 500px;
+      max-height: 50vw;
     }
 
     #about-description p {
-      font-size: 20px;
+      font-size: 3.5vw;
     }
 
     #intro-paragraph {
-      padding-top: 30px;
+      padding-top: 10vw;
     }
 
+}
+
+@media (min-width: 500px) and (max-width: 900px) {
+
+    #leo-and-dylan-pic {
+      max-height: 50vw;
+    }
+
+    #about-description p {
+      font-size: 2vw;
+    }
+
+    #intro-paragraph {
+      padding-top: 5vw;
+    }
+
+}
+
+@media (min-width: 900px) and (max-width: 1200px) {
+
+    #leo-and-dylan-pic {
+      max-height: 40vw;
+    }
+
+    #about-description p {
+      font-size: 1.75vw;
+    }
 }
 
 @media (min-width: 1200px) {
 
     #about-description p {
-      font-size: 25px;
+      font-size: 1.5vw;
     }
 }
 
-@media (min-width: 1500px) {
-
-    #about-description p {
-      font-size: 40px;
-    }
-}
-
-@media (min-width: 1700px) {
-
-    #about-description p {
-      font-size: 43px;
-    }
-}
 </style>

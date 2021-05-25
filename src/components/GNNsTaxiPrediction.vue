@@ -59,7 +59,7 @@
 <script>
 
 export default {
-  name: 'Trump'
+  name: 'Taxi'
 }
 </script>
 
@@ -74,13 +74,13 @@ h1, h3, h5 {
     margin-bottom: 40px;
 }
 
-.trump-carousel-item img {
+.taxi-carousel-item img {
   height: 450px;
   max-height: 500px;
 }
 
 @media (max-width: 800px) {
-    .trump-carousel-item img {
+    .taxi-carousel-item img {
         height: 450px;
         max-height: 200px;
     }

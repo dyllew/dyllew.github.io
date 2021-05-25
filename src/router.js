@@ -11,6 +11,7 @@ import Artwork from './components/Artwork';
 import Resume from './components/Resume';
 import GNNsTaxiPrediction from './components/GNNsTaxiPrediction';
 import TrumpSpeechAnalysis from './components/TrumpSpeechAnalysis';
+import ClimateChangeNews from './components/ClimateChangeNews';
 import Boomerang from './components/Boomerang';
 import NotFoundComponent from './components/NotFoundComponent';
 
@@ -39,6 +40,10 @@ const router = [
     {
         path: '/projects/gnns-taxi-prediction',
         component: GNNsTaxiPrediction
+    },
+    {
+        path: '/projects/climate-change-news',
+        component: ClimateChangeNews
     },
     {
         path: '/artwork',
