@@ -48,7 +48,7 @@
         <h4>Artwork</h4>
         <div v-on:click="goToArtwork" class="img-holder">
           <img
-            class="rounded img-fluid"
+            class="rounded img-fluid lower-img"
             src="../../public/assets/portrait.jpg"
           />
         </div>
@@ -59,7 +59,7 @@
         <h4>Projects</h4>
         <div v-on:click="goToProjects" class="img-holder">
           <img
-            class="rounded img-fluid"
+            class="rounded img-fluid lower-img"
             src="../../public/assets/project-collage.png"
           />
         </div>
@@ -99,16 +99,6 @@ h4 {
   font-size: 4vw;
 }
 
-.upper-img {
-    height: 25vw;
-    width: auto;
-}
-
-.lower-img {
-    height: 25vw;
-    width: auto;
-}
-
 #artwork-and-projs {
     display: none;
 }
@@ -118,6 +108,18 @@ h4 {
   border-radius: 2px;
   cursor: pointer;
   color: white;
+}
+
+@media (max-width: 750px) {
+  .upper-img {
+    height: 40vw;
+    width: auto;
+  }
+
+  .lower-img {
+    height: 30vw;
+    width: auto;
+  }
 }
 
 @media (min-width: 768px) {
@@ -147,8 +149,12 @@ h4 {
   }
 
     @media (min-width: 1150px) { 
+        .upper-img {
+          height: 30vw;
+          width: auto;
+      }
         .lower-img {
-            height: 20vw;
+            height: 15vw;
         }
     }
 }
