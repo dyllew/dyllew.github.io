@@ -1,6 +1,6 @@
 <template>
-  <div class="row pt-4 justify-content-around min-vh-md-100">
-    <div id="about" class="col-4 col-md-3 pt-md-5">
+  <div class="row pt-4 align-items-md-start justify-content-around">
+    <div id="about" class="col-6 pt-4 col-md-3 pt-md-5">
       <div class="img-container">
         <h4>About Me</h4>
         <div v-on:click="goToAbout" class="img-holder">
@@ -8,13 +8,11 @@
             class="rounded img-fluid upper-img"
             src="../../public/assets/dylan-n-leo.jpg"
           />
-          <div class="screen"></div>
-          <div id="about-text" class="screen-text"></div>
         </div>
       </div>
     </div>
 
-    <div id="resume" class="col-5 col-md-3 pt-md-5">
+    <div id="resume" class="col-6 pt-4 col-md-3 pt-md-5">
       <div class="img-container">
         <h4>Resume</h4>
         <div v-on:click="goToResume" class="img-holder">
@@ -22,32 +20,26 @@
             class="rounded img-fluid upper-img"
             src="../../public/assets/resume.png"
           />
-          <div class="screen"></div>
-          <div id="artwork-text" class="screen-text"></div>
         </div>
       </div>
     </div>
-    <div id="artwork-and-projs" class="col-md-6">
+    <div id="artwork-and-projs" class="col-md-4">
         <div class="img-container">
           <h4>Projects</h4>
           <div v-on:click="goToProjects" class="img-holder">
             <img
               class="rounded img-fluid"
-              src="../../public/assets/taxi-fare-and-surge-pred.png"
+              src="../../public/assets/project-collage.png"
             />
-            <div class="screen"></div>
-            <div id="artwork-text" class="screen-text"></div>
           </div>
         </div>
-        <div class="img-container pt-4">
+        <div class="img-container mt-4">
           <h4>Artwork</h4>
           <div v-on:click="goToArtwork" class="img-holder">
             <img
               class="rounded img-fluid lower-img"
               src="../../public/assets/portrait.jpg"
             />
-            <div class="screen"></div>
-            <div id="artwork-text" class="screen-text"></div>
           </div>
         </div>
     </div>
@@ -59,8 +51,6 @@
             class="rounded img-fluid"
             src="../../public/assets/portrait.jpg"
           />
-          <div class="screen"></div>
-          <div id="artwork-text" class="screen-text"></div>
         </div>
       </div>
     </div>
@@ -70,10 +60,8 @@
         <div v-on:click="goToProjects" class="img-holder">
           <img
             class="rounded img-fluid"
-            src="../../public/assets/taxi-fare-and-surge-pred.png"
+            src="../../public/assets/project-collage.png"
           />
-          <div class="screen"></div>
-          <div id="artwork-text" class="screen-text"></div>
         </div>
       </div>
     </div>
@@ -107,24 +95,22 @@ export default {
 
 <style scoped>
 
+h4 {
+  font-size: 4vw;
+}
+
+.upper-img {
+    height: 25vw;
+    width: auto;
+}
+
+.lower-img {
+    height: 25vw;
+    width: auto;
+}
+
 #artwork-and-projs {
     display: none;
-}
-
-.screen {
-  /* width: calc(100% - 30px); */
-  height: 100%;
-  top: 0;
-  opacity: 0;
-  position: absolute;
-  z-index: 1;
-  background: #61dafb;
-}
-
-.screen:hover {
-  opacity: 0.3;
-  cursor: pointer;
-  border: 4px solid #61dafb;
 }
 
 .img-container:hover {
@@ -135,6 +121,10 @@ export default {
 }
 
 @media (min-width: 768px) {
+  h4 {
+  font-size: 2vw;
+  }
+
   #about {
     order: 1;
   }
@@ -156,18 +146,9 @@ export default {
     display: none;
   }
 
-  /* .upper-img {
-        height: 300px;
-        width: auto;
-    } */
-    .lower-img {
-        height: 200px;
-        width:  auto;
-    }
-
     @media (min-width: 1150px) { 
         .lower-img {
-            height: 300px;
+            height: 20vw;
         }
     }
 }
