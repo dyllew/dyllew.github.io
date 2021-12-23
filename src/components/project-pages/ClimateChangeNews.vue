@@ -14,7 +14,7 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active cc-carousel-item">
-                        <img class="rounded img-fluid" src="../../public/assets/final-project-overview.png" alt="First slide">
+                        <img class="rounded img-fluid" src="../../../public/assets/final-project-overview.png" alt="First slide">
                         <div class="carousel-text">
                             <h5>Project Code, Poster, and Report</h5>
                             <p>
@@ -50,7 +50,7 @@
                         </div>
                     </div>
                     <div class="carousel-item cc-carousel-item">
-                        <img class="rounded img-fluid" src="../../public/assets/network_tfidf_wordclouds.png" alt="First slide">
+                        <img class="rounded img-fluid" src="../../../public/assets/network_tfidf_wordclouds.png" alt="First slide">
                         <div class="carousel-text">
                             <h5>Dataset, Exploration, and Preprocessing</h5>
                             <p>
@@ -72,7 +72,7 @@
                         </div>
                     </div>
                     <div class="carousel-item cc-carousel-item">
-                        <img class="rounded img-fluid" src="../../public/assets/networks_and_years_cosine_similarity.png" alt="Second slide">
+                        <img class="rounded img-fluid" src="../../../public/assets/networks_and_years_cosine_similarity.png" alt="Second slide">
                         <div class="carousel-text">
                             <h5>Content Analysis: TF-IDF Document Embedding & Cosine Similarity</h5>
                             <p> 
@@ -94,7 +94,7 @@
                         </div>
                     </div>
                     <div class="carousel-item cc-carousel-item">
-                        <img class="rounded img-fluid" src="../../public/assets/final-project-overview.png" alt="Second slide">
+                        <img class="rounded img-fluid" src="../../../public/assets/final-project-overview.png" alt="Second slide">
                         <div class="carousel-text">
                             <h5>Results</h5>
                             <p> 

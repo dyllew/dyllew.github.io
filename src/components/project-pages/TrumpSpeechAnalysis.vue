@@ -12,7 +12,7 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active trump-carousel-item">
-                        <img class="rounded img-fluid" src="../../public/assets/trump-campaign.png" alt="First slide">
+                        <img class="rounded img-fluid" src="../../../public/assets/trump-campaign.png" alt="First slide">
                         <div class="carousel-text">
                             <h5>Main Puzzle</h5>
                             <p>
@@ -24,7 +24,7 @@
                         </div>
                     </div>
                     <div class="carousel-item trump-carousel-item">
-                        <img class="rounded img-fluid" src="../../public/assets/negative-positive.jpg" alt="Second slide">
+                        <img class="rounded img-fluid" src="../../../public/assets/negative-positive.jpg" alt="Second slide">
                         <div class="carousel-text">
                             <h5>Most Frequent Negative and Positive Words in Trump's Campaign Speeches</h5>
                             <p> 
@@ -34,8 +34,8 @@
                         </div>
                     </div>
                     <div class="carousel-item trump-carousel-item">
-                        <img class="col-12 rounded img-fluid" src="../../public/assets/RelativeWordFrequencyDiff.png">
-                        <img class="col-12 rounded img-fluid pt-4" src="../../public/assets/RelativeWordFreqDiffFlorida.png">
+                        <img class="col-12 rounded img-fluid" src="../../../public/assets/RelativeWordFrequencyDiff.png">
+                        <img class="col-12 rounded img-fluid pt-4" src="../../../public/assets/RelativeWordFreqDiffFlorida.png">
                         <div class="carousel-text">
                             <h5>Trump's Most Frequently Used Words Across his Entire Campaign & Across Florida Campaign</h5>
                             <p> 

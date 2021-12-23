@@ -12,7 +12,7 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active boomerang-carousel-item">
-                        <img class="rounded img-fluid" src="../../public/assets/boomerang-home.jpg" alt="First slide">
+                        <img class="rounded img-fluid" src="../../../public/assets/boomerang-home.jpg" alt="First slide">
                         <div class="carousel-text">
                             <h5>Sign Up/Login Page</h5>
                             <p>When my group decided on how we wanted to split up the tasks for Boomerang,
@@ -23,7 +23,7 @@
                         </div>
                     </div>
                     <div class="carousel-item boomerang-carousel-item">
-                        <img class="rounded img-fluid" src="../../public/assets/create-account.png" alt="Second slide">
+                        <img class="rounded img-fluid" src="../../../public/assets/create-account.png" alt="Second slide">
                         <div class="carousel-text">
                             <h5>Create Account Part I</h5>
                             <p> 
@@ -36,7 +36,7 @@
                         </div>
                     </div>
                     <div class="carousel-item boomerang-carousel-item">
-                        <img class="rounded img-fluid" src="../../public/assets/join-communities.png" alt="Third slide">
+                        <img class="rounded img-fluid" src="../../../public/assets/join-communities.png" alt="Third slide">
                         <div class="carousel-text">
                             <h5>Create Account Part II</h5>
                             <p> 

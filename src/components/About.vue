@@ -10,7 +10,8 @@
         <div id="about-description" class="col-10 col-md-6 col-lg-5 col-xl-5">
             <p id="intro-paragraph">
               Hey there! I'm a Masters student at MIT studying
-              Computer Science, specifically Artificial Intelligence.
+              Computer Science, specifically Artificial Intelligence. My research focuses on machine learning tools
+              for assisting crisis managers during climate crises using crowdsourced climate crisis data.
               But more importantly, I am a proud dad
               to my son, Leo 🐕
             </p>

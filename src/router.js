@@ -9,10 +9,12 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Artwork from './components/Artwork';
 import Resume from './components/Resume';
-import GNNsTaxiPrediction from './components/GNNsTaxiPrediction';
-import TrumpSpeechAnalysis from './components/TrumpSpeechAnalysis';
-import ClimateChangeNews from './components/ClimateChangeNews';
-import Boomerang from './components/Boomerang';
+import MLForCrowdsourcedCrisisData from './components/project-pages/MLForCrowdsourcedCrisisData';
+import NLPIntDevGrayLit from './components/project-pages/NLPIntDevGrayLit';
+import GNNsTaxiPrediction from './components/project-pages/GNNsTaxiPrediction';
+import TrumpSpeechAnalysis from './components/project-pages/TrumpSpeechAnalysis';
+import ClimateChangeNews from './components/project-pages/ClimateChangeNews';
+import Boomerang from './components/project-pages/Boomerang';
 import NotFoundComponent from './components/NotFoundComponent';
 
 // store router -> components mappings
@@ -32,6 +34,14 @@ const router = [
     {
         path: '/projects/boomerang',
         component: Boomerang
+    },
+    {
+        path: '/projects/ml-for-crowdsourced-crisis-data',
+        component: MLForCrowdsourcedCrisisData
+    },
+    {
+        path: '/projects/nlp-for-int-dev-gray-lit',
+        component: NLPIntDevGrayLit
     },
     {
         path: '/projects/trump-speech-analysis',

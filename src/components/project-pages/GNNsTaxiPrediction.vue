@@ -12,7 +12,7 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active taxi-carousel-item">
-                        <img class="rounded img-fluid" src="../../public/assets/taxi-fare-and-surge-pred.png" alt="First slide">
+                        <img class="rounded img-fluid" src="../../../public/assets/taxi-fare-and-surge-pred.png" alt="First slide">
                         <div class="carousel-text">
                             <h5>Motivation</h5>
                             <p>
@@ -26,7 +26,7 @@
                         </div>
                     </div>
                     <div class="carousel-item taxi-carousel-item">
-                        <img class="rounded img-fluid" src="../../public/assets/fare-surge-graph-pred.png" alt="Second slide">
+                        <img class="rounded img-fluid" src="../../../public/assets/fare-surge-graph-pred.png" alt="Second slide">
                         <div class="carousel-text">
                             <h5>Graph Neural Networks for Taxi Fare and Surge Prediction</h5>
                             <p> 
@@ -38,7 +38,7 @@
                         </div>
                     </div>
                     <div class="carousel-item taxi-carousel-item">
-                        <img class="rounded img-fluid" src="../../public/assets/fare-surge-graph-pred.png" alt="Second slide">
+                        <img class="rounded img-fluid" src="../../../public/assets/fare-surge-graph-pred.png" alt="Second slide">
                         <div class="carousel-text">
                             <h5>Results</h5>
                             <p> 
