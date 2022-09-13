@@ -37,72 +37,49 @@
                                         and visualizing clusters of featurized text data</li>
                                 </ul>
                                 <br>
-                                We note that this research was supported by a grant from Google.org and the Tides Foundation.
+                                This research was supported by a grant from Google.org and the Tides Foundation.
                             </p>
                         </div>
                     </div>
                     <div class="carousel-item cc-carousel-item">
                         <div class="carousel-text">
-                            <h5><strong>Motivation & Research Question</strong></h5>
+                            <h5><strong>Abstract</strong></h5>
                             <p>
-                                Print and televised media reporting on climate change influences 
-                                the public perception of climate change, which in turn affects support for 
-                                systemic policies to reduce greenhouse gas emissions and for individual actions to 
-                                mitigate climate change. Over two thirds of Americans get their news often or 
-                                sometimes from television. In this analysis, we looked at ten years of 
-                                data from three television stations: CNN, Fox News, and MSNBC to address the 
-                                following research question:
+                               The availability of information during a climate crisis event is critical for crisis managers to assess and respond to crisis impact. 
+                               During crisis events, affected residents post real-time crisis updates on platforms such as <a href="https://riskmap.mit.edu/japan.html" target="_blank">RiskMap</a> and <a href="https://twitter.com/?lang=en" target="_blank">Twitter</a>. 
+                               These updates provide localized information, which has the potential to enhance crisis awareness and response. 
+                               However, with limited resources, crisis managers may endure information overload from the inundation of these updates. 
+                               Prior work has demonstrated the potential of machine learning (ML) methodologies to mitigate this problem. 
+                               We have identified limitations in the prior work including the lack of involvement of crisis managers in the development and evaluation of a ML methodology.
                             </p>
-                            <br>
-                            <strong id='research-question'>
-                                How has the frequency and content of 
-                                top American English-speaking news media coverage of climate change 
-                                evolved in the past ten years (July 2009-January 2020)-and what environmental and political factors 
-                                have influenced the trends?
+                            <p>
+                                To address these limitations, we propose a novel framework and ML methodology which investigate the efficacy of various ML methods in enhancing crisis awareness 
+                                and response beyond model performance metrics. This framework aims to iteratively embed the information needs and priorities of crisis managers during crisis 
+                                into the design of the ML methodology. We cooperated with crisis managers in Fukuchiyama City (FC), a city in Japan which is susceptible to flood events, and 
+                                analyzed crowdsourced crisis image and text data from past FC flood events. We devised the Flood Presence image classification task, constructed Train/Dev/Test splits, 
+                                and annotated images from FC. We report a weighted F1 score of 92.1% on the test split and 82.5% on the FC images. Using the results of our image analysis 
+                                ML methodology and the insights we gained from crisis managers, we iterated on the design of our text analysis ML methodology. This led to the creation of the 
+                                Human Risk text classification task which is tailored to a subset of the identified information needs of the crisis managers. 
+                                To align with the priorities of crisis managers for this task, we determined the model evaluation metric to be the F2 score. 
+                                We report an F2 score of 92.8% on an FC crisis text test dataset, which is a significant improvement over the baseline score of 43.4%. 
+                            </p>
+                            <h5><strong>Research Question</strong></h5>
+                            <strong id="research-question">
+                                In collaborating with crisis managers, how can machine learning methods be utilized and evaluated to effectively reduce the information overload of crowdsourced crisis data on
+                                crisis managers during flood crisis events for enhanced crisis awareness and response?
                             </strong>
                         </div>
                     </div>
                     <div class="carousel-item cc-carousel-item">
-                        <img class="rounded img-fluid" src="../../../public/assets/network_tfidf_wordclouds.png" alt="First slide">
                         <div class="carousel-text">
-                            <h5>Dataset, Exploration, and Preprocessing</h5>
-                            <p>
-                                The data used for this analysis includes text snippets of 15-seconds of TV news audio transcripts
-                                of climate change mentions on CNN, MSNBC, and Fox News from 
-                                July 2009-January 2020, provided by the <a href="https://blog.gdeltproject.org/a-new-dataset-for-exploring-climate-change-narratives-on-television-news-2009-2020/" target="_blank">GDELT Project.</a>
-                                The features of the data points include time of day and date of the mention, 
-                                the TV news network, the show, and the text snippet of the transcribed audio. 
-                                This dataset provides the ability to compare the TV networks over time on the subject of 
-                                climate change in order to answer the research question posed. 
-                                We followed standard Natural Language Processing (NLP) text preprocessing by removing punctuation and numbers, 
-                                converting all letters to lower-case (the data was already provided as lowercase), lemmatizing, removing standard English stopwords & 
-                                corpus-specific stopwords, and tokenizing the data into words. We conducted our analysis with two distinct
-                                analysis streams: Frequency Analysis and Content Analysis. Our Frequency Analysis entailed methods of time-series analysis of climate change mentions
-                                by the different TV networks over time and dynamic time-warping & STL decomposition. Content Analysis used methods of TF-IDF document embeddings,
-                                Cosine Similarity as a proxy for content similarity between documents, and Topic Modeling & Change-Point Detection. The above figure was created as part of 
-                                an exploratory component of the TF-IDF Embedding analysis, in which we wished to extract the most important words to each of the networks across the entire corpus.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="carousel-item cc-carousel-item">
-                        <img class="rounded img-fluid" src="../../../public/assets/networks_and_years_cosine_similarity.png" alt="Second slide">
-                        <div class="carousel-text">
-                            <h5>Content Analysis: TF-IDF Document Embedding & Cosine Similarity</h5>
-                            <p> 
-                                My contribution to this project was primarly focused in the Content Analysis stream, specifically TF-IDF document embeddings & 
-                                Cosine Similarity between documents. To conduct our content analysis, we needed to featurize the news snippets, or collections of snippets, 
-                                which form the documents in our corpus. I first formed a document for each TV network in our dataset
-                                (e.g. all snippets for CNN), and transformed the documents into a L2-normalized unit vector TF-IDF vector embedding. 
-                                From this featurization, I formed a document-term matrix, where the rows correspond to the TF-IDF embedding of a document and the column 
-                                represents a unique word in the corpus (~34,000 words). Thus, entry i, j corresponds to the normalized 
-                                TF-IDF score of word j in document i (i.e. word j's relative importance for the ith document). I also constructed document-term matrices for documents representing each year of our dataset
-                                (e.g. all snippets in 2009) as well as for documents constructed from networks in specific years (e.g. all CNN snippets in 2015). Finally, for each of the document-term matrices mentioned above, 
-                                I calculated the pairwise cosine similarity between the document embeddings to yield a measure of content similarity between the documents. 
-                                A heatmap constructed from the computed cosine similarities between the network & year documents is shown above. The main findings from my analysis were 
-                                that the content of climate mentions in the latter years of the dataset, 2016-2020, are most dissimilar to earlier years in the dataset, 2009-2012. 
-                                Additionally, in the years 2010 & 2018, the content of MSNBC differed greatly from the other news networks in those years and with other networks and itself in other years. 
-                                This similarly occurred for CNN in 2012 & 2013. Lastly, with the exception of these years, the similarity of content of climate mentions between CNN and MSNBC, 
-                                the liberal-leaning networks, has been increasing over the years, although the pairwise content similarity between all of the networks is fairly high over time.
+                            <h5>Main Research Aims</h5>
+                            <p id="research-aims">
+                                <ol>
+                                    <li><strong>To reduce information overload during a crisis</strong> using accurate, efficient, automated image and text classification of crisis reports by machine learning (ML) models during crisis.</li>
+                                    <li><strong>To embed tacit knowledge, information needs and decision-making priorities of emergency managers</strong> into the designed ML methodology.</li>
+                                    <li><strong>To evaluate methodology in collaboration with crisis managers</strong>, e.g. crisis managers in Fukuchiyama, Japan.</li>
+                                    <li><strong>To incorporate evaluation results and iterate on the ML methodology</strong> in order to better reach aim of using AI to assist crisis managers during crisis.</li>
+                                </ol>
                             </p>
                         </div>
                     </div>
@@ -158,7 +135,6 @@ a:hover {
     color: white;
 }
 
-
 h1, h3, h5 {
     color: white;
 }
@@ -172,12 +148,20 @@ h1, h3, h5 {
   max-height: 30vw;
 }
 
-
 #overview-pic {
     margin-top: 10px;
     margin-bottom: 40px;
     width: 90vh;
     height: 50vh;
+}
+
+#research-question {
+    text-align: center;
+    color: white;
+}
+
+#research-aims {
+
 }
 
 @media (max-width: 800px) {

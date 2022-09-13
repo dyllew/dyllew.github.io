@@ -17,6 +17,7 @@
             <p>
               I'm interested in Software Engineering, Data Science & Machine Learning, and Web Development! 
               You can contact me through<a href="mailto: drlewis@mit.edu">email,</a>add me on<a href="https://www.linkedin.com/in/dyllew/" target="_blank">LinkedIn,</a>or checkout my<a href="https://github.com/dyllew/" target="_blank">GitHub!</a>
+              I'm currently looking for remote Data Science and Software Engineering positions!
             </p>
             <p>
               In my freetime I love to explore nature, play video games, make and experiment with different forms of art,
