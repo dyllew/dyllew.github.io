@@ -9,18 +9,17 @@
         </div>
         <div id="about-description" class="col-10 col-md-6 col-lg-5 col-xl-5">
             <p id="intro-paragraph">
-              Hey there! I'm a Masters student at MIT studying
-              Computer Science, specifically Artificial Intelligence. My research focuses on machine learning tools
-              for assisting crisis managers during climate crises using crowdsourced climate crisis data.
-              But more importantly, I am a proud dad
-              to my son, Leo 🐕
+              Hey there! I'm a Masters grad from MIT where I studied
+              Computer Science, specifically Artificial Intelligence. My research focused on machine learning tools
+              for assisting crisis managers during climate crises using crowdsourced climate crisis data. You can learn more
+              about my research<a href="#/projects/ml-for-crowdsourced-crisis-data">here!</a>I'm also a proud dad to my son, Leo 🐕
             </p>
             <p>
               I'm interested in Software Engineering, Data Science & Machine Learning, and Web Development! 
-              You can contact me through<a href="mailto: drlewis@mit.edu">email,</a>add me on<a href="https://www.linkedin.com/in/dylan-lewis-2020/" target="_blank">LinkedIn,</a>or checkout my<a href="https://github.com/dyllew/" target="_blank">GitHub!</a>
+              You can contact me through<a href="mailto: drlewis@mit.edu">email,</a>add me on<a href="https://www.linkedin.com/in/dyllew/" target="_blank">LinkedIn,</a>or checkout my<a href="https://github.com/dyllew/" target="_blank">GitHub!</a>
             </p>
             <p>
-              In my freetime, I love to explore nature, make and experiment with different forms of art,
+              In my freetime I love to explore nature, play video games, make and experiment with different forms of art,
               develop new skills, and go on adventures with my pup!
             </p> 
         </div>

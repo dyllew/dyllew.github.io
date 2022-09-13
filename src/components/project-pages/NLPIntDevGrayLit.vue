@@ -184,6 +184,10 @@ export default {
 
 <style scoped>
 
+p {
+    text-align: left;
+}
+
 a {
     color: hotpink;
 }

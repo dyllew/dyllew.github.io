@@ -41,12 +41,14 @@
                                 sometimes from television. In this analysis, we looked at ten years of 
                                 data from three television stations: CNN, Fox News, and MSNBC to address the 
                                 following research question:
-                                <br>
-                                <strong id='research-question'>How has the frequency and content of 
-                                    top American English-speaking news media coverage of climate change 
-                                    evolved in the past ten years (July 2009-January 2020)-and what environmental and political factors 
-                                    have influenced the trends?</strong>
                             </p>
+                            <br>
+                            <strong id='research-question'>
+                                How has the frequency and content of 
+                                top American English-speaking news media coverage of climate change 
+                                evolved in the past ten years (July 2009-January 2020)-and what environmental and political factors 
+                                have influenced the trends?
+                            </strong>
                         </div>
                     </div>
                     <div class="carousel-item cc-carousel-item">
@@ -128,6 +130,15 @@ export default {
 
 <style scoped>
 
+p {
+    text-align: left;
+}
+
+#research-question {
+    text-align: center;
+    color: white;
+}
+
 a {
     color: hotpink;
 }
@@ -136,9 +147,6 @@ a:hover {
     color: white;
 }
 
-#research-question{
-    color: white;
-}
 
 h1, h3, h5 {
     color: white;

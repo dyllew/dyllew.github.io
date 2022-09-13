@@ -62,6 +62,10 @@ export default {
 
 <style scoped>
 
+p {
+    text-align: left;
+}
+
 h1 {
     color: white;
 }

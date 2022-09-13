@@ -34,14 +34,14 @@ export default {
             {   
                 id: "ml-for-crowdsourced-crisis-data",
                 link: "/projects/ml-for-crowdsourced-crisis-data", 
-                src: {img_name: "pika-gif.gif", size_class: 'w-75'},
-                title: "Automating Crowdsourced Crisis Report Assessment for Enhanced Crisis Awareness and Response", 
+                src: {img_name: "masters-thesis-overview.png"},
+                title: "Towards Automated Assessment of Crowdsourced Crisis Reporting for Enhanced Crisis Awareness and Response", 
                 desc: "Masters thesis on constructing labeled crowdsourced crisis datasets and developing machine learning models to assist crisis managers in gaining situational awareness from crowdsourced crisis data for enhanced crisis response.",
-                // projectWebsite: {
-                //     id: "button-holder",
-                //     buttonText: "Poster PDF",
-                //     url: "./assets/IDS131_Poster.pdf"
-                // }
+                projectWebsite: {
+                    id: "button-holder",
+                    buttonText: "See Thesis Document",
+                    url: "https://dspace.mit.edu/handle/1721.1/144911"
+                }
             },
             {   
                 id: "nlp-for-int-dev-gray-lit",
@@ -72,14 +72,19 @@ export default {
                 link: "/projects/gnns-taxi-prediction", 
                 src: {img_name: "fare-surge-graph-pred.png"},
                 title: "Graph Neural Networks for NYC Taxi Fare & Demand Surge Prediction", 
-                desc: "Machine Learning project in Python which evaluated graph neural networks (GNNs) for the tasks of NYC taxi fare and demand surge prediction."
+                desc: "Machine Learning project in Python which investigated graph neural networks (GNNs) for the tasks of NYC taxi fare and demand surge prediction."
             },
             {   
                 id: "trump-img",
                 link: "/projects/trump-speech-analysis", 
                 src: {img_name: "FrequencyPlot.png", size_class: 'w-75'},
                 title: "Trump Campaign Speech Analysis", 
-                desc: "Data Science project in R which investigated how Donald Trump's 2016 campaign speeches may have influenced public sentiment on a regional level."
+                desc: "Data Science project in R which investigated how Donald Trump's 2016 campaign speeches may have influenced public sentiment on a regional level.",
+                projectWebsite: {
+                    id: "button-holder",
+                    buttonText: "Poster PDF",
+                    url: "./assets/17_835_Poster.pdf"
+                }
             },
             {   
                 id: "boomerang-img",
@@ -122,6 +127,10 @@ h5 {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+p {
+    text-align: left;
 }
 
 @media (max-width: 750px) {
