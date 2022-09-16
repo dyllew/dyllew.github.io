@@ -85,8 +85,33 @@
                                     <li><strong>To evaluate methodology in collaboration with crisis managers</strong>, e.g. crisis managers in Fukuchiyama, Japan.</li>
                                     <li><strong>To incorporate evaluation results and iterate on the ML methodology</strong> in order to better reach aim of using AI to assist crisis managers during crisis.</li>
                                 </ol>
-                                To achieve these aims we develop and evaluate a methodology consisting of two main machine learning modules, namely: Image Analysis and Text Analysis Modules
+                                We investigate various ML techniques
+                                that can be applied to mitigate information overload for crisis managers during crisis
+                                events while also assessing if those techniques can satisfy the information needs and
+                                priorities of crisis managers through qualitative and quantitative evaluation.
                             </p>
+                            <h5>Novel Framework</h5>
+                            <p>
+                                To achieve the aims above we develop a novel framework in the crisis informatics community consisting of the following components:
+                                <ul>
+                                    <li><strong>Classification Task Creation</strong> - We develop new classification tasks using labels provided to us by crisis managers
+                                        and labels present in open-source datasets</li>
+                                    <li><strong>Data Annotation Procedure</strong> - We open-souce the annotation guide we develop for greater transparency into the procurement of human-annotated
+                                        that is used to train and evaluate ML models</li>
+                                    <li><strong>Interannotator Agreement/Data Reliability Analysis</strong> - After performing an annotation effort on data provided by crisis managers, we analyze the quality
+                                        of the annotations through interannotator agreement analysis to demonstrate the importance of understanding data quality prior to using it for ML purposes</li>
+                                    <li><strong>Model Development and Evaluation; Per-Class Performance Analysis</strong> - The metrics we used to evaluate models are derived either from metrics reported in the literature or, more notably, metrics determined from insights 
+                                        provided by crisis managers directly. Additionally, we consider issues of class imbalance and report per-class performance and confusion matrices to provide more granular insight
+                                        into model performance. Finally, we establish baselines to compare against the models we develop to assess the degree to which the models we develop outperform the baseline</li>
+                                    <li><strong>Qualitative Analysis through Workshops with Crisis Managers</strong> - We sought to cooperate with crisis managers with the intent of using this framework to
+                                        iteratively design ML systems, such as the specific classification tasks performed by the models and their associated performance metric, by iteratively incorporating feedback and insights form
+                                        crisis managers, so that the system better aligns with their information needs and decision-making priorities</li>
+                                </ul>
+                                This framework situates <i>Model Development and Evaluation</i>, which is commonplace in prior work, as part of a larger, contextualized analysis. On that note, we
+                                expand on the notion of <i>Model Development and Evaluation</i> beyond what is typically seen in the prior work.
+                            </p>
+                            <h5>Machine Learning Methodology</h5>
+                            With our crisis management partners in Fukuchiyama (FC), Japan, we present our framework through two ML modules: Image Analysis Module & Text Analysis Module
                         </div>
                     </div>
                     <div class="carousel-item cc-carousel-item">

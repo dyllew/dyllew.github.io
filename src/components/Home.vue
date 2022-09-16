@@ -3,7 +3,7 @@
     <div id="about" class="col-6 pt-4 col-md-3 pt-md-5">
       <div class="img-container">
         <h4>About Me</h4>
-        <div v-on:click="goTo('/about')" class="img-holder">
+        <div v-on:click="goToAbout" class="img-holder">
           <img
             class="rounded img-fluid upper-img"
             src="../../public/assets/dylan-n-leo.jpg"
@@ -15,7 +15,7 @@
     <div id="resume" class="col-6 pt-4 col-md-3 pt-md-5">
       <div class="img-container">
         <h4>Resume</h4>
-        <div v-on:click="goTo('/resume')" class="img-holder">
+        <div v-on:click="goToResume" class="img-holder">
           <img
             class="rounded img-fluid upper-img"
             src="../../public/assets/resume.png"
@@ -26,7 +26,7 @@
     <div id="artwork-and-projs" class="col-md-4">
         <div class="img-container">
           <h4>Projects</h4>
-          <div v-on:click="goTo('/projects')" class="img-holder">
+          <div v-on:click="goToProjects" class="img-holder">
             <img
               class="rounded img-fluid"
               src="../../public/assets/project-collage.png"
@@ -35,13 +35,35 @@
         </div>
         <div class="img-container mt-4">
           <h4>Artwork</h4>
-          <div v-on:click="goTo('/artwork')" class="img-holder">
+          <div v-on:click="goToArtwork" class="img-holder">
             <img
               class="rounded img-fluid lower-img"
               src="../../public/assets/portrait.jpg"
             />
           </div>
         </div>
+    </div>
+    <div id="artwork" class="col-5 pt-5 pt-md-0 col-md-2">
+      <div class="img-container">
+        <h4>Artwork</h4>
+        <div v-on:click="goToArtwork" class="img-holder">
+          <img
+            class="rounded img-fluid lower-img"
+            src="../../public/assets/portrait.jpg"
+          />
+        </div>
+      </div>
+    </div>
+    <div id="projects" class="col-6 pt-5 pt-md-0 col-md-4">
+      <div class="img-container">
+        <h4>Projects</h4>
+        <div v-on:click="goToProjects" class="img-holder">
+          <img
+            class="rounded img-fluid lower-img"
+            src="../../public/assets/project-collage.png"
+          />
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -55,8 +77,17 @@ export default {
     };
   },
   methods: {
-    goTo(name) {
-      this.$router.push(name);
+    goToAbout() {
+      this.$router.push("/about");
+    },
+    goToProjects() {
+      this.$router.push("/projects");
+    },
+    goToArtwork() {
+      this.$router.push("/artwork");
+    },
+    goToResume() {
+      this.$router.push("/resume");
     },
   },
 };
@@ -109,14 +140,22 @@ h4 {
       order: 2;
   }
 
-  @media (min-width: 1150px) { 
-      .upper-img {
-        height: 30vw;
-        width: auto;
-    }
-      .lower-img {
-          height: 15vw;
-      }
+  #projects {
+    display: none;
   }
+
+  #artwork {
+    display: none;
+  }
+
+    @media (min-width: 1150px) { 
+        .upper-img {
+          height: 30vw;
+          width: auto;
+      }
+        .lower-img {
+            height: 15vw;
+        }
+    }
 }
 </style>
