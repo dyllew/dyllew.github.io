@@ -1,9 +1,9 @@
 <template>
     <div class="row align-items-center justify-content-center">
-        <div class="col-12">  
+        <div class="col-8">  
             <h3>Towards Automated Assessment of Crowdsourced Crisis Reporting for Enhanced Crisis Awareness and Response</h3>
         </div>
-        <div class="col-md-8">
+        <div class="col-md-10">
             <div id="ccCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
                 <ol class="carousel-indicators">
                     <li data-target="#ccCarousel" data-slide-to="0" class="active"></li>
@@ -11,10 +11,15 @@
                     <li data-target="#ccCarousel" data-slide-to="2"></li>
                     <li data-target="#ccCarousel" data-slide-to="3"></li>
                     <li data-target="#ccCarousel" data-slide-to="4"></li>
+                    <li data-target="#ccCarousel" data-slide-to="5"></li>
+                    <li data-target="#ccCarousel" data-slide-to="6"></li>
+                    <!-- <li data-target="#ccCarousel" data-slide-to="7"></li>
+                    <li data-target="#ccCarousel" data-slide-to="8"></li>
+                    <li data-target="#ccCarousel" data-slide-to="9"></li> -->
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active cc-carousel-item">
-                        <img class="rounded img-fluid" src="../../../public/assets/masters-thesis-overview.png" alt="First slide">
+                        <img class="rounded img-fluid" id="overview-pic" src="../../../public/assets/masters-thesis-overview.png" alt="First slide">
                         <div class="carousel-text">
                             <h5>Thesis Document & Code and Related Open-source Python Packages</h5>
                             <p>
@@ -31,7 +36,7 @@
                                 Relatedly, with this thesis, we produced two open-source Python packages to better enable readability, reusability, and reproducibility of the computational utilities derived 
                                 for performing various experiments and analysis on crowdsourced crisis image and text data:
                                 <ul>
-                                    <li><a href="https://pypi.org/project/url-image-module/0.27.0/" target="_blank">URL Image Module</a> - Utilities for training, testing, and predicting with pretrained CNNs for classifying
+                                    <li><a href="https://pypi.org/project/url-image-module/0.27.0/" target="_blank">URL Image Module</a> - Utilities for training, testing, and predicting with pretrained Convolutional Neural Networks for classifying
                                         crowdsourced crisis image data and constructing & analyzing annotated datasets</li>
                                     <li><a href="https://pypi.org/project/url-text-module/0.6.1/" target="_blank">URL Text Module</a> - Utilities for featurizing crisis text data, training and testing with a variety of classification machine learning models, 
                                         and visualizing clusters of featurized text data</li>
@@ -76,37 +81,192 @@
                             <p id="research-aims">
                                 <ol>
                                     <li><strong>To reduce information overload during a crisis</strong> using accurate, efficient, automated image and text classification of crisis reports by machine learning (ML) models during crisis.</li>
-                                    <li><strong>To embed tacit knowledge, information needs and decision-making priorities of emergency managers</strong> into the designed ML methodology.</li>
+                                    <li><strong>To embed tacit knowledge, information needs, and decision-making priorities of crisis managers</strong> into the designed ML methodology.</li>
                                     <li><strong>To evaluate methodology in collaboration with crisis managers</strong>, e.g. crisis managers in Fukuchiyama, Japan.</li>
                                     <li><strong>To incorporate evaluation results and iterate on the ML methodology</strong> in order to better reach aim of using AI to assist crisis managers during crisis.</li>
                                 </ol>
+                                To achieve these aims we develop and evaluate a methodology consisting of two main machine learning modules, namely: Image Analysis and Text Analysis Modules
                             </p>
                         </div>
                     </div>
                     <div class="carousel-item cc-carousel-item">
-                        <img class="rounded img-fluid" src="../../../public/assets/final-project-overview.png" alt="Second slide">
-                        <div class="carousel-text">
-                            <h5>Results</h5>
-                            <p> 
-                                Climate change TV news media coverage frequency and 
-                                content appears to be significantly driven by political events
-                                 more so than environmental factors. The frequency of climate change mentions 
-                                 follow similar patterns by network, with clear influence of political events such as 
-                                 the 2009 UNCCC, 2015 Paris Agreement, and 2019 Democratic primary debates driving 
-                                 climate news coverage. This is reflected in the content of the 
-                                 climate mentions over time as words describing the political events 
-                                 occurring at the time tend to be the most important words for each of the networks 
-                                 in that specific year coupled with the tendency of different networks in the same 
-                                 year to have high content similarity. Topic analysis also finds that the majority of 15 topics 
-                                 found in topic analysis had significant changes in mean on some of the topics at the time of 
-                                 Donald Trump's inauguration.
-                            </p>
+                        <div class="row align-items-center justify-content-around">
+                            <div class="col-6 pt-3 pb-5">
+                                <img id="image-analysis-module" class="img-fluid" src="../../../public/assets/image-analysis-module.png" alt="Second slide">
+                            </div>
+                            <div class="carousel-text col-6">
+                                <h5>Image Analysis Methodology Overview</h5>
+                                <p> 
+                                    The goal of the Image Analysis Module is to utilize pretrained Convolutional Neural Network models to yield
+                                    efficient and accurate predictions from image data in crowdsourced crisis reports. The
+                                    classification tasks of Damage Severity (DS), Humanitarian Categories (HC), Informativeness (IN), and
+                                    Flood Presence (FP) form a diverse suite of labels. In a fraction of a second, the model
+                                    predictions made for these tasks provide a series of categorizations for an individual
+                                    report. We leverage state-of-the-art CNNs, which strike a necessary balance between
+                                    model complexity, memory and storage constraints, and model performance to provide
+                                    these predictions.
+                                    <br>
+                                    <br>
+                                    To achieve this aim, we use large, labeled, open-source datasets for training and
+                                    evaluating the models. We formulate a new crisis image classification task for detecting flood presence in an image and construct
+                                    a new dataset altogether using flood images from various open-source datasets, which contained
+                                    flood-adjacent labels. We additionally devise an annotation procedure and analyze the results of human-annotations on crisis images 
+                                    provided to us by crisis managers in Fukuchiyama. We held various image annotation workshops with crisis managers to identify the limitations in our
+                                    approach and understand how we could iterate on the design of our ML methodology. This evaluation procedure thus enabled us to evaluate the use of image classification models in assisting crisis managers
+                                    using quantitative metrics as well as qualitatively through the feedback we got through the image annotation workshops. 
+                                    This evaluation directly influenced our approach for devising the Text Analysis Module.
+                                </p>
+                            </div>
                         </div>
+                    </div>
+                    <div class="carousel-item cc-carousel-item">
+                        <div class="carousel-text">
+                            <h5>Image Datasets & Train/Dev/Test Splits for Model Development & Evaluation</h5>
+                            <div class="row justify-content-around">
+                                <div class="carousel-text col-9">
+                                    <p>
+                                        Since we used CNN models, specifically the EfficientNet-B1 architecture pretrained on ImageNet, we wanted to make use of large open-source image datasets
+                                        for finetuning the models to perform the classification tasks of Damage Severity (DS), Humanitarian Categories (HC), Informativeness (IN), and Flood Presence (FP).
+                                    </p>
+                                    <h6>Open-source Consolidated Crisis Image Datasets</h6>
+                                    <p>
+                                        For the DS, HC, and IN tasks, we made use of the open-source train/dev/test splits made available at 
+                                        <a href="https://crisisnlp.qcri.org/crisis-image-datasets-asonam20">CrisisNLP</a>. We train the models which perform these tasks using
+                                        the train and dev splits. For evaluation, we make use of the respective test splits for each task.
+                                    </p>
+                                    <h6>Flood Presence Task Creation and Dataset Formation</h6>
+                                    <p>
+                                        In this work we focus on flood-crisis events, thus we used various open-source image datasets which have flood-adjacent labels
+                                        and map them to the binary labels of "Flood"/"Not Flood". Using the resulting dataset, we create randomized, non-overlapping Train/Dev/Test splits.
+                                        Similar to the above, we use the train & dev splits to develop the FP model, and the test split to evaluate the model.
+                                    </p>
+                                    <!-- <h6>Model Evaluation on Test Splits & Flood Presence Benchmark Performance</h6>
+                                    <p>
+                                        For each task, we evaluate the trained models on their respective test split. The authors in [1]<sup><a href="#fn1" id="ref1">1</a></sup>
+                                    </p>
+                                    <hr>
+                                    <sup id="fn1">1. <a href="#ref1" title="Jump back to footnote 1 in the text.">↩</a></sup> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item cc-carousel-item">
+                        <div class="carousel-text">
+                            <div class="row align-items-center justify-content-around">
+                                <div class="col-8">
+                                    <h5>Flood Presence Dataset Composition</h5>
+                                    Composition of the Flood Presence dataset from the original datasets and the number of images for each label.
+                                    <table id="fp-table">
+                                        <tr>
+                                            <th><strong>Dataset</strong></th>
+                                            <th><strong>Flood</strong></th>
+                                            <th><strong>Not Flood</strong></th>
+                                            <th><strong>Total</strong></th>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <i>
+                                                    <strong>Consolidated Disaster Types</strong>
+                                                    <br>
+                                                    (<a href="https://arxiv.org/abs/2011.08916" target="_blank">Alam et al. 2020</a>)
+                                                </i>
+                                            </td>
+                                            <td>3201</td>
+                                            <td>14310</td>
+                                            <td>17511</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <i>
+                                                    <strong>Central European Floods 2013</strong>
+                                                    <br>
+                                                    (<a href="https://arxiv.org/abs/1908.03361" target="_blank">Barz et al. 2018</a>)
+                                                </i>
+                                            </td>
+                                            <td>3151</td>
+                                            <td>559</td>
+                                            <td>3710</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <i>
+                                                    <strong>Harz Region Floods 2017</strong>
+                                                    <br>
+                                                    (<a href="https://arxiv.org/abs/2011.05756" target="_blank">Barz et al. 2020</a>)
+                                                </i>
+                                            </td>
+                                            <td>264</td>
+                                            <td>405</td>
+                                            <td>669</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <i>
+                                                    <strong>Rhine River Floods 2018</strong>
+                                                    <br>
+                                                    (<a href="https://arxiv.org/abs/2011.05756" target="_blank">Barz et al. 2020</a>)
+                                                </i>
+                                            </td>
+                                            <td>730</td>
+                                            <td>1007</td>
+                                            <td>1737</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Total</td>
+                                            <td>7346</td>
+                                            <td>16281</td>
+                                            <td>23627</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                    <!-- <h6>Model Evaluation on Test Splits & Flood Presence Benchmark Performance</h6>
+                                    <p>
+                                        For each task, we evaluate the trained models on their respective test split. The authors in [1]<sup><a href="#fn1" id="ref1">1</a></sup>
+                                    </p>
+                                    <hr>
+                                    <sup id="fn1">1. <a href="#ref1" title="Jump back to footnote 1 in the text.">↩</a></sup> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item cc-carousel-item">
+                        <div class="carousel-text">
+                            <h5>To Be Continued...</h5>
+                            <img id="pika-gif" class="rounded img-fluid" src="../../../public/assets/pika-gif.gif">
+                        </div>
+                    </div>
+                    <!-- <div class="carousel-item cc-carousel-item">
+                        <div class="row justify-content-around">
+                            <div class="col-6 pt-3 pb-5">
+                                <img id="image-analysis-module" class="img-fluid" src="../../../public/assets/image-analysis-module.png" alt="Second slide">
+                            </div>
+                            <div class="carousel-text col-6">
+                                <h5>Text Analysis Methodology Overview</h5>
+                                <p> 
+                                    The goal of the Image Analysis Module is to utilize pretrained Convolutional Neural Network models to yield
+                                    efficient and accurate predictions from image data in crowdsourced crisis reports. The
+                                    classification tasks of Damage Severity (DS), Humanitarian Categories (HC), Informativeness (IN), and
+                                    Flood Presence (FP) form a diverse suite of labels. In a fraction of a second, the model
+                                    predictions made for these tasks provide a series of categorizations for an individual
+                                    report. We leverage state-of-the-art CNNs, which strike a necessary balance between
+                                    model complexity, memory and storage constraints, and model performance to provide
+                                    these predictions.
+                                    <br>
+                                    <br>
+                                    To achieve this aim, we use large, labeled, open-source datasets for training and
+                                    evaluating the models. We formulate a new crisis image classification task for detecting flood presence in an image and construct
+                                    a new dataset altogether using flood images from various open-source datasets, which contained
+                                    flood-adjacent labels. We additionally devise an annotation procedure and analyze the results of human-annotations on crisis images 
+                                    provided to us by crisis managers in Fukuchiyama. We held various image annotation workshops with crisis managers to identify the limitations in our
+                                    approach and understand how we could iterate on the design of our ML methodology. This evaluation procedure thus enabled us to evaluate the use of image classification models in assisting crisis managers
+                                    using quantitative metrics as well as qualitatively through the feedback we got through the image annotation workshops. 
+                                    This evaluation directly influenced our approach for devising the Text Analysis Module.
+                                </p>
+                            </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 </template>
 
 
@@ -123,7 +283,7 @@ p {
     text-align: left;
 }
 
-h1, h3, h5 {
+h1, h3, h5, h6 {
     color: white;
 }
 
@@ -144,15 +304,11 @@ h1, h3, h5 {
     margin-bottom: 40px;
 }
 
-.cc-carousel-item img {
-  max-height: 30vw;
-}
-
 #overview-pic {
     margin-top: 10px;
     margin-bottom: 40px;
     width: 90vh;
-    height: 50vh;
+    height: 40vh;
 }
 
 #research-question {
@@ -160,8 +316,16 @@ h1, h3, h5 {
     color: white;
 }
 
-#research-aims {
+#image-analysis-module {
+    width: 70vh;
+    height: 80vh;
+}
 
+#pika-gif {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    width: 60vh;
+    height: 40vh;
 }
 
 @media (max-width: 800px) {
@@ -169,4 +333,29 @@ h1, h3, h5 {
         max-height: 80vw;
     }
 }
+
+#fp-table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  color: black;
+  width: 100%;
+}
+
+#fp-table td, #fp-table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#fp-table tr:nth-child(even){background-color: #f2f2f2;}
+#fp-table tr:hover{background-color: #ddd;}
+#fp-table tr:nth-child(odd) {background-color: #ddd;}
+
+#fp-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: darkturquoise;
+  color: white
+}
+
 </style>
