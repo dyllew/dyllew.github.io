@@ -5,11 +5,11 @@
         </div>
         <div id="logos-col" class="col-md-4 my-auto">
             <div class="d-flex flex-row justify-content-center justify-content-md-end">
-                <a href="mailto: drlewis@mit.edu">
+                <a href="mailto: dylanrl97@gmail.com">
                     <i class="fa fa-envelope-o fa-3x"></i>
                     <i class="fa fa-envelope-o fa-2x"></i>
                 </a> 
-                <a href="https://www.linkedin.com/in/dylan-lewis-2020/" target="_blank">
+                <a href="https://www.linkedin.com/in/dyllew/" target="_blank">
                     <i class="fa fa-linkedin-square fa-3x"></i>
                     <i class="fa fa-linkedin-square fa-2x"></i>
                 </a>

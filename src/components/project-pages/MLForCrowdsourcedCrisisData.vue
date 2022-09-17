@@ -165,12 +165,6 @@
                                         and map them to the binary labels of "Flood"/"Not Flood". Using the resulting dataset, we create randomized, non-overlapping Train/Dev/Test splits.
                                         Similar to the above, we use the train & dev splits to develop the FP model, and the test split to evaluate the model.
                                     </p>
-                                    <!-- <h6>Model Evaluation on Test Splits & Flood Presence Benchmark Performance</h6>
-                                    <p>
-                                        For each task, we evaluate the trained models on their respective test split. The authors in [1]<sup><a href="#fn1" id="ref1">1</a></sup>
-                                    </p>
-                                    <hr>
-                                    <sup id="fn1">1. <a href="#ref1" title="Jump back to footnote 1 in the text.">↩</a></sup> -->
                                 </div>
                             </div>
                         </div>
@@ -244,15 +238,95 @@
                                         </tr>
                                     </table>
                                 </div>
-                                    <!-- <h6>Model Evaluation on Test Splits & Flood Presence Benchmark Performance</h6>
-                                    <p>
-                                        For each task, we evaluate the trained models on their respective test split. The authors in [1]<sup><a href="#fn1" id="ref1">1</a></sup>
-                                    </p>
-                                    <hr>
-                                    <sup id="fn1">1. <a href="#ref1" title="Jump back to footnote 1 in the text.">↩</a></sup> -->
                             </div>
                         </div>
                     </div>
+                    <!-- <div class="carousel-item cc-carousel-item">
+                        <div class="carousel-text">
+                            <h5>Model Evaluation on Test Splits & Flood Presence Benchmark Performance</h5>
+                            <div class="row justify-content-around">
+                                <div class="carousel-text col-9">
+                                    <p>
+                                        
+                                    </p>
+                                    <hr>
+                                    <sup id="fn1">1. <a href="#ref1" title="Jump back to footnote 1 in the text.">↩</a></sup>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item cc-carousel-item">
+                        <div class="carousel-text">
+                            <div class="row align-items-center justify-content-around">
+                                <div class="col-8">
+                                    <h5>Model Evaluation on Test Splits & Flood Presence Benchmark Performance</h5>
+                                    Composition of the Flood Presence dataset from the original datasets and the number of images for each label.
+                                    <table id="fp-table">
+                                        <tr>
+                                            <th><strong>Dataset</strong></th>
+                                            <th><strong>Flood</strong></th>
+                                            <th><strong>Not Flood</strong></th>
+                                            <th><strong>Total</strong></th>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <i>
+                                                    <strong>Consolidated Disaster Types</strong>
+                                                    <br>
+                                                    (<a href="https://arxiv.org/abs/2011.08916" target="_blank">Alam et al. 2020</a>)
+                                                </i>
+                                            </td>
+                                            <td>3201</td>
+                                            <td>14310</td>
+                                            <td>17511</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <i>
+                                                    <strong>Central European Floods 2013</strong>
+                                                    <br>
+                                                    (<a href="https://arxiv.org/abs/1908.03361" target="_blank">Barz et al. 2018</a>)
+                                                </i>
+                                            </td>
+                                            <td>3151</td>
+                                            <td>559</td>
+                                            <td>3710</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <i>
+                                                    <strong>Harz Region Floods 2017</strong>
+                                                    <br>
+                                                    (<a href="https://arxiv.org/abs/2011.05756" target="_blank">Barz et al. 2020</a>)
+                                                </i>
+                                            </td>
+                                            <td>264</td>
+                                            <td>405</td>
+                                            <td>669</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <i>
+                                                    <strong>Rhine River Floods 2018</strong>
+                                                    <br>
+                                                    (<a href="https://arxiv.org/abs/2011.05756" target="_blank">Barz et al. 2020</a>)
+                                                </i>
+                                            </td>
+                                            <td>730</td>
+                                            <td>1007</td>
+                                            <td>1737</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Total</td>
+                                            <td>7346</td>
+                                            <td>16281</td>
+                                            <td>23627</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
                     <div class="carousel-item cc-carousel-item">
                         <div class="carousel-text">
                             <h5>To Be Continued...</h5>
