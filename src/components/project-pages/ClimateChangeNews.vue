@@ -6,11 +6,11 @@
         <div class="col-md-8">
             <div id="ccCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
                 <ol class="carousel-indicators">
-                    <li data-target="#ccCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#ccCarousel" data-slide-to="1"></li>
-                    <li data-target="#ccCarousel" data-slide-to="2"></li>
-                    <li data-target="#ccCarousel" data-slide-to="3"></li>
-                    <li data-target="#ccCarousel" data-slide-to="4"></li>
+                    <li data-target="#ccCarousel" data-slide-to="0" class="active" @click="scrollUp"></li>
+                    <li data-target="#ccCarousel" data-slide-to="1" @click="scrollUp"></li>
+                    <li data-target="#ccCarousel" data-slide-to="2" @click="scrollUp"></li>
+                    <li data-target="#ccCarousel" data-slide-to="3" @click="scrollUp"></li>
+                    <li data-target="#ccCarousel" data-slide-to="4" @click="scrollUp"></li>
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active cc-carousel-item">
@@ -122,9 +122,14 @@
 </template>
 
 <script>
-
+import { scrollUpFunc } from '../../constants';
 export default {
-  name: 'ClimateChangeNews'
+  name: 'ClimateChangeNews',
+  methods: {
+    scrollUp() {
+        scrollUpFunc();
+    }
+  }
 }
 </script>
 

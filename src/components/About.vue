@@ -20,7 +20,7 @@
               I'm currently looking for remote Data Science and Software Engineering positions!
             </p>
             <p>
-              In my freetime I love to explore nature, play video games, make and experiment with different forms of art,
+              In my freetime I love to explore nature, play video games (Zelda/DMC/Soulsborne/Skyrim/Kingdom Hearts/Fallout), cook/bake something new, make and experiment with different forms of art,
               develop new skills, and go on adventures with my pup!
             </p> 
         </div>
@@ -78,7 +78,7 @@ a:hover {
     }
 
     #about-description p {
-      font-size: 2vw;
+      font-size: 1.85vw;
     }
 
     #intro-paragraph {
@@ -94,14 +94,14 @@ a:hover {
     }
 
     #about-description p {
-      font-size: 1.75vw;
+      font-size: 1.50vw;
     }
 }
 
 @media (min-width: 1200px) {
 
     #about-description p {
-      font-size: 1.5vw;
+      font-size: 1.35vw;
     }
 }
 

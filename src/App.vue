@@ -23,6 +23,7 @@ export default {
 
 html {
   height: 100vh;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -38,6 +39,17 @@ body {
   text-align: center;
   color: #61DAFB;
   background-color: #080707;
+}
+
+.carousel-text {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 800px) {
+    .cc-carousel-item img {
+        max-height: 80vw;
+    }
 }
 
 

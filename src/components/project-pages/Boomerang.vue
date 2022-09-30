@@ -1,14 +1,14 @@
 <template>
     <div class="row align-items-center justify-content-center">
-        <div class="col-12">  
+        <div id="title" class="col-12">  
             <h1>Boomerang</h1>
         </div>
         <div class="col-md-8">
             <div id="boomerangCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
                 <ol class="carousel-indicators">
-                    <li data-target="#boomerangCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#boomerangCarousel" data-slide-to="1"></li>
-                    <li data-target="#boomerangCarousel" data-slide-to="2"></li>
+                    <li data-target="#boomerangCarousel" data-slide-to="0" class="active" @click="scrollUp"></li>
+                    <li data-target="#boomerangCarousel" data-slide-to="1" @click="scrollUp"></li>
+                    <li data-target="#boomerangCarousel" data-slide-to="2" @click="scrollUp"></li>
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active boomerang-carousel-item">
@@ -54,9 +54,14 @@
 </template>
 
 <script>
-
+import { scrollUpFunc } from '../../constants';
 export default {
-  name: 'Boomerang'
+  name: 'Boomerang',
+  methods: {
+    scrollUp() {
+        scrollUpFunc();
+    }
+  }
 }
 </script>
 

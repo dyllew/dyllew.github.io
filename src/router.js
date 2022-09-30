@@ -9,7 +9,9 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Artwork from './components/Artwork';
 import Resume from './components/Resume';
-import MLForCrowdsourcedCrisisData from './components/project-pages/MLForCrowdsourcedCrisisData';
+import MLForCrowdsourcedCrisisData from './components/project-pages/ml-for-crowdsourced-crisis-data/MLForCrowdsourcedCrisisData';
+import ImageAnalysisCarousel from './components/project-pages/ml-for-crowdsourced-crisis-data/ImageAnalysisCarousel';
+import TextAnalysisCarousel from './components/project-pages/ml-for-crowdsourced-crisis-data/TextAnalysisCarousel';
 import NLPIntDevGrayLit from './components/project-pages/NLPIntDevGrayLit';
 import GNNsTaxiPrediction from './components/project-pages/GNNsTaxiPrediction';
 import TrumpSpeechAnalysis from './components/project-pages/TrumpSpeechAnalysis';
@@ -38,6 +40,14 @@ const router = [
     {
         path: '/projects/ml-for-crowdsourced-crisis-data',
         component: MLForCrowdsourcedCrisisData
+    },
+    {
+        path: '/projects/ml-for-crowdsourced-crisis-data/image-analysis-module',
+        component: ImageAnalysisCarousel
+    },
+    {
+        path: '/projects/ml-for-crowdsourced-crisis-data/text-analysis-module',
+        component: TextAnalysisCarousel
     },
     {
         path: '/projects/nlp-for-int-dev-gray-lit',
