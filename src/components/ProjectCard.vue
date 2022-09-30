@@ -21,16 +21,19 @@
 </template>
 
 <script>
+import { scrollUpFunc } from '../constants';
+
 export default {
     name: 'ProjectCard',
     props: ['project'],
     methods: {
         goToProjectPage(projectURL) {
             this.$router.push(projectURL);
+            scrollUpFunc();
         },
         getImgURL(imgFilename) {
             return require('../../public/assets/' + imgFilename)
-        }
+        },
     },
     computed: {
         projectBtnText() {
