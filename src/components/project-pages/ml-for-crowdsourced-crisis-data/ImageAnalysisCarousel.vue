@@ -293,8 +293,8 @@
                                 The ground-truth datasets are formed from the plurality labels found from the annotations given to the Fukuchiyama images.
 
                                 We again observe imbalance in the resulting datasets, albeit to varying degrees. Therefore, we again make use of weighted aggregate metrics for model evaluation,
-                                however for granular insight into model performance, we also investigate the per-class performance of each model by precision, recall, 
-                                and F1 score for each class as well as the confusion matrix and establish a baseline using Cohen's Kappa score.
+                                however, for a more granular insight into model performance, we also investigate the per-class performance of each model by precision, recall, 
+                                and F1 score for each class and visualize the confusion matrix. Lastly, we establish a comparison to a baseline classifier using the Cohen's Kappa score.
                             </p>
                         </div>
                     </div>
