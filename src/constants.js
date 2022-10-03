@@ -4,7 +4,7 @@ export const MAIN_PROJECTS = [
         link: "/projects/ml-for-crowdsourced-crisis-data", 
         src: {imgFilename: "masters-thesis-overview.png"},
         title: "Towards Automated Assessment of Crowdsourced Crisis Reporting for Enhanced Crisis Awareness and Response", 
-        desc: "Masters thesis on constructing labeled crowdsourced crisis datasets and developing machine learning models to assist crisis managers in gaining situational awareness from crowdsourced crisis data for enhanced crisis response. Resultant Open-sourced Python Packages.",
+        desc: "Masters thesis/Research project on constructing labeled crowdsourced crisis datasets and developing machine learning models to assist crisis managers in gaining situational awareness from crowdsourced crisis data for enhanced crisis response.",
         projectWebsite: {
             id: "button-holder",
             btnText: "See Thesis Document",

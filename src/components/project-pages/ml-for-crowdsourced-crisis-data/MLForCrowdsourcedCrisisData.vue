@@ -6,7 +6,7 @@
         <div class="col-md-10">
             <div id="ccCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
                 <ol class="carousel-indicators">
-                    <li data-target="#ccCarousel" data-slide-to="0" class="active" @click="scrollUp"></li>
+                    <li data-target="#ccCarousel" data-slide-to="0" class="active" @click="scrollUp"><div class="tooltip"><span class="tooltiptext">Thesis Document & Code</span></div></li>
                     <li data-target="#ccCarousel" data-slide-to="1" @click="scrollUp"></li>
                     <li data-target="#ccCarousel" data-slide-to="2" @click="scrollUp"></li>
                     <li data-target="#ccCarousel" data-slide-to="3" @click="scrollUp"></li>
@@ -64,8 +64,8 @@
                             </p>
                             <h5><strong>Research Question</strong></h5>
                             <strong id="research-question">
-                                In collaborating with crisis managers, how can machine learning methods be utilized and evaluated to effectively reduce the information overload of crowdsourced crisis data on
-                                crisis managers during flood crisis events for enhanced crisis awareness and response?
+                                In collaborating with crisis managers, how can machine learning methods be utilized and evaluated to effectively reduce the information overload of crowdsourced data on
+                                crisis managers during flood events for enhanced crisis awareness and response?
                             </strong>
                         </div>
                     </div>

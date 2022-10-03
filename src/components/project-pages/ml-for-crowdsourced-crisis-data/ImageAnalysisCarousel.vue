@@ -13,6 +13,9 @@
                     <li data-target="#ccCarousel" data-slide-to="4"></li>
                     <li data-target="#ccCarousel" data-slide-to="5"></li>
                     <li data-target="#ccCarousel" data-slide-to="6"></li>
+                    <li data-target="#ccCarousel" data-slide-to="7"></li>
+                    <li data-target="#ccCarousel" data-slide-to="8"></li>
+                    <li data-target="#ccCarousel" data-slide-to="9"></li>
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item cc-carousel-item active">
@@ -202,7 +205,96 @@
                                 similar to RiskMap images. To form evaluation/test sets from this data, we needed to label the images for each of the four image classification tasks we've discussed.
                             </p>
                             <p>
-                                
+                                <ul>
+                                    <li>The images were labeled independently by Urban Risk Lab researchers for each task. The researchers used <a href="https://github.com/dyllew/towards-automated-assessment-of-crowdsourced-crisis-reporting/blob/main/Image%20Analysis%20Module/Annotation/Image%20Labeling%20Guide.docx" target="_blank">this guide</a> to inform their decisions.</li>
+                                    <li>Each image was independently provided a <strong>single label for each task</strong> by 3 annotators.</li>
+                                    <li>We enforced independent labeling by hiding the labels given by the other labelers while someone was labeling.</li>
+                                </ul>
+                            </p>
+                            <p>
+                                Since each image was given three labels for a task, we use the plurality, or most frequent label, given to the image as the ground-truth label for that image. We chose this method of ground-truthing to minimize any specific person's contributed bias towards the ground-truth label.
+                                If there was not a plurality label, we do not label the image and thus do not put that image in the test set for that task, but did make note of the disagreement for later analysis.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item cc-carousel-item">
+                        <h5>Inter-Annotator Agreement Analysis on Annotated Fukuchiyama Images</h5>
+                        <div class="row align-items-center justify-content-around">
+                                <div class="col-6 pt-3 pb-5">
+                                    <h2>“... a computer cannot generally agree with annotators at a rate that is higher than the rate at which the annotators agree with each other."<sup><a href="#fn2" id="ref2">2</a></sup></h2>
+                                </div>
+                                <div class="carousel-text col-6">
+                                    <p> 
+                                        Since the data we have is <strong>human-annotated</strong> and thus introduces subjectivity, we aimed to assess and make transparent <strong>the quality of the annotated datasets</strong>, thus we computed measures of inter-annotator agreement (IAA).
+                                        <br>
+                                        <br>
+                                        This IAA analysis enabled us to determine, for each task:
+                                        <ul>
+                                            <li>How reproducible labeling for the task is</li>
+                                            <li>How are annotation procedure can be improved:</li>
+                                                <ul>
+                                                    <li>Refinement of task label definitions</li>
+                                                    <li>Clarifying data points of disagreement between annotators</li>
+                                                    <li>Adding more examples for each class</li>
+                                                </ul>
+                                        </ul>
+                                        This analysis has the advantage of happening before any model development, focusing on <strong>improvement of classification task formulation itself rather than building a model which will likely perform poorly on an ill-formed task.</strong>
+                                    </p>
+                                </div>
+                        </div>
+                        <hr>
+                        <p>
+                            <sup id="fn2">2. D. T. Nguyen, K. Al-Mannai, S. R. Joty, H. Sajjad, M. Imran, and P. Mitra, <a href="https://arxiv.org/abs/1608.03902" target="_blank">“Rapid classification of crisis-related data on social networks using convolutional neural networks,”</a> CoRR, vol. abs/1608.03902, 2016.<a href="#ref2" title="Jump back to footnote 2 in the text.">↩</a></sup>
+                        </p>
+                    </div>
+                    <div class="carousel-item cc-carousel-item">
+                        <div class="carousel-text">
+                            <div class="row align-items-center justify-content-around">
+                                <h5>Inter-Annotator Agreement Analysis on Annotated Fukuchiyama Images</h5>
+                                <div class="col-8">
+                                    Agreement Measures by Task for Labeled Fukuchiyama Images
+                                    <img src="../../../../public/assets/iaa.png" class="img-fluid">
+                                </div>
+                            </div>
+                            <br>
+                            <p>
+                                <strong>Fleiss' Kappa</strong> score incorporates the level of agreement attained if the annotators did not look at the data when labeling, i.e. 
+                                <strong>random chance agreement</strong>, which is an advantage over the complete agreement percentage ("Unanimous Agreement Percentage" pictured above), in which all annotators
+                                agree on the same label for an image.
+                                <ul>
+                                    <li>By Fleiss' Kappa, we observe smaller improvements over random chance agreement for Damage Severity (0.413), Humanitarian Categories (0.304), and Informativeness (0.313) as compared to Flood Presence (0.829)</li>
+                                        <ul>
+                                            <li> This suggests that further investigation should be conducted in refining the label definitions and the annotation guide for clarity by understanding potential causes for disagreement on the tasks with lower Fleiss' Kappa scores,
+                                                in order to improve agreement and thus the quality of the dataset.</li>
+                                        </ul>
+                                    <li>We use the plurality labels found for each task to form the ground-truth Fukuchiyama datasets for each of the tasks which we evaluate the trained CNN models on.</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item cc-carousel-item">
+                        <div class="carousel-text">
+                            <h5>Annotated Fukuchiyama Image Test Sets</h5>
+                            <div class="row align-items-center justify-content-between">
+                                <div class="col-12 col-md-6 col-lg-3 pt-3">
+                                    <img src="../../../../public/assets/ds-fc.png" class="img-fluid"/>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-3 pt-3">
+                                    <img src="../../../../public/assets/hc-fc.png" class="img-fluid"/>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-3 pt-3">
+                                    <img src="../../../../public/assets/in-fc.png" class="img-fluid"/>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-3 pt-3">
+                                    <img src="../../../../public/assets/fp-fc.png" class="img-fluid"/>
+                                </div>
+                            </div>
+                            <p>
+                                The ground-truth datasets are formed from the plurality labels found from the annotations given to the Fukuchiyama images.
+
+                                We again observe imbalance in the resulting datasets, albeit to varying degrees. Therefore, we again make use of weighted aggregate metrics for model evaluation,
+                                however for granular insight into model performance, we also investigate the per-class performance of each model by precision, recall, 
+                                and F1 score for each class as well as the confusion matrix and establish a baseline using Cohen's Kappa score.
                             </p>
                         </div>
                     </div>
