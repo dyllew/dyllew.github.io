@@ -1,6 +1,6 @@
 <template>
     <div class="row align-items-center justify-content-center">
-        <div class="col-8">  
+        <div class="col-12 col-md-8">  
             <h3>Towards Automated Assessment of Crowdsourced Crisis Reporting for Enhanced Crisis Awareness and Response</h3>
         </div>
         <div class="col-md-10">
@@ -10,6 +10,9 @@
                     <li data-target="#ccCarousel" data-slide-to="1" @click="scrollUp"></li>
                     <li data-target="#ccCarousel" data-slide-to="2" @click="scrollUp"></li>
                     <li data-target="#ccCarousel" data-slide-to="3" @click="scrollUp"></li>
+                    <li data-target="#ccCarousel" data-slide-to="4" @click="scrollUp"></li>
+                    <li data-target="#ccCarousel" data-slide-to="5" @click="scrollUp"></li>
+                    <li data-target="#ccCarousel" data-slide-to="6" @click="scrollUp"></li>
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active cc-carousel-item">
@@ -107,17 +110,186 @@
                         </div>
                     </div>
                     <div class="carousel-item cc-carousel-item">
-                        <h5>Machine Learning Methodology</h5>
-                            With crisis management partners in Fukuchiyama (FC), Japan, we present our framework through two ML modules:<br> Image Analysis Module & Text Analysis Module<br>
-                        <br>
-                        <p>
-                            We note that our findings from the Image Analysis Module influenced the design of the Text Analysis Module in order to meet our aim of
-                            developing machine learning systems for crisis management which iteratively incorporate the feedback received from crisis managers.
-                        </p>
-                        <div class="row align-items-center justify-content-center pb-5">
-                            <div class="col-6 col-md-6 col-lg-6 pt-3" v-for="module in modules" :key="module.link">
-                                <ProjectCard :project="module"></ProjectCard>
+                        <div class="carousel-text">
+                            <h5>Machine Learning Methodology</h5>
+                                With crisis management partners in Fukuchiyama (FC), Japan, we present our framework through two ML modules:<br> Image Analysis Module & Text Analysis Module<br>
+                            <br>
+                            <p>
+                                We note that our findings from the Image Analysis Module influenced the design of the Text Analysis Module in order to meet our aim of
+                                developing machine learning systems for crisis management which iteratively incorporate the feedback received from crisis managers.
+                            </p>
+                            <div class="row align-items-center justify-content-center pb-5">
+                                <div class="col-12 col-md-6 col-lg-6 pt-3" v-for="module in modules" :key="module.link">
+                                    <ProjectCard :project="module"></ProjectCard>
+                                </div>
                             </div>
+                            <p>
+                                In the next few slides, we summarize our main contributions to the field of Crisis Informatics.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item cc-carousel-item">
+                        <div class="carousel-text">
+                            <h4>Main Contributions 1/3</h4>
+                            <h5>Novel Framework for Information Overload Mitigation of Crowdsourced Crisis Data</h5>
+                            <p>
+                                Our main contribution is a novel framework that unifies a variety of machine learning
+                                techniques, analysis, and evaluation on images and text present in crowdsourced crisis
+                                data, which aims to reduce the information overload of crisis managers, specifically
+                                during flood crisis events. This approach leverages classical machine learning models
+                                and deep learning models aimed to provide accurate and efficient classifications on
+                                individual flood reports to mitigate information overload of crisis managers. This
+                                framework addresses the limitations in the prior work such as the lack of engagement 
+                                of crisis managers in the development of the ML methodology and an evaluation which expands beyond model metrics. 
+                                In this framework, we embed various utilities for conducting analysis such as computing properties
+                                and statistics of annotated datasets and model performance.
+                            </p>
+                            <h5>Open-source Python Packages/Code</h5>
+                            <p>
+                                To ensure the reuse of the analysis conducted in this work, we release two open-source
+                                Python packages: One for the <a href="https://pypi.org/project/url-image-module/0.27.0/" target="_blank">Image Analysis Module</a> and the other for the <a href="https://pypi.org/project/url-text-module/0.6.1/" target="_blank">Text
+                                Analysis Module</a>. These packages include utilities for training, testing, and prediction using the models presented in this work, computing statistics for interannotator
+                                agreement, and computing metrics for model performance. For text data, there are also utilities for featurization of text, performing nested cross validation, and clustering.
+                                We note that there are utilities for plotting such as methods for producing the plots shown throughout this project.
+                            </p>
+                            <p>
+                                In addition to these packages, we release an <a href="https://github.com/dyllew/towards-automated-assessment-of-crowdsourced-crisis-reporting" target="_blank">open-source repository</a> containing
+                                Jupyter notebooks, relevant documents (e.g. the annotation guide mentioned
+                                above), and other code required to reproduce the experiments and reuse the analysis
+                                conducted in this work.
+                            </p>
+                            <h5>Flood Presence Task Creation, Labeled Image Dataset, and Performance Benchmark</h5>
+                            <p>
+                                Since we focused on flood crises, we defined the image prediction task of Flood Presence classification. 
+                                The Flood Presence task is the binary classification task of determining whether or not there is presence of flood in an image. We construct a
+                                labeled dataset for the task consisting of ∼23.6𝑘 images by combining various opensource datasets which were labeled with labels useful for this task, although they
+                                were originally developed for other adjacent tasks. We contribute this dataset for
+                                further research in crisis informatics. In addition, we provide Train/Dev/Test splits
+                                and an associated benchmark performance on the test split using a state-of-the-art
+                                Convolutional Neural Network (CNN) model, EfficientNet-B1.
+                            </p>
+                            <h5>Data Annotation Procedure and Analysis of Interannotator Agreement</h5>
+                            <p>
+                                We developed a procedure for annotating images in order to label the unlabeled image
+                                data provided to us by our partners in Fukuchiyama, Japan. This procedure included creating
+                                an annotation guide to assist annotators in their labeling. This guide included the
+                                name of each task, the names of the mutually-exclusive classes associated with each
+                                task, and an associated description and example image for each class. We then had
+                                annotators from the Urban Risk Lab independently annotate the images using this
+                                guide.
+                            </p>
+                            <p>
+                                After the annotation effort was completed, we were able analyze the interannotator
+                                agreement between the annotators and construct ground-truth labels for these images.
+                                We computed interannotator reliability statistics to get a sense of how reproducible
+                                the annotation procedure was for each task as well as to have transparency of the
+                                data quality prior to using it for ML purposes. Finally, we created ground-truth
+                                datasets using these labels for the Fukuchiyama images to use in evaluating the image
+                                classification ML models we developed.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item cc-carousel-item">
+                        <div class="carousel-text">
+                            <h4>Main Contributions 2/3</h4>
+                            <h5>Classification and Clustering of Crowdsourced Japanese Crisis Text</h5>
+                            <p>
+                                Research in crisis informatics on crowdsourced crisis data focuses mostly on English, 
+                                and thus research on crowdsourced Japanese crisis text is sparse. The Text Analysis 
+                                Module developed in this work focused exclusively on Japanese text data. We explored 
+                                various numerical representations of the Japanese crisis text reports provided by our 
+                                partners and developed a pipeline for preprocessing the raw text and producing the numerical representations. 
+                                Additionally, our partners provided labels along with the text reports, so we experimented with classifying the
+                                text. Lastly, we explored the text data using unsupervised learning, specifically, we
+                                employed clustering methods to help inform development of classification tasks in
+                                future work
+                            </p>
+                            <h6>Pipeline for Japanese Crisis Text Preprocessing, Tokenization, and Featurization</h6>
+                            <p>
+                                In order to use the text reports as input to the various ML models employed in
+                                this work, we represent the raw text string of each report as a numerical vector, or featurization. 
+                                Depending on the featurization we choose to use for a text
+                                report, we may first preprocess the text. This preprocessing included various steps
+                                including tokenization, stopword removal, and lemmatization, which we performed
+                                using open-source software (i.e. tokenizer and lemmatizer) and publicly available
+                                data (i.e. stopwords list) for the Japanese language.
+                                We provide a pipeline for preprocessing and performing the following featurizations
+                                on Japanese text:
+                                <ul>
+                                    <li>n-gram Bag-of-Words (BOW)</li>
+                                    <li>n-gram Term Frequency-Inverse Document Frequency (TF-IDF)</li>
+                                    <li>Pretrained Japanese Masked Language Modeling (MLM) BERT Model with Classification (CLS) Pooling Embedding</li>
+                                </ul>
+                                The resultant feature vectors representing the text enabled us to use them as input
+                                to ML models. Thus, we can then employ classification and clustering techniques on
+                                the text data.
+                            </p>
+                            <h6>Human Risk Task Creation and Performance Metric Determination</h6>
+                            <p>
+                                We devised a new text classification task, Human Risk classification. The human
+                                risk text classification task determines whether or not a crisis text report indicates if
+                                there are people in need of rescue from a crisis. This includes people being unable
+                                to evacuate due to physical disability (such as unable to use stairs), surrounding
+                                conditions (such as being trapped in a submerged car), and/or being in need of
+                                life-saving emergency medical care. This classification task was unique among the
+                                classification tasks presented in this work because it was devised using labels that
+                                came with the text reports given to us by our crisis management partners. Relatedly,
+                                we determine the metric to use in model performance evaluation using the insights
+                                we gained from our partners.
+                            </p>
+                            <h6>Exploratory Analysis of Japanese Crisis Text using Unsupervised Learning</h6>
+                            <p>
+                                With the intention of finding cohesive groupings within the Japanese crisis text corpus, which can inform the development of future text classification tasks, we devise
+                                a pipeline for featurizing Japanese crisis text, reducing the high-dimensional text feature vector to 2 dimensions, and clustering the data. We evaluate this pipeline
+                                both quantitatively and qualitatively, experimenting with various text featurizations
+                                including unigram TF-IDF features and pretrained Japanese MLM BERT with CLS
+                                Pooling embeddings mentioned above, t-Distributed Stochastic Neighbor Embedding
+                                (t-SNE) and Principle Component Analysis (PCA) for dimensionality reduction, and finally K-means and K-medoids for the algorithm which clusters
+                                the data.
+                            </p>
+                            <p>
+                                After we determine the optimal combination of text embedding, dimensionality
+                                reduction technique, and clustering algorithm, we create brief summaries of each
+                                cluster using the unigrams with highest TF-IDF score for each cluster and the closest
+                                reports (by euclidean distance) within each cluster to the cluster center to help in the
+                                determination of a label for each cluster. Lastly, a member of the Urban Risk Lab at
+                                MIT who is fluent in Japanese used these summaries to determine an interpretable
+                                label to accompany each cluster found. We thus provide various labels which can be
+                                used for classification experiments and analysis in a future work.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item cc-carousel-item">
+                        <div class="carousel-text">
+                            <h4>Main Contributions 3/3</h4>
+                            <h6>Quantitative and Qualitative Evaluation in Japanese Flood Crisis Context</h6>
+                            <p>
+                                Prior work has typically evaluated ML methods using quantitative measures, mainly
+                                classification performance metrics, e.g. accuracy, precision, recall, F1, and AUROC
+                                (Area Under the Receiver Operating Characteristic Curve) and their macro and micro
+                                variants. However, with the framework we present in this thesis, we aimed to expand
+                                the evaluation of the efficacy ML models have in reducing information overload to
+                                not only include similar quantitative measures mentioned above, but also qualitative
+                                evaluation derived from engaging with our crisis management partners. Beyond having good performance, we hoped to use the qualitative evaluation used in this study
+                                to gain a broader understanding of the efficacy a model can provide crisis managers
+                                in mitigating information overload and gaining situational awareness.
+                            </p>
+                            <p>
+                                We held image annotation workshops with various crisis managers and aimed to
+                                understand what type of information they seek to gain from a crowdsourced image
+                                during a flood crisis event. With their insights, we began to understand how our
+                                models can be refined or improved, or how new models can be created in order to
+                                better serve the information needs of crisis managers more effectively, such as by
+                                tailoring the labels and their associated meanings to the information needs of crisis
+                                managers suggested from their annotations. Additionally, we gained more insight
+                                into the appropriate metrics to use when evaluating models based on the priorities of
+                                crisis managers as it relates to the task. From these workshops, we share key lessons
+                                that can influence the design of this framework and AI-augmented crisis information
+                                systems of the future. In fact, within this work, we used the lessons learned from
+                                the image analysis workshops to assist us in determining the performance metric to
+                                use when developing models for the human risk text classification task. This exercise
+                                exhibited the principle of iterative development our framework intends to promote.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -166,7 +338,7 @@ a:hover {
     color: white;
 }
 
-h1, h3, h5 {
+h1, h3, h4, h5 {
     color: white;
 }
 
@@ -180,6 +352,18 @@ h1, h3, h5 {
 #research-question {
     text-align: center;
     color: white;
+}
+
+@media (max-width: 500px) {
+
+    #overview-pic {
+        max-height: 50vw;
+    }
+
+    h3 {
+        font-size: 4.5vw;
+    }
+
 }
 
 </style>

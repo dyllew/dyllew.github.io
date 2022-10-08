@@ -67,4 +67,10 @@ h5 {
     height: 40vh;
 }
 
+@media (max-width: 500px) {
+    #text-module-img {
+        max-height: 50vw;
+    }
+}
+
 </style>

@@ -1,6 +1,6 @@
 <template>
     <div class="row align-items-center justify-content-center">
-        <div class="col-8">  
+        <div class="col-12 col-md-8">  
             <h3>Information Extraction and Unsupervised Methods for Streamlining Evidence Synthesis in International Development Gray Literature</h3>
         </div>
         <div class="col-md-8">
@@ -217,6 +217,12 @@ h6 {
 .int-dev-lit-carousel-item img {
   height: 40vh;
   max-height: 500px;
+}
+
+@media (max-width: 500px) {
+    h3 {
+        font-size: 4vw;
+    }
 }
 
 @media (max-width: 800px) {

@@ -55,14 +55,14 @@ a:hover {
   text-align: left;
 }
 
-@media (min-width: 0px) and (max-width: 500px) {
+@media (min-width: 0px) and (max-width: 768px) {
 
     #leo-and-dylan-pic {
-      max-height: 50vw;
+      max-height: 60vw;
     }
 
     #about-description p {
-      font-size: 3.5vw;
+      font-size: 3vw;
     }
 
     #intro-paragraph {
@@ -71,14 +71,14 @@ a:hover {
 
 }
 
-@media (min-width: 500px) and (max-width: 900px) {
+@media (min-width: 768px) and (max-width: 900px) {
 
     #leo-and-dylan-pic {
       max-height: 50vw;
     }
 
     #about-description p {
-      font-size: 1.85vw;
+      font-size: 2vw;
     }
 
     #intro-paragraph {
@@ -94,7 +94,7 @@ a:hover {
     }
 
     #about-description p {
-      font-size: 1.50vw;
+      font-size: 1.5vw;
     }
 }
 

@@ -23,7 +23,7 @@ export default {
 
 @media (max-width: 500px) {
     #nav-bar {
-      font-size: 16px;
+      font-size: 20px;
     }
 }
 
