@@ -184,7 +184,9 @@
                     <div class="carousel-item cc-carousel-item">
                         <div class="carousel-text">
                             <div class="row align-items-center justify-content-around">
-                                <h5>Model Evaluation on Test Splits & Flood Presence Benchmark Performance</h5>
+                                <div class="col-12">
+                                    <h5>Model Evaluation on Test Splits & Flood Presence Benchmark Performance</h5>
+                                </div>
                                 <div class="col-12 col-md-8">
                                     <p>
                                         Performance of image classification models on their respective test splits. [1] as referred to in the table can be found in the footnote below.<sup><a href="#fn1" id="ref1">1</a></sup>
@@ -237,7 +239,7 @@
                     <div class="carousel-item cc-carousel-item">
                         <h5>Inter-Annotator Agreement Analysis on Annotated Fukuchiyama Images</h5>
                         <div class="row align-items-center justify-content-around">
-                                <div class="col-12 col-md-6 pt-3 pb-5">
+                                <div class="col-12 col-md-6 pt-3 pb-2">
                                     <h2>“... a computer cannot generally agree with annotators at a rate that is higher than the rate at which the annotators agree with each other."<sup><a href="#fn2" id="ref2">1</a></sup></h2>
                                 </div>
                                 <div class="carousel-text col-12 col-md-6">
@@ -267,7 +269,9 @@
                     <div class="carousel-item cc-carousel-item">
                         <div class="carousel-text">
                             <div class="row align-items-center justify-content-around">
-                                <h5>Inter-Annotator Agreement Analysis on Annotated Fukuchiyama Images</h5>
+                                <div class="col-12">
+                                    <h5>Inter-Annotator Agreement Analysis on Annotated Fukuchiyama Images</h5>
+                                </div>
                                 <div class="col-12 col-md-6">
                                     Agreement Measures by Task for Labeled Fukuchiyama Images
                                     <img src="../../../../public/assets/iaa.png" class="img-fluid">
@@ -426,7 +430,9 @@
                     <div class="carousel-item cc-carousel-item">
                         <div class="carousel-text">
                             <div class="row align-items-center justify-content-around">
-                                <h5>Model Evaluation on Fukuchiyama Data - Aggregate Metrics</h5>
+                                <div class="col-12">
+                                    <h5>Model Evaluation on Fukuchiyama Data - Aggregate Metrics</h5>
+                                </div>
                                 <div class="col-12 col-md-8">
                                     Performance of Image Classification models on task-respective Fukuchiyama Data
                                     <img id="agg-metrics" src="../../../../public/assets/agg-metrics-fc.png" class="img-fluid">
