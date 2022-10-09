@@ -579,82 +579,86 @@
                             </p>
                             <h6>Cross-contextual Insights</h6>
                             <div class="row align-items-center justify-content-around">
-                                <p>
-                                    <ul>
-                                        <li>
-                                            <strong><u>Potential of Human Casualties in Crisis Imagery</u></strong>
-                                            <ul>
-                                                <li>Possibility of Human Casualty is <strong>Top Priority</strong></li>
-                                                <li>
-                                                    <strong>Identified physical markers</strong> suggesting <strong>potential for human casualty:</strong>
-                                                    <ul>
-                                                        <li>Submerged Vehicles</li>
-                                                        <li>Collapsed Buildings</li>
-                                                        <li>Housing in Close Proximity to Rockfall or Landslide</li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    Not investigating when there is actually human casualty (False Negative) <strong>is more costly</strong> 
-                                                    than investigating when there is not actually human casualty (False Positive)
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <strong><u>Presence of People in Crisis Imagery</u></strong>
-                                            <ul>
-                                                <li><strong>People in crisis imagery</strong> is important and should be <strong>assessed with high priority</strong></li>
-                                                <li><strong>Insights should be specific,</strong> e.g. people laying down vs. people standing casually/walking about - can indicate crisis impact
-                                                    severity to personnel
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <strong><u>Insights of Broader Impact derived from Physical Markers in Images:</u></strong>
-                                            <ul>
-                                                <li>
-                                                    Experts <strong>identified physical markers</strong> which suggest <strong>potential broader impact to area</strong>, including:
-                                                    <ul>
-                                                        <li>Muddy Water → potential nearby landslide</li>
-                                                        <li>Fallen Power Pole → potential power outage</li>
-                                                        <li>Road Passability → possibility of emergency vehicle use & isolated residential areas</li>
-                                                    </ul>
-                                                </li>
-                                                
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </p>
+                                <div class="col-12">
+                                    <p>
+                                        <ul>
+                                            <li>
+                                                <strong><u>Potential of Human Casualties in Crisis Imagery</u></strong>
+                                                <ul>
+                                                    <li>Possibility of Human Casualty is <strong>Top Priority</strong></li>
+                                                    <li>
+                                                        <strong>Identified physical markers</strong> suggesting <strong>potential for human casualty:</strong>
+                                                        <ul>
+                                                            <li>Submerged Vehicles</li>
+                                                            <li>Collapsed Buildings</li>
+                                                            <li>Housing in Close Proximity to Rockfall or Landslide</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        Not investigating when there is actually human casualty (False Negative) <strong>is more costly</strong> 
+                                                        than investigating when there is not actually human casualty (False Positive)
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <strong><u>Presence of People in Crisis Imagery</u></strong>
+                                                <ul>
+                                                    <li><strong>People in crisis imagery</strong> is important and should be <strong>assessed with high priority</strong></li>
+                                                    <li><strong>Insights should be specific,</strong> e.g. people laying down vs. people standing casually/walking about - can indicate crisis impact
+                                                        severity to personnel
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <strong><u>Insights of Broader Impact derived from Physical Markers in Images:</u></strong>
+                                                <ul>
+                                                    <li>
+                                                        Experts <strong>identified physical markers</strong> which suggest <strong>potential broader impact to area</strong>, including:
+                                                        <ul>
+                                                            <li>Muddy Water → potential nearby landslide</li>
+                                                            <li>Fallen Power Pole → potential power outage</li>
+                                                            <li>Road Passability → possibility of emergency vehicle use & isolated residential areas</li>
+                                                        </ul>
+                                                    </li>
+                                                    
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </p>
+                                </div>
                             </div>
                             <h6>Contextual Insights</h6>
                             <div class="row align-items-center justify-content-around">
-                                <p>
-                                    <ul>
-                                        <li>
-                                            <strong><u>National Standards in Japan for Assessing Impact Severity</u></strong>
-                                            <ul>
-                                                <li>
-                                                    Standards for Flood Impact Severity on Housing used in Fukuchiyama:
-                                                    <ul>
-                                                        <li>“Water reaches up to the first-floor ceiling” → Severe Flooding/Destruction</li>
-                                                        <li>“Water reaches 1m above first-floor level” →  Partial Flooding/Destruction</li>
-                                                        <li>“Water reaches below flood level” → Minor Flooding/Destruction</li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <strong><u>Insights Derived from both the Image and Contextual-Knowledge:</u></strong>
-                                            <ul>
-                                                <li>
-                                                    <strong>FC crisis experts used contextual knowledge</strong> of the area where the image was taken in gaining insights
-                                                    <ul>
-                                                        <li>E.g. Image showing flooding in an area that doesn’t typically flood causes more concern for that area</li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </p>
+                                <div class="col-12">
+                                    <p>
+                                        <ul>
+                                            <li>
+                                                <strong><u>National Standards in Japan for Assessing Impact Severity</u></strong>
+                                                <ul>
+                                                    <li>
+                                                        Standards for Flood Impact Severity on Housing used in Fukuchiyama:
+                                                        <ul>
+                                                            <li>“Water reaches up to the first-floor ceiling” → Severe Flooding/Destruction</li>
+                                                            <li>“Water reaches 1m above first-floor level” →  Partial Flooding/Destruction</li>
+                                                            <li>“Water reaches below flood level” → Minor Flooding/Destruction</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <strong><u>Insights Derived from both the Image and Contextual-Knowledge:</u></strong>
+                                                <ul>
+                                                    <li>
+                                                        <strong>FC crisis experts used contextual knowledge</strong> of the area where the image was taken in gaining insights
+                                                        <ul>
+                                                            <li>E.g. Image showing flooding in an area that doesn’t typically flood causes more concern for that area</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>

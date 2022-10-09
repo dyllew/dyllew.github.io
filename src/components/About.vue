@@ -7,7 +7,7 @@
               class="rounded img-fluid"
               alt="Leo and Dylan" />
         </div>
-        <div id="about-description" class="col-10 col-md-6 col-lg-5 col-xl-5">
+        <div id="about-description" class="col-11 col-md-6 col-lg-5 col-xl-5">
             <p id="intro-paragraph">
               Hey there! I'm a Masters grad from MIT where I studied
               Computer Science, specifically Artificial Intelligence. My research focused on machine learning tools
@@ -62,7 +62,7 @@ a:hover {
     }
 
     #about-description p {
-      font-size: 3vw;
+      font-size: 4vw;
     }
 
     #intro-paragraph {
@@ -94,7 +94,7 @@ a:hover {
     }
 
     #about-description p {
-      font-size: 1.5vw;
+      font-size: 1.75vw;
     }
 }
 

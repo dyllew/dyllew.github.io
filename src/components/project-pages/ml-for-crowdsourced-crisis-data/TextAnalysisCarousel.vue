@@ -11,7 +11,7 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active cc-carousel-item">
                         <div class="carousel-text">
-                            <img id="pika-gif" src="../../../../public/assets/pika-gif.gif" alt="First slide">
+                            <img id="pika-gif" src="../../../../public/assets/pika-gif.gif" class="img-fluid" alt="First slide">
                         </div>
                     </div>
                 </div>
