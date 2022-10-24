@@ -4,7 +4,7 @@
             <h3>Towards Automated Assessment of Crowdsourced Crisis Reporting for Enhanced Crisis Awareness and Response</h3>
         </div>
         <div class="col-md-10">
-            <div id="ccCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div id="ccCarousel" class="carousel slide" data-ride="carousel" data-interval="false" data-touch="true">
                 <ol class="carousel-indicators">
                     <li data-target="#ccCarousel" data-slide-to="0" class="active" @click="scrollUp"><div class="tooltip"><span class="tooltiptext">Thesis Document & Code</span></div></li>
                     <li data-target="#ccCarousel" data-slide-to="1" @click="scrollUp"></li>
@@ -160,7 +160,7 @@
                             <h4>Summary of Main Contribution</h4>
                             <p>
                                 With this thesis, we have introduced and exemplified a framework which aims to
-                                embed all of the mentioned considerations above into the process of designing, developing,
+                                embed all of the mentioned considerations into the process of designing, developing,
                                 and iterating on a ML methodology for enhancing crisis awareness and
                                 response. Most notably, this framework situates model development and evaluation,
                                 which is commonplace in prior work, as one piece of a broader, contextualized understanding
@@ -210,8 +210,7 @@
                             </p>
                             <p>
                                 In addition to these packages, we release an <a href="https://github.com/dyllew/towards-automated-assessment-of-crowdsourced-crisis-reporting" target="_blank">open-source repository</a> containing
-                                Jupyter notebooks, relevant documents (e.g. the annotation guide mentioned
-                                above), and other code required to reproduce the experiments and reuse the analysis
+                                Jupyter notebooks, relevant documents (e.g. the mentioned annotation guide), and other code required to reproduce the experiments and reuse the analysis
                                 conducted in this work.
                             </p>
                             <h5>Flood Presence Task Creation, Labeled Image Dataset, and Performance Benchmark</h5>
@@ -351,15 +350,42 @@
                     <div class="carousel-item cc-carousel-item">
                         <div class="carousel-text">
                             <h4>Adjacent Projects</h4>
+                            <img class="rounded img-fluid" id="overview-pic" src="../../../../public/assets/adjacent-projects.png" alt="First slide">
                             <p>
-                                During my research on this project, I defined and mentored undergraduate research projects that were adjacent to my research.
+                                During my time on this project, I defined and mentored undergraduate research projects that were adjacent to my research.
 
                                 These projects included novel topics in the field of Crisis Informatics such as: 
                                 <ul>
-                                    <li><strong>Interpretability in Image and Text ML Models</strong></li>
-                                    <li><strong>Towards Establishing Interannotator Agreement Standards</strong></li>
-                                    <li><strong>Multilabel Image Classification</strong></li>
-                                    <li><strong>Development of a Crisis Management Dashboard and Simulations using ML Models and their Predictions</strong></li>
+                                    <li>
+                                        <strong><u>Interpretability in Image and Text ML Models:</u></strong>
+                                        <p>
+                                            Investigated interpretability algorithms such as GradCAM (Class Activation Mapping) on classified crisis report images and Local Interpretable Model-Agnostic Explaination
+                                            (LIME) on classified report text in an effort to increase the interpretability of the models which would be employed during crisis and potentially 
+                                            improve model performance through relabeling & retraining.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <strong><u>Multilabel Image Classification:</u></strong>
+                                        <p>
+                                            Investigated CNNs for image classification tasks which can perform multilabel classification (as opposed to single label classification) in the crisis informatics context as
+                                            most classification tasks in the literature were single-label.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <strong><u>Towards Establishing Interannotator Agreement Standards & Tools in the Crisis Informatics Community:</u></strong>
+                                        <p>
+                                            Investigated the establishment of standards and analysis tools for understanding interannotator agreement (and disagreement) on human-annotated datasets in the crisis informatics community for
+                                            both single-label and multilabel classification tasks as such standards and tools did not exist in the crisis informatics community.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <strong><u>Development of a Crisis Management Dashboard and Simulations using ML Models and their Predictions:</u></strong>
+                                        <p>
+                                            Investigated the development of an interactive dashboard for crisis managers to use during a crisis event that visualizes the predictions of
+                                            various machine learning models on a map to provide situational summarization on individual report and aggregate report levels. 
+                                            A simulation was constructed using past citizen crisis reports and predictions on those reports by trained machine learning models.
+                                        </p>
+                                    </li>
                                 </ul>
                             </p>
                             <div class="col-12">
