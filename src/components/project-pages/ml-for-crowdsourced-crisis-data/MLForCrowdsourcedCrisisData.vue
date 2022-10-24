@@ -13,6 +13,9 @@
                     <li data-target="#ccCarousel" data-slide-to="4" @click="scrollUp"></li>
                     <li data-target="#ccCarousel" data-slide-to="5" @click="scrollUp"></li>
                     <li data-target="#ccCarousel" data-slide-to="6" @click="scrollUp"></li>
+                    <li data-target="#ccCarousel" data-slide-to="7" @click="scrollUp"></li>
+                    <li data-target="#ccCarousel" data-slide-to="8" @click="scrollUp"></li>
+                    <li data-target="#ccCarousel" data-slide-to="9" @click="scrollUp"></li>
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active cc-carousel-item">
@@ -93,15 +96,15 @@
                                 <ul>
                                     <li><strong>Classification Task Creation</strong> - We develop new classification tasks using labels provided to us by crisis managers
                                         and labels present in open-source datasets</li>
-                                    <li><strong>Data Annotation Procedure</strong> - We open-souce the annotation guide we develop for greater transparency into the procurement of human-annotated
+                                    <li><strong>Data Annotation Procedure</strong> - We open-souce the annotation guide we develop for greater transparency into the procurement of human-annotated data
                                         that is used to train and evaluate ML models</li>
                                     <li><strong>Interannotator Agreement/Data Reliability Analysis</strong> - After performing an annotation effort on data provided by crisis managers, we analyze the quality
                                         of the annotations through interannotator agreement analysis to demonstrate the importance of understanding data quality prior to using it for ML purposes</li>
-                                    <li><strong>Model Development and Evaluation; Per-Class Performance Analysis</strong> - The metrics we used to evaluate models are derived either from metrics reported in the literature or, more notably, metrics determined from insights 
-                                        provided by crisis managers directly. Additionally, we consider issues of class imbalance and report per-class performance and confusion matrices to provide more granular insight
+                                    <li><strong>Model Development and Evaluation; Per-Class Performance Analysis</strong> - The metrics we used to evaluate models are derived either from metrics reported in the literature or, more notably, <strong>metrics determined from insights 
+                                        provided by crisis managers directly</strong>. Additionally, we consider issues of class imbalance and report per-class performance and confusion matrices to provide more granular insight
                                         into model performance. Finally, we establish baselines to compare against the models we develop to assess the degree to which the models we develop outperform the baseline</li>
                                     <li><strong>Qualitative Analysis through Workshops with Crisis Managers</strong> - We sought to cooperate with crisis managers with the intent of using this framework to
-                                        iteratively design ML systems, such as the specific classification tasks performed by the models and their associated performance metric, by iteratively incorporating feedback and insights form
+                                        iteratively design ML systems, such as the specific classification tasks performed by the models and their associated performance metric, by iteratively incorporating feedback and insights from
                                         crisis managers, so that the system better aligns with their information needs and decision-making priorities</li>
                                 </ul>
                                 This framework situates <i>Model Development and Evaluation</i>, which is commonplace in prior work, as part of a larger, contextualized analysis. On that note, we
@@ -124,13 +127,66 @@
                                 </div>
                             </div>
                             <p>
-                                In the next few slides, we summarize our main contributions to the field of Crisis Informatics.
+                                In the next slides, we discuss the important implications of this study and summarize our contributions to the field of Crisis Informatics.
                             </p>
                         </div>
                     </div>
                     <div class="carousel-item cc-carousel-item">
                         <div class="carousel-text">
-                            <h4>Main Contributions 1/3</h4>
+                            <h4>Discussion & Implications of Study</h4>
+                            <h5>Involvement of Crisis Managers in the development & iteration of ML methodology</h5>
+                            <p>
+                                While crisis classification tasks have been published in the literature, to the best of our knowledge, this work is the first of its kind 
+                                to both involve & incorporate the insights of crisis managers into an ML methodology to reduce information overload of crisis managers during crisis. 
+                                This is best seen from the image annotation workshops we held with EOC and the incorporation of those results into our text analysis ML methodology.
+                            </p>
+                            <h5>Investigation of Non-English Crisis Text </h5>
+                            <p>
+                                While we have developed the infrastructure to develop machine learning text models for any language, 
+                                we underscore our investigation of Japanese crisis text as prior work has focused on applying NLP techniques to predominantly English crisis text.
+                            </p>
+                            <h5>Contextualized Framework towards better human-centered design of an AI system</h5>
+                            <p>
+                                Our novel framework contextualizes model performance (e.g. F1, F2, precision, etc. ) as part of a broad approach to assessing the efficacy of using ML in 
+                                reducing information overload. That is, we consider other important aspects in the design of our system in order to better serve those 
+                                we aim to assist, crisis managers. We investigate classification task creation, data quality & interannotator agreement analysis,
+                                issues of class imbalance, involving crisis managers in the development process, and the determination of a performance metric 
+                                & corresponding performance baselines
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item cc-carousel-item">
+                        <div class="carousel-text">
+                            <h4>Summary of Main Contribution</h4>
+                            <p>
+                                With this thesis, we have introduced and exemplified a framework which aims to
+                                embed all of the mentioned considerations above into the process of designing, developing,
+                                and iterating on a ML methodology for enhancing crisis awareness and
+                                response. Most notably, this framework situates model development and evaluation,
+                                which is commonplace in prior work, as one piece of a broader, contextualized understanding
+                                of the efficacy ML methodologies can have for crisis managers in mitigating
+                                information overload from crowdsourced crisis reports. Additionally, this framework
+                                promotes the iterative development of AI systems and ML methodologies which is
+                                informed from the insights gained from engaging with crisis managers, aiming to
+                                address this gap in prior work.
+                            </p>
+                            <p>
+                                This framework is only the beginning for similar work in this domain, as the development
+                                of AI systems and ML methodologies for mitigating information overload
+                                of crisis managers has many complex intricacies for which we only scratch the surface
+                                in our attempt to broaden this discussion within the field. We contribute this
+                                framework and the full exhibition of the principles and analyses contained within it to
+                                work closer towards a goal worth striving for: enhanced crisis awareness and response
+                                from automated assessment of crowdsourced crisis reporting.
+                            </p>
+                            <p>
+                                In the next slides, we further detail the other contributions of this thesis. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item cc-carousel-item">
+                        <div class="carousel-text">
+                            <h4>Contributions 1/3</h4>
                             <h5>Novel Framework for Information Overload Mitigation of Crowdsourced Crisis Data</h5>
                             <p>
                                 Our main contribution is a novel framework that unifies a variety of machine learning
@@ -191,7 +247,7 @@
                     </div>
                     <div class="carousel-item cc-carousel-item">
                         <div class="carousel-text">
-                            <h4>Main Contributions 2/3</h4>
+                            <h4>Contributions 2/3</h4>
                             <h5>Classification and Clustering of Crowdsourced Japanese Crisis Text</h5>
                             <p>
                                 Research in crisis informatics on crowdsourced crisis data focuses mostly on English, 
@@ -261,7 +317,7 @@
                     </div>
                     <div class="carousel-item cc-carousel-item">
                         <div class="carousel-text">
-                            <h4>Main Contributions 3/3</h4>
+                            <h4>Contributions 3/3</h4>
                             <h6>Quantitative and Qualitative Evaluation in Japanese Flood Crisis Context</h6>
                             <p>
                                 Prior work has typically evaluated ML methods using quantitative measures, mainly
@@ -290,6 +346,25 @@
                                 use when developing models for the human risk text classification task. This exercise
                                 exhibited the principle of iterative development our framework intends to promote.
                             </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item cc-carousel-item">
+                        <div class="carousel-text">
+                            <h4>Adjacent Projects</h4>
+                            <p>
+                                During my research on this project, I defined and mentored undergraduate research projects that were adjacent to my research.
+
+                                These projects included novel topics in the field of Crisis Informatics such as: 
+                                <ul>
+                                    <li><strong>Interpretability in Image and Text ML Models</strong></li>
+                                    <li><strong>Towards Establishing Interannotator Agreement Standards</strong></li>
+                                    <li><strong>Multilabel Image Classification</strong></li>
+                                    <li><strong>Development of a Crisis Management Dashboard and Simulations using ML Models and their Predictions</strong></li>
+                                </ul>
+                            </p>
+                            <div class="col-12">
+
+                            </div>
                         </div>
                     </div>
                 </div>

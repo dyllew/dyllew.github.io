@@ -285,7 +285,7 @@
                                 <ul>
                                     <li>By Fleiss' Kappa, we observe smaller improvements over random chance agreement for Damage Severity (0.413), Humanitarian Categories (0.304), and Informativeness (0.313) as compared to Flood Presence (0.829)</li>
                                         <ul>
-                                            <li> This suggests that further investigation should be conducted in refining the label definitions and the annotation guide for clarity by understanding potential causes for disagreement on the tasks with lower Fleiss' Kappa scores,
+                                            <li>This suggests that further investigation should be conducted in refining the label definitions and the annotation guide for clarity by understanding potential causes for disagreement on the tasks with lower Fleiss' Kappa scores,
                                                 in order to improve agreement and thus the quality of the dataset.</li>
                                         </ul>
                                     <li>We use the plurality labels found for each task to form the ground-truth Fukuchiyama datasets for each of the tasks which we evaluate the trained CNN models on.</li>
