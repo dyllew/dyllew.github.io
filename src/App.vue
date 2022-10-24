@@ -13,6 +13,8 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 
 import $ from 'jquery';
 
+import { scrollUpFunc } from './constants';
+
 import Header from './components/Header';
 import NavBar from './components/NavBar';
 
@@ -31,13 +33,12 @@ export default {
         const sensitivityInPx = 5;
 
         if( Math.floor(xClick - xMove) > sensitivityInPx ){
-            console.log('test left')
             $(this).carousel('next');
         }
         else if( Math.floor(xClick - xMove) < -sensitivityInPx ){
-            console.log('test right')
             $(this).carousel('prev');
         }
+        scrollUpFunc();
     });
     $(this).on('touchend', function(){
         $(this).off('touchmove');
