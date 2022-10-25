@@ -114,7 +114,7 @@ export function enableSwipeOnCarousel(carouselID) {
         const xClick = event.originalEvent.touches[0].pageX;
         $(this).one('touchmove', function(event) {
             const xMove = event.originalEvent.touches[0].pageX;
-            const sensitivityInPx = 10;
+            const sensitivityInPx = 7;
   
             if( Math.floor(xClick - xMove) > sensitivityInPx ){
                 $(this).carousel('next')
