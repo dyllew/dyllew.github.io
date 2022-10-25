@@ -147,7 +147,7 @@
                             </p>
                             <h5>Contextualized Framework towards better human-centered design of an AI system</h5>
                             <p>
-                                Our novel framework contextualizes model performance (e.g. F1, F2, precision, etc. ) as part of a broad approach to assessing the efficacy of using ML in 
+                                Our novel framework contextualizes model performance (e.g. F1, F2, precision, etc.) as part of a broad approach to assessing the efficacy of using ML in 
                                 reducing information overload. That is, we consider other important aspects in the design of our system in order to better serve those 
                                 we aim to assist, crisis managers. We investigate classification task creation, data quality & interannotator agreement analysis,
                                 issues of class imbalance, involving crisis managers in the development process, and the determination of a performance metric 
