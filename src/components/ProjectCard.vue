@@ -21,7 +21,6 @@
 </template>
 
 <script>
-import { scrollUpFunc } from '../constants';
 
 export default {
     name: 'ProjectCard',
@@ -29,7 +28,6 @@ export default {
     methods: {
         goToProjectPage(projectURL) {
             this.$router.push(projectURL);
-            scrollUpFunc();
         },
         getImgURL(imgFilename) {
             return require('../../public/assets/' + imgFilename)

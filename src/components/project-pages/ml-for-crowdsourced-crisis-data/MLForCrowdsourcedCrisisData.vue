@@ -401,7 +401,7 @@
 
 <script>
 import ProjectCard from '../../ProjectCard.vue';
-import { ML_MODULES, enableScrollUpOnCarousel, enableSwipeOnCarousel } from '../../../constants.js';
+import { ML_MODULES, scrollUpFunc, enableScrollUpOnCarousel, enableSwipeOnCarousel } from '../../../constants.js';
 
 export default {
   name: 'MLForCrowdsourcedCrisisData',
@@ -414,6 +414,7 @@ export default {
     }
   },
   mounted() {
+    scrollUpFunc();
     enableScrollUpOnCarousel('#MLForCrowdsourcedCrisisDataCarousel');
     enableSwipeOnCarousel('#MLForCrowdsourcedCrisisDataCarousel');
   }
