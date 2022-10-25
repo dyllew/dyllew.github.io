@@ -6,12 +6,12 @@
         <div class="col-md-8">
             <div id="NLPIntLitDevCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
                 <ol class="carousel-indicators">
-                    <li data-target="#NLPIntLitDevCarousel" data-slide-to="0" class="active" @click="scrollUp"></li>
-                    <li data-target="#NLPIntLitDevCarousel" data-slide-to="1" @click="scrollUp"></li>
-                    <li data-target="#NLPIntLitDevCarousel" data-slide-to="2" @click="scrollUp"></li>
-                    <li data-target="#NLPIntLitDevCarousel" data-slide-to="3" @click="scrollUp"></li>
-                    <li data-target="#NLPIntLitDevCarousel" data-slide-to="4" @click="scrollUp"></li>
-                    <li data-target="#NLPIntLitDevCarousel" data-slide-to="5" @click="scrollUp"></li>
+                    <li data-target="#NLPIntLitDevCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#NLPIntLitDevCarousel" data-slide-to="1"></li>
+                    <li data-target="#NLPIntLitDevCarousel" data-slide-to="2"></li>
+                    <li data-target="#NLPIntLitDevCarousel" data-slide-to="3"></li>
+                    <li data-target="#NLPIntLitDevCarousel" data-slide-to="4"></li>
+                    <li data-target="#NLPIntLitDevCarousel" data-slide-to="5"></li>
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active int-dev-lit-carousel-item">
@@ -176,13 +176,12 @@
 </template>
 
 <script>
-import { scrollUpFunc } from '../../constants';
+import { enableScrollUpOnCarousel, enableSwipeOnCarousel } from '../../constants';
 export default {
   name: 'NLPIntDevGrayLit',
-  methods: {
-    scrollUp() {
-        scrollUpFunc();
-    }
+  mounted() {
+    enableScrollUpOnCarousel('#NLPIntLitDevCarousel');
+    enableSwipeOnCarousel('#NLPIntLitDevCarousel');
   }
 }
 </script>

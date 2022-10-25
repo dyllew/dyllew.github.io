@@ -4,11 +4,11 @@
             <h1>Boomerang</h1>
         </div>
         <div class="col-md-8">
-            <div id="boomerangCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div id="BoomerangCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
                 <ol class="carousel-indicators">
-                    <li data-target="#boomerangCarousel" data-slide-to="0" class="active" @click="scrollUp"></li>
-                    <li data-target="#boomerangCarousel" data-slide-to="1" @click="scrollUp"></li>
-                    <li data-target="#boomerangCarousel" data-slide-to="2" @click="scrollUp"></li>
+                    <li data-target="#BoomerangCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#BoomerangCarousel" data-slide-to="1"></li>
+                    <li data-target="#BoomerangCarousel" data-slide-to="2"></li>
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active boomerang-carousel-item">
@@ -54,13 +54,12 @@
 </template>
 
 <script>
-import { scrollUpFunc } from '../../constants';
+import { enableScrollUpOnCarousel, enableSwipeOnCarousel } from '../../constants';
 export default {
   name: 'Boomerang',
-  methods: {
-    scrollUp() {
-        scrollUpFunc();
-    }
+  mounted() {
+    enableScrollUpOnCarousel("#BoomerangCarousel");
+    enableSwipeOnCarousel("#BoomerangCarousel");
   }
 }
 </script>

@@ -4,11 +4,11 @@
             <h3>Graph Neural Networks for NYC Taxi Fare & Demand Surge Prediction</h3>
         </div>
         <div class="col-md-8">
-            <div id="taxiCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div id="TaxiCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
                 <ol class="carousel-indicators">
-                    <li data-target="#taxiCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#taxiCarousel" data-slide-to="1"></li>
-                    <li data-target="#taxiCarousel" data-slide-to="2"></li>
+                    <li data-target="#TaxiCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#TaxiCarousel" data-slide-to="1"></li>
+                    <li data-target="#TaxiCarousel" data-slide-to="2"></li>
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active taxi-carousel-item">
@@ -57,9 +57,14 @@
 </template>
 
 <script>
+import { enableScrollUpOnCarousel, enableSwipeOnCarousel } from '../../constants';
 
 export default {
-  name: 'Taxi'
+  name: 'Taxi',
+  mounted() {
+    enableScrollUpOnCarousel('#TaxiCarousel');
+    enableSwipeOnCarousel('#TaxiCarousel');
+  }
 }
 </script>
 

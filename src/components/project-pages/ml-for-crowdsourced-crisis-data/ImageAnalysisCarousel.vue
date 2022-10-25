@@ -4,27 +4,27 @@
             <h3>Image Analysis Module</h3>
         </div>
         <div class="col-12 col-md-10">
-            <div id="ccCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div id="ImageAnalysisCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
                 <ol class="carousel-indicators">
-                    <li data-target="#ccCarousel" data-slide-to="0" class="active" @click="scrollUp"></li>
-                    <li data-target="#ccCarousel" data-slide-to="1" @click="scrollUp"></li>
-                    <li data-target="#ccCarousel" data-slide-to="2" @click="scrollUp"></li>
-                    <li data-target="#ccCarousel" data-slide-to="3" @click="scrollUp"></li>
-                    <li data-target="#ccCarousel" data-slide-to="4" @click="scrollUp"></li>
-                    <li data-target="#ccCarousel" data-slide-to="5" @click="scrollUp"></li>
-                    <li data-target="#ccCarousel" data-slide-to="6" @click="scrollUp"></li>
-                    <li data-target="#ccCarousel" data-slide-to="7" @click="scrollUp"></li>
-                    <li data-target="#ccCarousel" data-slide-to="8" @click="scrollUp"></li>
-                    <li data-target="#ccCarousel" data-slide-to="9" @click="scrollUp"></li>
-                    <li data-target="#ccCarousel" data-slide-to="10" @click="scrollUp"></li>
-                    <li data-target="#ccCarousel" data-slide-to="11" @click="scrollUp"></li>
-                    <li data-target="#ccCarousel" data-slide-to="12" @click="scrollUp"></li>
-                    <li data-target="#ccCarousel" data-slide-to="13" @click="scrollUp"></li>
-                    <li data-target="#ccCarousel" data-slide-to="14" @click="scrollUp"></li>
-                    <li data-target="#ccCarousel" data-slide-to="15" @click="scrollUp"></li>
-                    <li data-target="#ccCarousel" data-slide-to="16" @click="scrollUp"></li>
-                    <li data-target="#ccCarousel" data-slide-to="17" @click="scrollUp"></li>
-                    <li data-target="#ccCarousel" data-slide-to="18" @click="scrollUp"></li>
+                    <li data-target="#ImageAnalysisCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#ImageAnalysisCarousel" data-slide-to="1"></li>
+                    <li data-target="#ImageAnalysisCarousel" data-slide-to="2"></li>
+                    <li data-target="#ImageAnalysisCarousel" data-slide-to="3"></li>
+                    <li data-target="#ImageAnalysisCarousel" data-slide-to="4"></li>
+                    <li data-target="#ImageAnalysisCarousel" data-slide-to="5"></li>
+                    <li data-target="#ImageAnalysisCarousel" data-slide-to="6"></li>
+                    <li data-target="#ImageAnalysisCarousel" data-slide-to="7"></li>
+                    <li data-target="#ImageAnalysisCarousel" data-slide-to="8"></li>
+                    <li data-target="#ImageAnalysisCarousel" data-slide-to="9"></li>
+                    <li data-target="#ImageAnalysisCarousel" data-slide-to="10"></li>
+                    <li data-target="#ImageAnalysisCarousel" data-slide-to="11"></li>
+                    <li data-target="#ImageAnalysisCarousel" data-slide-to="12"></li>
+                    <li data-target="#ImageAnalysisCarousel" data-slide-to="13"></li>
+                    <li data-target="#ImageAnalysisCarousel" data-slide-to="14"></li>
+                    <li data-target="#ImageAnalysisCarousel" data-slide-to="15"></li>
+                    <li data-target="#ImageAnalysisCarousel" data-slide-to="16"></li>
+                    <li data-target="#ImageAnalysisCarousel" data-slide-to="17"></li>
+                    <li data-target="#ImageAnalysisCarousel" data-slide-to="18"></li>
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item cc-carousel-item active">
@@ -716,14 +716,13 @@
 </template>
 
 <script>
-import { scrollUpFunc } from '../../../constants';
+import { enableScrollUpOnCarousel, enableSwipeOnCarousel } from '../../../constants';
 
 export default {
   name: 'ImageAnalysisCarousel',
-  methods: {
-    scrollUp() {
-        scrollUpFunc();
-    }
+  mounted() {
+    enableScrollUpOnCarousel('#ImageAnalysisCarousel');
+    enableSwipeOnCarousel('#ImageAnalysisCarousel');
   }
 }
 </script>

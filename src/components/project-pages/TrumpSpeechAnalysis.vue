@@ -4,11 +4,11 @@
             <h1>Trump Campaign Speech Analysis</h1>
         </div>
         <div class="col-md-8">
-            <div id="trumpCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div id="TrumpCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
                 <ol class="carousel-indicators">
-                    <li data-target="#trumpCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#trumpCarousel" data-slide-to="1"></li>
-                    <li data-target="#trumpCarousel" data-slide-to="2"></li>
+                    <li data-target="#TrumpCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#TrumpCarousel" data-slide-to="1"></li>
+                    <li data-target="#TrumpCarousel" data-slide-to="2"></li>
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active trump-carousel-item">
@@ -54,9 +54,14 @@
 </template>
 
 <script>
+import { enableScrollUpOnCarousel, enableSwipeOnCarousel } from '../../constants';
 
 export default {
-  name: 'Trump'
+  name: 'Trump',
+  mounted() {
+    enableScrollUpOnCarousel('#TrumpCarousel');
+    enableSwipeOnCarousel('#TrumpCarousel')
+  }
 }
 </script>
 

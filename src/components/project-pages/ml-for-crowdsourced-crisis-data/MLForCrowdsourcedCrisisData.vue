@@ -4,18 +4,18 @@
             <h3>Towards Automated Assessment of Crowdsourced Crisis Reporting for Enhanced Crisis Awareness and Response</h3>
         </div>
         <div class="col-md-10">
-            <div id="ccCarousel" class="carousel slide" data-ride="carousel" data-interval="false" data-touch="true">
+            <div id="MLForCrowdsourcedCrisisDataCarousel" class="carousel slide" data-ride="carousel" data-interval="false" data-touch="true">
                 <ol class="carousel-indicators">
-                    <li data-target="#ccCarousel" data-slide-to="0" class="active" @click="scrollUp"><div class="tooltip"><span class="tooltiptext">Thesis Document & Code</span></div></li>
-                    <li data-target="#ccCarousel" data-slide-to="1" @click="scrollUp"></li>
-                    <li data-target="#ccCarousel" data-slide-to="2" @click="scrollUp"></li>
-                    <li data-target="#ccCarousel" data-slide-to="3" @click="scrollUp"></li>
-                    <li data-target="#ccCarousel" data-slide-to="4" @click="scrollUp"></li>
-                    <li data-target="#ccCarousel" data-slide-to="5" @click="scrollUp"></li>
-                    <li data-target="#ccCarousel" data-slide-to="6" @click="scrollUp"></li>
-                    <li data-target="#ccCarousel" data-slide-to="7" @click="scrollUp"></li>
-                    <li data-target="#ccCarousel" data-slide-to="8" @click="scrollUp"></li>
-                    <li data-target="#ccCarousel" data-slide-to="9" @click="scrollUp"></li>
+                    <li data-target="#MLForCrowdsourcedCrisisDataCarousel" data-slide-to="0" class="active"><div class="tooltip"><span class="tooltiptext">Thesis Document & Code</span></div></li>
+                    <li data-target="#MLForCrowdsourcedCrisisDataCarousel" data-slide-to="1"></li>
+                    <li data-target="#MLForCrowdsourcedCrisisDataCarousel" data-slide-to="2"></li>
+                    <li data-target="#MLForCrowdsourcedCrisisDataCarousel" data-slide-to="3"></li>
+                    <li data-target="#MLForCrowdsourcedCrisisDataCarousel" data-slide-to="4"></li>
+                    <li data-target="#MLForCrowdsourcedCrisisDataCarousel" data-slide-to="5"></li>
+                    <li data-target="#MLForCrowdsourcedCrisisDataCarousel" data-slide-to="6"></li>
+                    <li data-target="#MLForCrowdsourcedCrisisDataCarousel" data-slide-to="7"></li>
+                    <li data-target="#MLForCrowdsourcedCrisisDataCarousel" data-slide-to="8"></li>
+                    <li data-target="#MLForCrowdsourcedCrisisDataCarousel" data-slide-to="9"></li>
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active cc-carousel-item">
@@ -401,7 +401,7 @@
 
 <script>
 import ProjectCard from '../../ProjectCard.vue';
-import { ML_MODULES, scrollUpFunc } from '../../../constants.js';
+import { ML_MODULES, enableScrollUpOnCarousel, enableSwipeOnCarousel } from '../../../constants.js';
 
 export default {
   name: 'MLForCrowdsourcedCrisisData',
@@ -413,10 +413,9 @@ export default {
         modules: ML_MODULES
     }
   },
-  methods: {
-    scrollUp() {
-        scrollUpFunc();
-    }
+  mounted() {
+    enableScrollUpOnCarousel('#MLForCrowdsourcedCrisisDataCarousel');
+    enableSwipeOnCarousel('#MLForCrowdsourcedCrisisDataCarousel');
   }
 }
 </script>

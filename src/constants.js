@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 export const MAIN_PROJECTS = [
     {   
         id: "ml-for-crowdsourced-crisis-data",
@@ -99,4 +101,30 @@ export const ML_MODULES = [
 
 export function scrollUpFunc() {
     window.scrollTo(0, 0);
+}
+
+export function enableScrollUpOnCarousel(carouselID) {
+    $(carouselID).on('slid.bs.carousel', function() {
+        scrollUpFunc();
+    });
+}
+
+export function enableSwipeOnCarousel(carouselID) {
+    $(carouselID).on('touchstart', function(event){
+        const xClick = event.originalEvent.touches[0].pageX;
+        $(this).one('touchmove', function(event) {
+            const xMove = event.originalEvent.touches[0].pageX;
+            const sensitivityInPx = 5;
+  
+            if( Math.floor(xClick - xMove) > sensitivityInPx ){
+                $(this).carousel('next')
+            }
+            else if( Math.floor(xClick - xMove) < -sensitivityInPx ){
+                $(this).carousel('prev')
+            }
+        });
+        $(this).on('touchend', function(){
+            $(this).off('touchmove');
+        });
+      });
 }
