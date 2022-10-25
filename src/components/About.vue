@@ -11,7 +11,7 @@
             <p id="intro-paragraph">
               Hey there! I'm a Masters grad from MIT where I studied
               Computer Science, specifically Artificial Intelligence. My research focused on machine learning tools
-              for assisting crisis managers during climate crises using crowdsourced climate crisis data. You can learn more
+              for assisting crisis managers during climate crises. You can learn more
               about my research<a href="#/projects/ml-for-crowdsourced-crisis-data" @click="scrollUp">here!</a>I'm also a proud dad to my son, Leo 🐕
             </p>
             <p>
