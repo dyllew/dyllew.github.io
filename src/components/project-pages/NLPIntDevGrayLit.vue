@@ -176,10 +176,11 @@
 </template>
 
 <script>
-import { enableScrollUpOnCarousel, enableSwipeOnCarousel } from '../../constants';
+import { scrollUpFunc, enableScrollUpOnCarousel, enableSwipeOnCarousel } from '../../constants';
 export default {
   name: 'NLPIntDevGrayLit',
   mounted() {
+    scrollUpFunc();
     enableScrollUpOnCarousel('#NLPIntLitDevCarousel');
     enableSwipeOnCarousel('#NLPIntLitDevCarousel');
   }
