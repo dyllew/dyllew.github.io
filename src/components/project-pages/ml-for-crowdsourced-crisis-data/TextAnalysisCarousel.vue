@@ -1165,12 +1165,13 @@
 
 
 <script>
-import { enableScrollUpOnCarousel, enableSwipeOnCarousel } from '../../../constants';
+import { scrollUpFunc, enableScrollUpOnCarousel, enableSwipeOnCarousel } from '../../../constants';
 
 export default {
   name: 'TextAnalysisCarousel',
   mounted() {
-    enableScrollUpOnCarousel('#TextAnalysisCarousel')
+    scrollUpFunc();
+    enableScrollUpOnCarousel('#TextAnalysisCarousel');
     enableSwipeOnCarousel('#TextAnalysisCarousel');
   }
 }

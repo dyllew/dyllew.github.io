@@ -54,11 +54,12 @@
 </template>
 
 <script>
-import { enableScrollUpOnCarousel, enableSwipeOnCarousel } from '../../constants';
+import { scrollUpFunc, enableScrollUpOnCarousel, enableSwipeOnCarousel } from '../../constants';
 
 export default {
   name: 'Trump',
   mounted() {
+    scrollUpFunc();
     enableScrollUpOnCarousel('#TrumpCarousel');
     enableSwipeOnCarousel('#TrumpCarousel')
   }
