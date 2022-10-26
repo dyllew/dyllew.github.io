@@ -716,11 +716,12 @@
 </template>
 
 <script>
-import { enableScrollUpOnCarousel, enableSwipeOnCarousel } from '../../../constants';
+import { scrollUpFunc, enableScrollUpOnCarousel, enableSwipeOnCarousel } from '../../../constants';
 
 export default {
   name: 'ImageAnalysisCarousel',
   mounted() {
+    scrollUpFunc();
     enableScrollUpOnCarousel('#ImageAnalysisCarousel');
     enableSwipeOnCarousel('#ImageAnalysisCarousel');
   }
