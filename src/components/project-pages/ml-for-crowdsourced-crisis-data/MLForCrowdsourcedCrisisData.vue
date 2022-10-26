@@ -6,7 +6,7 @@
         <div class="col-md-10">
             <div id="MLForCrowdsourcedCrisisDataCarousel" class="carousel slide" data-ride="carousel" data-interval="false" data-touch="true">
                 <ol class="carousel-indicators">
-                    <li data-target="#MLForCrowdsourcedCrisisDataCarousel" data-slide-to="0" class="active"><div class="tooltip"><span class="tooltiptext">Thesis Document & Code</span></div></li>
+                    <li data-target="#MLForCrowdsourcedCrisisDataCarousel" data-slide-to="0" class="active"></li>
                     <li data-target="#MLForCrowdsourcedCrisisDataCarousel" data-slide-to="1"></li>
                     <li data-target="#MLForCrowdsourcedCrisisDataCarousel" data-slide-to="2"></li>
                     <li data-target="#MLForCrowdsourcedCrisisDataCarousel" data-slide-to="3"></li>
@@ -359,8 +359,8 @@
                                     <li>
                                         <strong><u>Interpretability in Image and Text ML Models:</u></strong>
                                         <p>
-                                            Investigated interpretability algorithms such as GradCAM (Class Activation Mapping) on classified crisis report images and Local Interpretable Model-Agnostic Explaination
-                                            (LIME) on classified report text in an effort to increase the interpretability of the models which would be employed during crisis and potentially 
+                                            Investigated interpretability algorithms such as GradCAM (Class Activation Mapping) on image classification models used to classify crisis report images and Local Interpretable Model-Agnostic Explaination
+                                            (LIME) on text classification models used to classify report text in an effort to increase the interpretability of the models which would be employed during crisis and potentially 
                                             improve model performance through relabeling & retraining.
                                         </p>
                                     </li>

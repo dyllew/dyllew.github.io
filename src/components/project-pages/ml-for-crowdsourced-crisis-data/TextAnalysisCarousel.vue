@@ -138,8 +138,8 @@
                                     0.919, which is a significant improvement over the typical baseline classifier used for
                                     that metric which achieves an AUCPR of 0.133. We note that recall for the "Human
                                     Risk" class is higher than precision likely being a result of using F2 as the performance
-                                    metric to optimize in the classification experiments. Lastly, when looking at the per-
-                                    class performance metrics for each class, we see that the model performs reasonably
+                                    metric to optimize in the classification experiments. Lastly, when looking at the 
+                                    per-class performance metrics for each class, we see that the model performs reasonably
                                     well on both classes achieving scores at or above 0.857 for the "Human Risk" class
                                     and at or above 0.976 for the "Not Human Risk" class.
                                 </p>
@@ -155,7 +155,7 @@
                                     We note that since the corpus we studied was specific to flood and typhoon crisis events, 
                                     it is no surprise that many of the identified cluster labels are geared
                                     towards flood-related information such as "Areas with Flood Risk", "River Water
-                                    Level and Corresponding Warning for EOC/FD", "Residential Areas/Buildings in
+                                    Level and Corresponding Warning for Emergency Operation Center (EOC)/Fire Department (FD)", "Residential Areas/Buildings in
                                     Flood (Risk)", and "Landslide/Fallen Tree". Although some of the categories are
                                     quite general such as "Rescue (Activities/Requests)", "Closed Roads by the City",
                                     and "Impassable Roads (due to Flood/Obstacles/Damage)", we also see that some
@@ -181,7 +181,7 @@
                                         <li>Typhoon Lan in 2017</li>
                                         <li>Heavy Rain Event in July 2018</li>
                                     </ul>
-                                    The data collection process for during these events is depicted in the neighbouring figure.
+                                    The data collection process which took place during these events is depicted in the neighbouring figure.
                                 </p>
                             </div>
                         </div>
@@ -192,7 +192,7 @@
                             <div class="col-12 col-md-7 pt-3 pb-2">
                                 <table id="text-characteristics-table">
                                         <tr>
-                                            <th><strong>Total Reports</strong></th>
+                                            <th><strong>Total Number of Reports</strong></th>
                                             <th><strong>Reports Labeled for Human Risk</strong></th>
                                             <th><strong>Reports Labeled for Emergency Operation Center (EOC) Humanitarian Categories</strong></th>
                                             <th><strong>Unique EOC Humanitarian Categories</strong></th>

@@ -6,7 +6,7 @@ export const MAIN_PROJECTS = [
         link: "/projects/ml-for-crowdsourced-crisis-data", 
         src: {imgFilename: "masters-thesis-overview.png"},
         title: "Towards Automated Assessment of Crowdsourced Crisis Reporting for Enhanced Crisis Awareness and Response", 
-        desc: "Masters thesis/Research project on constructing labeled crowdsourced crisis datasets and developing machine learning models to assist crisis managers in gaining situational awareness from crowdsourced crisis data for enhanced crisis response.",
+        desc: "Masters thesis/Research project on developing machine learning methodologies to assist crisis managers in gaining situational awareness from crowdsourced crisis data for enhanced crisis response.",
         projectWebsite: {
             id: "button-holder",
             btnText: "See Thesis Document",
@@ -76,7 +76,7 @@ export const ML_MODULES = [
         link: "/projects/ml-for-crowdsourced-crisis-data/image-analysis-module", 
         src: {imgFilename: "image-analysis-module-modified.png"},
         title: "Image Analysis Module", 
-        desc: "ML Module focused on Constructing human-annotated datasets and assessing the quality of the annotations, developing CNN models to classify the crowdsourced crisis image data for various classification tasks, and conducting image annotation workshops with crisis managers from various contexts.",
+        desc: "ML Module focused on Constructing human-annotated image datasets and assessing the quality of the annotations, developing CNN models to classify the crowdsourced crisis image data for various classification tasks, and conducting image annotation workshops with crisis managers from various contexts.",
         projectBtnText: "See Module Details",
         projectWebsite: {
             id: "button-holder",
@@ -110,6 +110,7 @@ export function enableScrollUpOnCarousel(carouselID) {
 }
 
 export function enableSwipeOnCarousel(carouselID) {
+    // This code block was taken from the solution to this Q on stackoverflow: https://stackoverflow.com/questions/21349984/how-to-make-bootstrap-carousel-slider-use-mobile-left-right-swipe
     $(carouselID).on('touchstart', function(event){
         const xClick = event.originalEvent.touches[0].pageX;
         $(this).one('touchmove', function(event) {
