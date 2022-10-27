@@ -110,8 +110,8 @@ export function scrollUpFunc(behavior = 'smooth') {
 export function enableSwipeOnCarousel(carouselID) {
     const carouselElem = document.getElementById(carouselID);
     const carousel = new Carousel(`#${carouselID}`);
-    carouselElem.addEventListener('slide.bs.carousel', () => {
-        scrollUpFunc('instant');
+    carouselElem.addEventListener('slid.bs.carousel', () => {
+        scrollUpFunc();
     });
     carouselElem.addEventListener('touchstart', function(event){
         const xClick = event.touches[0].pageX;
