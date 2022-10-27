@@ -4,11 +4,11 @@
             <h1>Trump Campaign Speech Analysis</h1>
         </div>
         <div class="col-md-8">
-            <div id="TrumpCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div id="TrumpCarousel" class="carousel slide">
                 <ol class="carousel-indicators">
-                    <li data-target="#TrumpCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#TrumpCarousel" data-slide-to="1"></li>
-                    <li data-target="#TrumpCarousel" data-slide-to="2"></li>
+                    <li data-bs-target="#TrumpCarousel" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#TrumpCarousel" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#TrumpCarousel" data-bs-slide-to="2"></li>
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active trump-carousel-item">
@@ -54,15 +54,14 @@
 </template>
 
 <script>
-import { scrollUpFunc, enableScrollUpOnCarousel, enableSwipeOnCarousel } from '../../constants';
+import { scrollUpFunc, enableSwipeOnCarousel } from '../../constants';
 
 export default {
   // eslint-disable-next-line
   name: 'Trump',
   mounted() {
     scrollUpFunc();
-    enableScrollUpOnCarousel('#TrumpCarousel');
-    enableSwipeOnCarousel('#TrumpCarousel')
+    enableSwipeOnCarousel('TrumpCarousel')
   }
 }
 </script>

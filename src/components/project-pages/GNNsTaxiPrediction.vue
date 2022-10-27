@@ -4,11 +4,11 @@
             <h3>Graph Neural Networks for NYC Taxi Fare & Demand Surge Prediction</h3>
         </div>
         <div class="col-md-8">
-            <div id="TaxiCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div id="TaxiCarousel" class="carousel slide">
                 <ol class="carousel-indicators">
-                    <li data-target="#TaxiCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#TaxiCarousel" data-slide-to="1"></li>
-                    <li data-target="#TaxiCarousel" data-slide-to="2"></li>
+                    <li data-bs-target="#TaxiCarousel" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#TaxiCarousel" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#TaxiCarousel" data-bs-slide-to="2"></li>
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active taxi-carousel-item">
@@ -57,15 +57,14 @@
 </template>
 
 <script>
-import { scrollUpFunc, enableScrollUpOnCarousel, enableSwipeOnCarousel } from '../../constants';
+import { scrollUpFunc, enableSwipeOnCarousel } from '../../constants';
 
 export default {
   // eslint-disable-next-line
   name: 'Taxi',
   mounted() {
     scrollUpFunc();
-    enableScrollUpOnCarousel('#TaxiCarousel');
-    enableSwipeOnCarousel('#TaxiCarousel');
+    enableSwipeOnCarousel('TaxiCarousel');
   }
 }
 </script>

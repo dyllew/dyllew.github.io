@@ -99,14 +99,20 @@ export const ML_MODULES = [
     }
 ]
 
-export function scrollUpFunc() {
-    window.scrollTo(0, 0);
+export function scrollUpFunc(behavior = 'smooth') {
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: behavior
+    })
 }
 
 export function enableSwipeOnCarousel(carouselID) {
     const carouselElem = document.getElementById(carouselID);
     const carousel = new Carousel(`#${carouselID}`);
-    carouselElem.addEventListener('slide.bs.carousel', scrollUpFunc);
+    carouselElem.addEventListener('slide.bs.carousel', () => {
+        scrollUpFunc('instant');
+    });
     carouselElem.addEventListener('touchstart', function(event){
         const xClick = event.touches[0].pageX;
         const touchMoveHandler = makeTouchMoveHandler(carousel, xClick);
@@ -120,7 +126,7 @@ export function enableSwipeOnCarousel(carouselID) {
 function makeTouchMoveHandler(carousel, xClick) {
     const touchMoveHandler = event => {
         const xMove = event.touches[0].pageX;
-        const sensitivityInPx = 7;
+        const sensitivityInPx = 5;
         if ( Math.floor(xClick - xMove) > sensitivityInPx ) {
             carousel.next();
         }

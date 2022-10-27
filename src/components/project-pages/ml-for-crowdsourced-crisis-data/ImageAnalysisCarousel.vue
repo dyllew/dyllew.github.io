@@ -4,27 +4,27 @@
             <h3>Image Analysis Module</h3>
         </div>
         <div class="col-12 col-md-10">
-            <div id="ImageAnalysisCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div id="ImageAnalysisCarousel" class="carousel slide">
                 <ol class="carousel-indicators">
-                    <li data-target="#ImageAnalysisCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#ImageAnalysisCarousel" data-slide-to="1"></li>
-                    <li data-target="#ImageAnalysisCarousel" data-slide-to="2"></li>
-                    <li data-target="#ImageAnalysisCarousel" data-slide-to="3"></li>
-                    <li data-target="#ImageAnalysisCarousel" data-slide-to="4"></li>
-                    <li data-target="#ImageAnalysisCarousel" data-slide-to="5"></li>
-                    <li data-target="#ImageAnalysisCarousel" data-slide-to="6"></li>
-                    <li data-target="#ImageAnalysisCarousel" data-slide-to="7"></li>
-                    <li data-target="#ImageAnalysisCarousel" data-slide-to="8"></li>
-                    <li data-target="#ImageAnalysisCarousel" data-slide-to="9"></li>
-                    <li data-target="#ImageAnalysisCarousel" data-slide-to="10"></li>
-                    <li data-target="#ImageAnalysisCarousel" data-slide-to="11"></li>
-                    <li data-target="#ImageAnalysisCarousel" data-slide-to="12"></li>
-                    <li data-target="#ImageAnalysisCarousel" data-slide-to="13"></li>
-                    <li data-target="#ImageAnalysisCarousel" data-slide-to="14"></li>
-                    <li data-target="#ImageAnalysisCarousel" data-slide-to="15"></li>
-                    <li data-target="#ImageAnalysisCarousel" data-slide-to="16"></li>
-                    <li data-target="#ImageAnalysisCarousel" data-slide-to="17"></li>
-                    <li data-target="#ImageAnalysisCarousel" data-slide-to="18"></li>
+                    <li data-bs-target="#ImageAnalysisCarousel" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#ImageAnalysisCarousel" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#ImageAnalysisCarousel" data-bs-slide-to="2"></li>
+                    <li data-bs-target="#ImageAnalysisCarousel" data-bs-slide-to="3"></li>
+                    <li data-bs-target="#ImageAnalysisCarousel" data-bs-slide-to="4"></li>
+                    <li data-bs-target="#ImageAnalysisCarousel" data-bs-slide-to="5"></li>
+                    <li data-bs-target="#ImageAnalysisCarousel" data-bs-slide-to="6"></li>
+                    <li data-bs-target="#ImageAnalysisCarousel" data-bs-slide-to="7"></li>
+                    <li data-bs-target="#ImageAnalysisCarousel" data-bs-slide-to="8"></li>
+                    <li data-bs-target="#ImageAnalysisCarousel" data-bs-slide-to="9"></li>
+                    <li data-bs-target="#ImageAnalysisCarousel" data-bs-slide-to="10"></li>
+                    <li data-bs-target="#ImageAnalysisCarousel" data-bs-slide-to="11"></li>
+                    <li data-bs-target="#ImageAnalysisCarousel" data-bs-slide-to="12"></li>
+                    <li data-bs-target="#ImageAnalysisCarousel" data-bs-slide-to="13"></li>
+                    <li data-bs-target="#ImageAnalysisCarousel" data-bs-slide-to="14"></li>
+                    <li data-bs-target="#ImageAnalysisCarousel" data-bs-slide-to="15"></li>
+                    <li data-bs-target="#ImageAnalysisCarousel" data-bs-slide-to="16"></li>
+                    <li data-bs-target="#ImageAnalysisCarousel" data-bs-slide-to="17"></li>
+                    <li data-bs-target="#ImageAnalysisCarousel" data-bs-slide-to="18"></li>
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item cc-carousel-item active">
@@ -716,14 +716,13 @@
 </template>
 
 <script>
-import { scrollUpFunc, enableScrollUpOnCarousel, enableSwipeOnCarousel } from '../../../constants';
+import { scrollUpFunc, enableSwipeOnCarousel } from '../../../constants';
 
 export default {
   name: 'ImageAnalysisCarousel',
   mounted() {
     scrollUpFunc();
-    enableScrollUpOnCarousel('#ImageAnalysisCarousel');
-    enableSwipeOnCarousel('#ImageAnalysisCarousel');
+    enableSwipeOnCarousel('ImageAnalysisCarousel');
   }
 }
 </script>

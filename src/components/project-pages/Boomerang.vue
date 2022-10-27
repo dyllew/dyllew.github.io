@@ -4,11 +4,11 @@
             <h1>Boomerang</h1>
         </div>
         <div class="col-md-8">
-            <div id="BoomerangCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div id="BoomerangCarousel" class="carousel slide">
                 <ol class="carousel-indicators">
-                    <li data-target="#BoomerangCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#BoomerangCarousel" data-slide-to="1"></li>
-                    <li data-target="#BoomerangCarousel" data-slide-to="2"></li>
+                    <li data-bs-target="#BoomerangCarousel" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#BoomerangCarousel" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#BoomerangCarousel" data-bs-slide-to="2"></li>
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active boomerang-carousel-item">
@@ -54,14 +54,13 @@
 </template>
 
 <script>
-import { scrollUpFunc, enableScrollUpOnCarousel, enableSwipeOnCarousel } from '../../constants';
+import { scrollUpFunc, enableSwipeOnCarousel } from '../../constants';
 export default {
   // eslint-disable-next-line
   name: 'Boomerang',
   mounted() {
     scrollUpFunc();
-    enableScrollUpOnCarousel("#BoomerangCarousel");
-    enableSwipeOnCarousel("#BoomerangCarousel");
+    enableSwipeOnCarousel("BoomerangCarousel");
   }
 }
 </script>

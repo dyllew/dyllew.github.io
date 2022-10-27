@@ -4,14 +4,14 @@
             <h3>Information Extraction and Unsupervised Methods for Streamlining Evidence Synthesis in International Development Gray Literature</h3>
         </div>
         <div class="col-md-8">
-            <div id="NLPIntLitDevCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div id="NLPIntLitDevCarousel" class="carousel slide">
                 <ol class="carousel-indicators">
-                    <li data-target="#NLPIntLitDevCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#NLPIntLitDevCarousel" data-slide-to="1"></li>
-                    <li data-target="#NLPIntLitDevCarousel" data-slide-to="2"></li>
-                    <li data-target="#NLPIntLitDevCarousel" data-slide-to="3"></li>
-                    <li data-target="#NLPIntLitDevCarousel" data-slide-to="4"></li>
-                    <li data-target="#NLPIntLitDevCarousel" data-slide-to="5"></li>
+                    <li data-bs-target="#NLPIntLitDevCarousel" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#NLPIntLitDevCarousel" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#NLPIntLitDevCarousel" data-bs-slide-to="2"></li>
+                    <li data-bs-target="#NLPIntLitDevCarousel" data-bs-slide-to="3"></li>
+                    <li data-bs-target="#NLPIntLitDevCarousel" data-bs-slide-to="4"></li>
+                    <li data-bs-target="#NLPIntLitDevCarousel" data-bs-slide-to="5"></li>
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active int-dev-lit-carousel-item">
@@ -176,13 +176,12 @@
 </template>
 
 <script>
-import { scrollUpFunc, enableScrollUpOnCarousel, enableSwipeOnCarousel } from '../../constants';
+import { scrollUpFunc, enableSwipeOnCarousel } from '../../constants';
 export default {
   name: 'NLPIntDevGrayLit',
   mounted() {
     scrollUpFunc();
-    enableScrollUpOnCarousel('#NLPIntLitDevCarousel');
-    enableSwipeOnCarousel('#NLPIntLitDevCarousel');
+    enableSwipeOnCarousel('NLPIntLitDevCarousel');
   }
 }
 </script>

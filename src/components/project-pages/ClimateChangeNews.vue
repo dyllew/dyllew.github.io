@@ -4,13 +4,13 @@
             <h3>Evolution of the U.S. TV News Narrative on Climate Change</h3>
         </div>
         <div class="col-md-8">
-            <div id="ClimateNewsCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div id="ClimateNewsCarousel" class="carousel slide">
                 <ol class="carousel-indicators">
-                    <li data-target="#ClimateNewsCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#ClimateNewsCarousel" data-slide-to="1"></li>
-                    <li data-target="#ClimateNewsCarousel" data-slide-to="2"></li>
-                    <li data-target="#ClimateNewsCarousel" data-slide-to="3"></li>
-                    <li data-target="#ClimateNewsCarousel" data-slide-to="4"></li>
+                    <li data-bs-target="#ClimateNewsCarousel" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#ClimateNewsCarousel" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#ClimateNewsCarousel" data-bs-slide-to="2"></li>
+                    <li data-bs-target="#ClimateNewsCarousel" data-bs-slide-to="3"></li>
+                    <li data-bs-target="#ClimateNewsCarousel" data-bs-slide-to="4"></li>
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active cc-carousel-item">
@@ -122,13 +122,12 @@
 </template>
 
 <script>
-import { scrollUpFunc, enableScrollUpOnCarousel, enableSwipeOnCarousel } from '../../constants';
+import { scrollUpFunc, enableSwipeOnCarousel } from '../../constants';
 export default {
   name: 'ClimateChangeNews',
   mounted() {
     scrollUpFunc();
-    enableSwipeOnCarousel('#ClimateNewsCarousel');
-    enableScrollUpOnCarousel('#ClimateNewsCarousel');
+    enableSwipeOnCarousel('ClimateNewsCarousel');
   }
 }
 </script>
