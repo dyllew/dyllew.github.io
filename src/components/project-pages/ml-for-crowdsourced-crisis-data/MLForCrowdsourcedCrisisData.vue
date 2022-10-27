@@ -4,18 +4,18 @@
             <h3>Towards Automated Assessment of Crowdsourced Crisis Reporting for Enhanced Crisis Awareness and Response</h3>
         </div>
         <div class="col-md-10">
-            <div id="MLForCrowdsourcedCrisisDataCarousel" class="carousel slide" data-ride="carousel" data-interval="false" data-touch="true">
+            <div id="MLForCrowdsourcedCrisisDataCarousel" class="carousel slide">
                 <ol class="carousel-indicators">
-                    <li data-target="#MLForCrowdsourcedCrisisDataCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#MLForCrowdsourcedCrisisDataCarousel" data-slide-to="1"></li>
-                    <li data-target="#MLForCrowdsourcedCrisisDataCarousel" data-slide-to="2"></li>
-                    <li data-target="#MLForCrowdsourcedCrisisDataCarousel" data-slide-to="3"></li>
-                    <li data-target="#MLForCrowdsourcedCrisisDataCarousel" data-slide-to="4"></li>
-                    <li data-target="#MLForCrowdsourcedCrisisDataCarousel" data-slide-to="5"></li>
-                    <li data-target="#MLForCrowdsourcedCrisisDataCarousel" data-slide-to="6"></li>
-                    <li data-target="#MLForCrowdsourcedCrisisDataCarousel" data-slide-to="7"></li>
-                    <li data-target="#MLForCrowdsourcedCrisisDataCarousel" data-slide-to="8"></li>
-                    <li data-target="#MLForCrowdsourcedCrisisDataCarousel" data-slide-to="9"></li>
+                    <li data-bs-target="#MLForCrowdsourcedCrisisDataCarousel" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#MLForCrowdsourcedCrisisDataCarousel" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#MLForCrowdsourcedCrisisDataCarousel" data-bs-slide-to="2"></li>
+                    <li data-bs-target="#MLForCrowdsourcedCrisisDataCarousel" data-bs-slide-to="3"></li>
+                    <li data-bs-target="#MLForCrowdsourcedCrisisDataCarousel" data-bs-slide-to="4"></li>
+                    <li data-bs-target="#MLForCrowdsourcedCrisisDataCarousel" data-bs-slide-to="5"></li>
+                    <li data-bs-target="#MLForCrowdsourcedCrisisDataCarousel" data-bs-slide-to="6"></li>
+                    <li data-bs-target="#MLForCrowdsourcedCrisisDataCarousel" data-bs-slide-to="7"></li>
+                    <li data-bs-target="#MLForCrowdsourcedCrisisDataCarousel" data-bs-slide-to="8"></li>
+                    <li data-bs-target="#MLForCrowdsourcedCrisisDataCarousel" data-bs-slide-to="9"></li>
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active cc-carousel-item">
@@ -401,7 +401,7 @@
 
 <script>
 import ProjectCard from '../../ProjectCard.vue';
-import { ML_MODULES, scrollUpFunc, enableScrollUpOnCarousel, enableSwipeOnCarousel } from '../../../constants.js';
+import { ML_MODULES, scrollUpFunc, enableSwipeOnCarousel } from '../../../constants.js';
 
 export default {
   name: 'MLForCrowdsourcedCrisisData',
@@ -415,8 +415,7 @@ export default {
   },
   mounted() {
     scrollUpFunc();
-    enableScrollUpOnCarousel('#MLForCrowdsourcedCrisisDataCarousel');
-    enableSwipeOnCarousel('#MLForCrowdsourcedCrisisDataCarousel');
+    enableSwipeOnCarousel('MLForCrowdsourcedCrisisDataCarousel');
   }
 }
 </script>

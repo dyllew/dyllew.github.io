@@ -31,6 +31,7 @@
 import { scrollUpFunc } from '../constants';
 
 export default {
+  // eslint-disable-next-line
   name: 'About',
   methods: {
     scrollUp() {

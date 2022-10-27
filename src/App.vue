@@ -7,16 +7,14 @@
 </template>
 
 <script>
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'jquery/src/jquery.js';
-import 'bootstrap/dist/js/bootstrap.min.js';
-
+// eslint-disable-next-line
 import Header from './components/Header';
 import NavBar from './components/NavBar';
 
 export default {
   name: 'App',
   components: {
+    // eslint-disable-next-line
     Header,
     NavBar
   },

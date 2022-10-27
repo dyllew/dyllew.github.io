@@ -56,6 +56,7 @@
 <script>
 import { scrollUpFunc, enableScrollUpOnCarousel, enableSwipeOnCarousel } from '../../constants';
 export default {
+  // eslint-disable-next-line
   name: 'Boomerang',
   mounted() {
     scrollUpFunc();

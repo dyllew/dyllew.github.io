@@ -57,6 +57,7 @@
 import { scrollUpFunc, enableScrollUpOnCarousel, enableSwipeOnCarousel } from '../../constants';
 
 export default {
+  // eslint-disable-next-line
   name: 'Trump',
   mounted() {
     scrollUpFunc();

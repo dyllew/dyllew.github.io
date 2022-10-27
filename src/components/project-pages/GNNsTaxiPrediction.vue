@@ -60,6 +60,7 @@
 import { scrollUpFunc, enableScrollUpOnCarousel, enableSwipeOnCarousel } from '../../constants';
 
 export default {
+  // eslint-disable-next-line
   name: 'Taxi',
   mounted() {
     scrollUpFunc();

@@ -11,6 +11,7 @@ import ProjectCard from './ProjectCard'
 import { MAIN_PROJECTS } from '../constants';
 
 export default {
+  // eslint-disable-next-line
   name: 'Projects',
   components: {
     ProjectCard,

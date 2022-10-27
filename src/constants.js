@@ -1,4 +1,4 @@
-import $ from 'jquery';
+import { Carousel } from 'bootstrap';
 
 export const MAIN_PROJECTS = [
     {   
@@ -103,29 +103,30 @@ export function scrollUpFunc() {
     window.scrollTo(0, 0);
 }
 
-export function enableScrollUpOnCarousel(carouselID) {
-    $(carouselID).on('slid.bs.carousel', function() {
-        scrollUpFunc();
-    });
-}
-
 export function enableSwipeOnCarousel(carouselID) {
-    // This code block was taken from the solution to this Q on stackoverflow: https://stackoverflow.com/questions/21349984/how-to-make-bootstrap-carousel-slider-use-mobile-left-right-swipe
-    $(carouselID).on('touchstart', function(event){
-        const xClick = event.originalEvent.touches[0].pageX;
-        $(this).one('touchmove', function(event) {
-            const xMove = event.originalEvent.touches[0].pageX;
-            const sensitivityInPx = 7;
-  
-            if( Math.floor(xClick - xMove) > sensitivityInPx ){
-                $(this).carousel('next')
-            }
-            else if( Math.floor(xClick - xMove) < -sensitivityInPx ){
-                $(this).carousel('prev')
-            }
-        });
-        $(this).on('touchend', function(){
-            $(this).off('touchmove');
+    const carouselElem = document.getElementById(carouselID);
+    const carousel = new Carousel(`#${carouselID}`);
+    carouselElem.addEventListener('slide.bs.carousel', scrollUpFunc);
+    carouselElem.addEventListener('touchstart', function(event){
+        const xClick = event.touches[0].pageX;
+        const touchMoveHandler = makeTouchMoveHandler(carousel, xClick);
+        carouselElem.addEventListener('touchmove', touchMoveHandler, {once: true});
+        carouselElem.addEventListener('touchend', function(){
+            carouselElem.removeEventListener('touchmove', touchMoveHandler, {once: true});
         });
       });
+}
+
+function makeTouchMoveHandler(carousel, xClick) {
+    const touchMoveHandler = event => {
+        const xMove = event.touches[0].pageX;
+        const sensitivityInPx = 7;
+        if ( Math.floor(xClick - xMove) > sensitivityInPx ) {
+            carousel.next();
+        }
+        else if ( Math.floor(xClick - xMove) < -sensitivityInPx ) {
+            carousel.prev();
+        }
+    }
+    return touchMoveHandler;
 }

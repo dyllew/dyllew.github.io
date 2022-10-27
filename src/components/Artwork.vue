@@ -27,6 +27,7 @@
 <script>
 
 export default {
+  // eslint-disable-next-line
   name: 'Artwork'
 }
 </script>

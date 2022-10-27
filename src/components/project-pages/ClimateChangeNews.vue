@@ -127,8 +127,8 @@ export default {
   name: 'ClimateChangeNews',
   mounted() {
     scrollUpFunc();
-    enableScrollUpOnCarousel('#ClimateNewsCarousel');
     enableSwipeOnCarousel('#ClimateNewsCarousel');
+    enableScrollUpOnCarousel('#ClimateNewsCarousel');
   }
 }
 </script>
