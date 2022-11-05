@@ -126,7 +126,7 @@ export function enableSwipeOnCarousel(carouselID) {
 function makeTouchMoveHandler(carousel, xClick) {
     const touchMoveHandler = event => {
         const xMove = event.touches[0].pageX;
-        const sensitivityInPx = 5;
+        const sensitivityInPx = 10;
         if ( Math.floor(xClick - xMove) > sensitivityInPx ) {
             carousel.next();
         }
