@@ -1,9 +1,9 @@
 <template>
     <div class="row align-items-center justify-content-center">
-        <div class="col-8">  
+        <div class="col-12">  
             <h3>Text Analysis Module</h3>
         </div>
-        <div class="col-md-10">
+        <div class="col-12 col-md-8">
             <div id="TextAnalysisCarousel" class="carousel slide">
                 <ol class="carousel-indicators">
                     <li data-bs-target="#TextAnalysisCarousel" data-bs-slide-to="0" class="active"></li>
@@ -28,17 +28,17 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item cc-carousel-item active">
-                        <div class="row align-items-center justify-content-around">
-                            <div class="col-12 col-md-7 pt-3 pb-2">
+                        <div class="row align-items-center justify-content-around pb-4">
+                            <div class="col-12 col-md-7 pt-3 pb-3">
                                 <img id="text-analysis-module" class="img-fluid" src="../../../../public/assets/text-analysis-module.png" alt="Second slide">
                             </div>
-                            <div class="carousel-text col-12">
+                            <div class="col-12 col-md-9">
                                 <h5>Text Analysis Methodology Overview</h5>
                                 <p> 
                                     The Text Analysis Module aims to provide accurate and efficient classifications of
-                                    crisis reports using the text modality that is often present in the reports. Another aim
+                                    crisis reports using the text modality that is often present in crowdsourced reports. Another aim
                                     was to incorporate the insights we gained from the results of our qualitative analysis
-                                    on the Image Analysis Module that were transferable
+                                    of the Image Analysis Module that were transferable
                                     between the data modalities, i.e. the importance of identifying potential for human
                                     casualty or risk to humans. We did this to exemplify our framework’s intention of
                                     producing iteratively developed ML methodologies and AI systems to enhance crisis
@@ -48,22 +48,20 @@
                                 <p>
                                     To incorporate the insights of the crisis managers into the design and development
                                     of a new text classification model, we first created a classification task and associated
-                                    classes that align with the expressed information needs of crisis managers during a
-                                    crisis event. Then, we selected a performance evaluation metric that aligns with
-                                    priorities of the crisis managers for that task, finally developing a model that is
+                                    <strong>classes that align with the expressed information needs of crisis managers during a
+                                    crisis event</strong>. Then, we <strong>selected a performance evaluation metric that aligns with the
+                                    priorities of the crisis managers</strong> for that task, finally developing a model that is
                                     evaluated using the selected performance metric.
                                 </p>
                                 <h6>Human Risk Text Classification Experiments</h6>
                                 <p>
                                     In the process of conducting this exercise, we performed various classification 
-                                    experiments, experimenting with various text featurizations, classical machine learning
-                                    algorithms, and importantly, we deliberated on the selection of a performance 
-                                    evaluation metric based on our findings from the qualitative analysis of the image annotation
-                                    workshops.
+                                    experiments, experimenting with various text featurizations and classical machine learning
+                                    algorithms.
                                 </p>
                                 <h6>Preprocessing & Featurization of Japanese Text</h6>
                                 <p>
-                                    We note that since this study focused exclusively on Japanese crisis text, we
+                                    We note that since this study focused exclusively on <strong>Japanese crisis text</strong>, we
                                     constructed a preprocessing pipeline that uses open-source Japanese tokenizers, 
                                     stop-words, and a lemmatizer to preprocess the Japanese text. Additionally, we 
                                     investigated the use of text embeddings of the Japanese crisis text that are created by
@@ -82,7 +80,7 @@
                                 <p>
                                     In our evaluation of our text classification experiments, we perform quantitative
                                     evaluation, assessing the performance of the model for the task based on the 
-                                    determined evaluation metric mentioned above in addition to other metrics, e.g. per-class
+                                    determined performance evaluation metric mentioned above in addition to other metrics, e.g. per-class
                                     performance metrics. For our unsupervised experiments, we include both 
                                     quantitative and qualitative evaluation. Using the Within-Cluster Sum of Squares (WCSS)
                                     metric, we determine a set of optimal clustering pipeline configurations and their
@@ -95,8 +93,8 @@
                         </div>
                     </div>
                     <div class="carousel-item cc-carousel-item">
-                        <div class="row align-items-center justify-content-around">
-                            <div class="carousel-text col-12">
+                        <div class="row align-items-center justify-content-around pb-5">
+                            <div class="col-12 col-md-9">
                                 <h5>Summary of Results</h5>
                                 <h5>Iterating on ML Methodology based on Crisis Managers Insights</h5>
                                 <p>
@@ -111,12 +109,15 @@
                                 <p>
                                     Using labels provided directly to us by crisis managers, we created a new text
                                     classification task in an effort to better fulfill their information needs during a crisis
-                                    event. Using insights gained from the results of image annotation workshops of the
+                                    event. <strong>Using insights gained from the results of image annotation workshops of the
                                     Image Analysis Module, we determined F2 score to be an appropriate
-                                    performance metric for model performance evaluation as false negatives are more
-                                    costly than false positives for assessing human risk from text reports. <strong>To the best
+                                    performance metric for model performance evaluation as false negatives are considered more
+                                    costly than false positives for assessing human risk from text reports</strong>. 
+                                </p>
+                                <p>
+                                    <strong>To the best
                                     of our knowledge, the exercises of creating a classification task from labels provided
-                                    directly by EOC and formulating an appropriate model performance metric informed
+                                    directly by crisis managers and formulating an appropriate model performance metric informed
                                     from crisis expert insights are novel contributions of this work.</strong> These exercises follow
                                     directly inline with our framework, <strong>using the results
                                     from the Image Analysis Module to iteratively design and develop ML models for the
@@ -124,17 +125,17 @@
                                 </p>
                                 <h5>Human Risk Task Model Evaluation</h5>
                                 <p>
-                                    Using F2 as the metric to optimize for during 5 x 5 Nested CV, we were able to
-                                    identify the SVM algorithm and its corresponding hyperparameter grid as achieving a
+                                    Using F2 as the metric to optimize for during 5 x 5 Nested Cross Validation (Nested CV), we were able to
+                                    identify the Support Vector Machine (SVM) algorithm and its corresponding hyperparameter grid as achieving a
                                     relatively high mean F2 performance with low variance. To assess the model’s ability
-                                    to perform the human risk classification task, we found the tuned SVM model to
+                                    to perform the human risk classification task, we found the tuned <strong>SVM model to
                                     achieve an F2 score of 92.8%, which is a substantial improvement over the baseline
-                                    model’s F2 score of 43.4%. Having a baseline is an important aspect of our framework
+                                    model’s F2 score of 43.4%</strong>. Having a baseline is an important aspect of our framework
                                     as it enables us the ability to determine if a developed model is performing the task
                                     well, i.e. if it does not perform the task better than the baseline, it is not a useful
-                                    model for the task. This suggests the tuned SVM model is a useful classifier for
-                                    the task and performs the task reasonably well. This is further evidenced from the
-                                    Precision-Recall curve, where the tuned SVM model achieved an AUCPR score of
+                                    model for the task. This <strong>suggests the tuned SVM model is a useful classifier for
+                                    the task and performs the task reasonably well</strong>. This is further evidenced from the
+                                    Precision-Recall curve, where the tuned SVM model achieved an Area Under the Precision-Recall Curve (AUCPR) score of
                                     0.919, which is a significant improvement over the typical baseline classifier used for
                                     that metric which achieves an AUCPR of 0.133. We note that recall for the "Human
                                     Risk" class is higher than precision likely being a result of using F2 as the performance
@@ -146,21 +147,21 @@
                                 <h5>Clustering of Firefighter Crisis Text Reports</h5>
                                 <p>
                                     From our preliminary clustering assessments, we observed that clustering using
-                                    K-medoids rather than K-means with all else equal (i.e. text featurization and dimensionality reduction technique), 
-                                    typically yielded lower WCSS scores across all 𝐾 values between 2-20. This is likely due to the K-medoids algorithm’s robustness to
+                                    <strong>K-medoids rather than K-means with all else equal (i.e. text featurization and dimensionality reduction technique), 
+                                    typically yielded lower WCSS scores across all 𝐾 values between 2-20</strong>. This is likely due to the K-medoids algorithm’s robustness to
                                     outliers and noise, suggesting that there may exist some reports in the corpus which
                                     are quite different from the rest.
                                 </p>
                                 <p>
                                     We note that since the corpus we studied was specific to flood and typhoon crisis events, 
-                                    it is no surprise that many of the identified cluster labels are geared
+                                    it is no surprise that <strong>many of the identified cluster labels are geared
                                     towards flood-related information such as "Areas with Flood Risk", "River Water
                                     Level and Corresponding Warning for Emergency Operation Center (EOC)/Fire Department (FD)", "Residential Areas/Buildings in
-                                    Flood (Risk)", and "Landslide/Fallen Tree". Although some of the categories are
-                                    quite general such as "Rescue (Activities/Requests)", "Closed Roads by the City",
-                                    and "Impassable Roads (due to Flood/Obstacles/Damage)", we also see that some
-                                    of the cluster labels are specific to the fire department such as "Areas where FD is
-                                    active" and "FD Activities/Weather Warning/Flood Control Alert".
+                                    Flood (Risk)", and "Landslide/Fallen Tree"</strong>. Although some of the categories are
+                                    <strong>quite general such as "Rescue (Activities/Requests)", "Closed Roads by the City",
+                                    and "Impassable Roads (due to Flood/Obstacles/Damage)"</strong>, we also see that some
+                                    of the cluster labels are <strong>specific to the fire department</strong> such as <strong>"Areas where FD is
+                                    active" and "FD Activities/Weather Warning/Flood Control Alert"</strong>.
                                 </p>
                             </div>
                         </div>
@@ -175,13 +176,17 @@
                                 <p>
                                     Our crisis management partners in Fukuchiyama City (FC) compiled <strong>716 Japanese (JA) text transcripts</strong>
                                     of radio communications from <strong>on-the-ground firefighters</strong> which occurred during the following past FC flood events:
-                                    <ul>
-                                        <li>Typhoon Manyi in 2013</li>
-                                        <li>Heavy Rain Event in August 2014</li>
-                                        <li>Typhoon Lan in 2017</li>
-                                        <li>Heavy Rain Event in July 2018</li>
-                                    </ul>
-                                    The data collection process which took place during these events is depicted in the neighbouring figure.
+                                </p>
+                                    <div class="centered-list-parent">
+                                        <ul class="centered-list">
+                                            <li>Typhoon Manyi in 2013</li>
+                                            <li>Heavy Rain Event in August 2014</li>
+                                            <li>Typhoon Lan in 2017</li>
+                                            <li>Heavy Rain Event in July 2018</li>
+                                        </ul>
+                                    </div>
+                                <p>
+                                    The data collection process which took place during these events is depicted in the adjacent figure.
                                 </p>
                             </div>
                         </div>
@@ -189,7 +194,7 @@
                     <div class="carousel-item cc-carousel-item">
                         <h5>Fukuchiyama Flood Text Reports Dataset Characteristics</h5>
                         <div class="row align-items-center justify-content-center">
-                            <div class="col-12 col-md-7 pt-3 pb-2">
+                            <div class="col-12 col-md-7 pt-3 pb-3">
                                 <table id="text-characteristics-table">
                                         <tr>
                                             <th><strong>Total Number of Reports</strong></th>
@@ -205,7 +210,7 @@
                                         </tr>
                                     </table>
                             </div>
-                            <div class="col-12">
+                            <div class="col-12 col-md-7">
                                 <p>
                                     We use all 716 reports in our clustering experiments. Since 715 out of the total 716 reports are labeled for Human Risk, we 
                                     use those labeled reports in our classification experiments. 
@@ -220,34 +225,34 @@
                             <div class="col-10">
                                 <img id="dataset-comparison" src="../../../../public/assets/character_box_and_whisk_fc_rm.png" class="img-fluid" alt="First slide">
                             </div>
-                            <div class="col-6 col-lg-4 pt-3">
-                                <h6>FC Firefighter Reports Characteristics</h6>
-                                <div>
-                                    <p>
-                                        <ul>
+                            <div class="row justify-content-center">
+                                <div class="col-6 col-lg-4 pt-3">
+                                    <h6>FC Firefighter Reports Characteristics</h6>
+                                    <div class="centered-list-parent">
+                                        <ul class="centered-list">
                                             <li>N = 716 Reports</li>
                                             <li>Median = 22 Characters</li>
                                         </ul> 
-                                    </p>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-4 pt-3">
+                                    <h6>Typhoon Hagibis RM Reports Characteristics</h6>
+                                    <div class="centered-list-parent">
+                                        <ul class="centered-list" id="hagibis-details">
+                                            <li>N = 68 Reports</li>
+                                            <li>Median = 14 Characters</li>
+                                        </ul> 
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-lg-4 pt-3">
-                                <h6>Typhoon Hagibis RM Reports Characteristics</h6>
-                                <p id="hagibis-details">
-                                    <ul>
-                                        <li>N = 68 Reports</li>
-                                        <li>Median = 14 Characters</li>
-                                    </ul> 
-                                </p>
-                            </div>
-                            <div class="col-12">
+                            <div class="col-12 col-md-7">
                                 <p>
                                     Most Japanese (JA) crisis text reports are between only a <strong>few characters</strong> to about <strong>50 characters</strong>. We also observe that each distribution is right-skewed. This is further seen by Twitter research, which 
                                     finds that <strong>JA tweets</strong> have a mode of <strong>15 characters</strong>, with a character distribution exhibiting right-skew. It is noted
                                     that <strong>English (EN) tweets</strong> have a mode of <strong>34 characters</strong>, which as the authors state,
                                 </p>
                             </div>
-                            <div class="col-12">
+                            <div class="col-12 col-md-7">
                                 <h6>
                                     “This is because in languages like Japanese, Korean, 
                                     and Chinese you can convey about double the amount of 
@@ -255,28 +260,31 @@
                                     like English, Spanish, Portuguese, or French"<sup><a href="#fnA" id="refA">1</a></sup>
                                 </h6>
                             </div>
-                            <div class="carousel-text col-12">
+                            <div class="col-12 col-md-7">
                                 <p>
                                     <strong>Comparing these various dataset distributions suggests that the FC firefighter text reports are of similar character length to RM JA reports and JA tweets.</strong>
                                 </p>
                             </div>
+                            <div class="col-12 col-md-7">
+                                <hr>
+                                <p>
+                                <sup id="fnA">1. A. Rosen and I. Ihara, “Giving you more characters to express yourself.” <a href="https://blog.twitter.com/en_us/topics/product/2017/Giving-you-more-characters-to-express-yourself" target="_blank">https://blog.twitter.com/en_us/topics/product/2017/Giving-you-more-characters-to-express-yourself</a>, Sept. 2017.<a href="#refA" title="Jump back to footnote 1 in the text.">↩</a></sup>
+                                </p>
+                                <br>
+                            </div>
                         </div>
-                        <p>
-                            <sup id="fnA">1. A. Rosen and I. Ihara, “Giving you more characters to express yourself.” <a href="https://blog.twitter.com/en_us/topics/product/2017/Giving-you-more-characters-to-express-yourself" target="_blank">https://blog.twitter.com/en_us/topics/product/2017/Giving-you-more-characters-to-express-yourself</a>, Sept. 2017.<a href="#refA" title="Jump back to footnote 1 in the text.">↩</a></sup>
-                        </p>
-                        <br>
                     </div>
                     <div class="carousel-item cc-carousel-item">
                         <h5>Text Preprocessing & Featurization Pipeline</h5>
-                        <div class="row justify-content-center">
-                            <div class="col-12 col-md-9 pb-2">
+                        <div class="row justify-content-center align-items-center pb-3">
+                            <div class="col-12 col-md-9 pb-4">
                                 <img id="text-pipeline" class="img-fluid" src="../../../../public/assets/text-preprocessing.png" alt="Second slide">
                             </div>
-                            <div class="carousel-text col-12">
+                            <div class="col-12 col-md-9 pb-4">
                                 <p>
                                     In order to use the FC firefighter report text data in our classification and clustering experiments, we needed to featurize, or construct
-                                    numerical representations (feature vectors) of the text to use as input to a ML model. In the pipeline we developed for the featurization of Japanese text, <strong>we investigate 4 different featurizations of the text</strong>, namely,
-                                    <strong>Bag-of-Words (BOW)</strong> based on unigram & bigram representations, <strong>Term-Frequency Inverse-Document-Frequency (TF-IDF)</strong> based on unigram, and finally <strong>pretrained BERT embeddings using CLS Pooling</strong>.
+                                    numerical representations (feature vectors) of the text to use as input to ML models. In the pipeline we developed for the featurization of Japanese text, <strong>we investigate 4 different featurizations of the text</strong>, namely,
+                                    <strong>Bag-of-Words (BOW)</strong> based on unigram & bigram representations, <strong>Term-Frequency Inverse-Document-Frequency (TF-IDF)</strong> based on unigram, and finally <strong>pretrained BERT Masked Language Model (MLM) embeddings using CLS Pooling</strong>.
                                 </p>
                                 <p>
                                     Depending on the featurization, we integrate various preprocessing steps in order to perform commonplace Natural Language Processing (NLP) preprocessing
@@ -292,14 +300,14 @@
                     <div class="carousel-item cc-carousel-item">
                         <h5>Text Preprocessing & Featurization Pipeline</h5>
                         <h5><u>BOW & TF-IDF Preprocessing & Featurization</u></h5>
-                        <div class="col-12 pb-2 pt-2">
-                            <img id="n-gram-preprocessing" class="img-fluid" src="../../../../public/assets/n-gram-preprocessing.png" alt="Second slide">
-                        </div>
-                        <div class="row justify-content-center">
+                        <div class="row align-items-center justify-content-center pb-4">
+                            <div class="col-12 col-md-7 pb-2 pt-2">
+                                <img id="n-gram-preprocessing" class="img-fluid" src="../../../../public/assets/n-gram-preprocessing.png" alt="N-gram Preprocessing">
+                            </div>
                             <div class="col-12">
                                 <h6>Preprocessing</h6>
                             </div>
-                            <div class="col-12">
+                            <div class="col-12 col-md-7">
                                 <p>
                                     For the BOW based on unigram, BOW based on bigram, and TF-IDF (based on unigram) featurizations, we leverage a popular, open-source JA tokenizer,
                                     stopwords list, and lemmatizer to <strong>preprocess the raw input text</strong><sup><a href="#fnB" id="refB">1</a></sup>, these steps can be seen in the figure above:
@@ -313,7 +321,7 @@
                                         <li>
                                             We remove stopwords (e.g. “the”, “as”, “it”, “is”, “.”) → otherwise could add noise to the input:
                                             <ul>
-                                                <li>E.g. [<strong>“the”</strong>, “road”, <strong>“is”</strong>, “submerged”, “.”] → [“road”, “submerged”]</li>
+                                                <li>E.g. [<strong>“the”</strong>, “road”, <strong>“is”</strong>, “submerged”, <strong>“.”</strong>] → [“road”, “submerged”]</li>
                                             </ul>
                                         </li>
                                         <li>
@@ -326,9 +334,9 @@
                                 </p>
                             </div>
                             <h6>Featurization</h6>
-                            <div class="col-12">
+                            <div class="col-12 col-md-7">
                                 <p>
-                                    After preprocessing the raw text, we then use the preprocessed input to form an n-gram representation, which in our work was limited to unigram and bigram representations, but we note our pipeline generalizes to produce n-gram representations. For example, 
+                                    After preprocessing the raw text, we then use the preprocessed input to form an n-gram representation, which in our work was limited to <strong>unigram</strong> and <strong>bigram</strong> representations, but we note our pipeline generalizes to produce n-gram representations. For example, 
                                     the unigram representation of the processed example used above ["road", "submerge"] would be
                                     as ["road", "submerge"] and the bigram representation would be ["road submerge"]. Once the n-gram representation is computed from the preprocessed input, we convert the preprocessed word tokens into the BOW or TF-IDF feature vector representations, or featurizations, which can be used as inputs to ML models.
                                     The values of the <strong>BOW n-gram features</strong> are simply their associated <strong>frequency</strong> in a text report. We show the resulting feature vector for BOW based on unigram for the ["road", "submerge"] example below:
@@ -337,7 +345,7 @@
                             <div class="col-12 pb-2">
                                 <img id="bow-unigram-ex" class="img-fluid" src="../../../../public/assets/bag-of-word-features.png" alt="Second slide">
                             </div>
-                            <div class="col-12">
+                            <div class="col-12 col-md-7">
                                 <p>
                                     For the TF-IDF featurizations based on unigrams, the feature values are computed by considering both the <strong>frequency</strong> of the unigrams in the report as well as the <strong>occurence
                                     of the unigram across all reports</strong>. This value gives a relative importance to a unigram that considers the unigram in a specific report and across all reports. We show the resulting feature vector for TF-IDF based on unigram for the ["road", "submerge"] example below as if it were part of a collection of reports, or a text corpus:
@@ -346,29 +354,29 @@
                             <div class="col-12 pb-2">
                                 <img id="tfidf-unigram-ex" class="img-fluid" src="../../../../public/assets/tfidf-features.png" alt="Second slide">
                             </div>
-                            <div class="col-7 col-md-3 pt-3 pl-md-5">
-                                <h6><u>Pros:</u></h6>
-                                <div>
-                                    <p>
-                                        <ul>
+                            <div class="row justify-content-center">
+                                <div class="col-12 col-md-3 pt-3">
+                                    <h6><u>Pros:</u></h6>
+                                    <div class="centered-list-parent">
+                                        <ul class="centered-list">
                                             <li>Interpretable</li>
                                             <li><strong>Language-agnostic</strong></li>
                                         </ul>
-                                    </p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-4 pt-3">
+                                    <h6><u>Cons:</u></h6>
+                                    <div class="centered-list-parent">
+                                        <ul class="centered-list">
+                                            <li>Sparse (many 0's) & High-Dimensional</li>
+                                            <li>Doesn't do well for <strong>Out-of-Vocab (OOV)</strong> word tokens</li>
+                                            <li><strong>Language-agnostic</strong> (i.e. inability to capture specificity to a particular language)</li>
+                                            <li><strong>Severely limited ability</strong> to capture <strong>token similarity, long-range dependencies, and understanding of a language</strong></li>
+                                        </ul> 
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-lg-4 pt-3">
-                                <h6><u>Cons:</u></h6>
-                                <p>
-                                    <ul>
-                                        <li>Sparse (many 0's) & High-Dimensional</li>
-                                        <li>Doesn't do well for <strong>Out-of-Vocab (OOV)</strong> word tokens</li>
-                                        <li><strong>Language-agnostic</strong> (i.e. inability to capture specificity to a particular language)</li>
-                                        <li><strong>Severely limited ability</strong> to capture <strong>token similarity, long-range dependencies, and understanding of a language</strong></li>
-                                    </ul> 
-                                </p>
-                            </div>
-                            <div class="col-12">
+                            <div class="col-12 col-md-7">
                                 <p>
                                     Although these n-gram-based featurizations have the benefit of being language-agnostic, we note that they have the limitations
                                     of being high-dimensional and sparse in which most entries of the feature vector are zero, an inability to model long-range dependencies between tokens in the context of a
@@ -377,11 +385,13 @@
                                     technique.
                                 </p>
                             </div>
+                            <div class="col-12 col-md-7">
+                                <hr>
+                                <p>
+                                    <sup id="fnB">1. We note that in this work we make use of the <a href="https://pypi.org/project/fugashi/1.1.2/" target="_blank">fugashi</a> (version: 1.1.2) open-source morphological tool for <strong>tokenizing and lemmatizing</strong> Japanese text. Since fugashi requires a dictionary to operate, we use the <a href="https://pypi.org/project/unidic-lite/1.0.8/" target="_blank">Unidic Lite</a> dictionary (version: 1.0.8). Finally, for the stopwords list, we use a versioned, open-source list available <a href="https://raw.githubusercontent.com/stopwords-iso/stopwords-ja/5a000f6a62f9e3a12f436f36d168e2fcd2fb1878/stopwords-ja.json" target="_blank">here</a>.<a href="#refB" title="Jump back to footnote 1 in the text.">↩</a></sup>
+                                </p>
+                            </div>
                         </div>
-                        <p>
-                            <sup id="fnB">1. We note that in this work we make use of the <a href="https://pypi.org/project/fugashi/1.1.2/" target="_blank">fugashi</a> (version: 1.1.2) open-source morphological tool for <strong>tokenizing and lemmatizing</strong> Japanese text. Since fugashi requires a dictionary to operate, we use the <a href="https://pypi.org/project/unidic-lite/1.0.8/" target="_blank">Unidic Lite</a> dictionary (version: 1.0.8). Finally, for the stopwords list, we use a versioned, open-source list available <a href="https://raw.githubusercontent.com/stopwords-iso/stopwords-ja/5a000f6a62f9e3a12f436f36d168e2fcd2fb1878/stopwords-ja.json" target="_blank">here</a>.<a href="#refB" title="Jump back to footnote 1 in the text.">↩</a></sup>
-                        </p>
-                        <br>
                     </div>
                     <div class="carousel-item cc-carousel-item">
                         <h5>Text Preprocessing & Featurization Pipeline</h5>
@@ -393,7 +403,7 @@
                             <div class="col-12">
                                 <h6>Preprocessing</h6>
                             </div>
-                            <div class="col-12">
+                            <div class="col-12 col-md-7">
                                 <p>
                                     The BERT MLM Deep learning (NN) model is optimized to <strong>predict</strong> a randomly <strong>masked words</strong> by using the <strong>context</strong>, 
                                     or the words that surround them. 
@@ -403,75 +413,80 @@
                                     <strong>Japanese version of Wikipedia</strong>. 
                                 </p>
                                 <p>
-                                    Raw text data is word tokenized using Fugashi & Unidic Lite library. Word tokens are further split into subwords 
+                                    Raw text data is word tokenized using Fugashi & Unidic Lite dictionary. Word tokens are further split into subwords 
                                     using the <strong>WordPiece algorithm</strong>, yielding a token vocabulary of <strong>32768 unique tokens.</strong><sup><a href="#fnC" id="refC">1</a></sup>
                                 </p>
                             </div>
                             <h6>Featurization</h6>
-                            <div class="col-12">
+                            <div class="col-12 col-md-7">
                                 <p>
-                                    The text input tokens from resulting from the preprocessing steps are prepended with a <strong>“[CLS]”</strong> token, 
+                                    The text input tokens resulting from the preprocessing steps are prepended with a <strong>“[CLS]”</strong> token, 
                                     the “Classification” token. Deep in the BERT model, we extract a <strong>contextualized numerical 
                                     representation</strong> of the report for classification tasks by grabbing the <strong>final hidden state</strong> 
                                     corresponding to this token. This is <strong><i>CLS Pooling</i></strong>, yielding a dense, contextualized feature vector of 768 dimensions. 
-                                    We refer to these feature vectors as BERT embeddings. We show an example of a featurized text report below:
+                                    For brevity, we refer to these feature vectors as <strong>BERT embeddings</strong>. We show an example of a featurized text report below:
                                 </p> 
                             </div>
                             <div class="col-12 pb-2">
                                 <img id="bert-features-ex" class="img-fluid" src="../../../../public/assets/bert-features.png" alt="Second slide">
                             </div>
-                            <div class="col-12 col-md-5 pt-3 pl-md-5">
-                                <h6><u>Pros:</u></h6>
-                                <div>
+                            <div class="row justify-content-center">
+                                <div class="col-12 col-md-5 pt-3">
+                                    <h6><u>Pros:</u></h6>
+                                    <div>
+                                        <p>
+                                            <ul>
+                                                <li><strong>Optimized for the Japanese language</strong></li>
+                                                <li><strong>Dense features </strong> (i.e. lower dimensions than previous n-gram based features & not sparse)</li>
+                                                <li>
+                                                    <strong>Contextualized representations</strong>, which can better capture long-range dependencies between words in a 
+                                                    report & State-of-the-art <strong>language understanding</strong>
+                                                </li>
+                                                <li>
+                                                    Better-equipped to handle <strong>OOV tokens</strong> due to the use of the WordPiece algorithm
+                                                </li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-4 pt-3">
+                                    <h6><u>Cons:</u></h6>
                                     <p>
                                         <ul>
-                                            <li><strong>Optimized for the Japanese language</strong></li>
-                                            <li><strong>Dense features </strong> (i.e. lower dimensions than previous n-gram based features & not sparse)</li>
-                                            <li>
-                                                <strong>Contextualized representations</strong>, which can better capture long-range dependencies between words in a 
-                                                report & State-of-the-art <strong>language understanding</strong>
-                                            </li>
-                                            <li>
-                                                Better-equipped to handle <strong>OOV tokens</strong> due to the use of the WordPiece algorithm
-                                            </li>
-                                        </ul>
+                                            <li>Features are <strong>NOT interpretable</strong></li>
+                                            <li><strong>Specific to JA</strong></li>
+                                            <li><strong>Not finetuned to crisis text corpus</strong>, although we note this could be done in a future work</li>
+                                        </ul> 
                                     </p>
                                 </div>
                             </div>
-                            <div class="col-12 col-lg-4 pt-3">
-                                <h6><u>Cons:</u></h6>
+                            <div class="col-12 col-md-7">
                                 <p>
-                                    <ul>
-                                        <li>Features are <strong>NOT interpretable</strong></li>
-                                        <li><strong>Specific to JA</strong></li>
-                                        <li><strong>Not finetuned to crisis text corpus</strong>, although we note this could be done in a future work</li>
-                                    </ul> 
-                                </p>
-                            </div>
-                            <div class="col-12">
-                                <p>
-                                    Having preprocessed the text and produced various featurizations with various pros and cons, we utilized all of the featurizations in our 
+                                    Having preprocessed the text and produced various featurizations with their own pros and cons, we utilized all of the featurizations in our 
                                     classification experiments discussed in the next slides and TF-IDF based on unigram features as well as BERT embeddings in our clustering experiments.
                                 </p>
                             </div>
+                            <div class="col-12 col-md-7">
+                                <hr>
+                                <p>
+                                <sup id="fnC">1. <a href="https://huggingface.co/cl-tohoku/bert-base-japanese-v2" target="_blank">Link to Pretrained Japanese BERT MLM Model</a><a href="#refC" title="Jump back to footnote 1 in the text.">↩</a></sup>
+                                </p>
+                                <br>
+                            </div>
                         </div>
-                        <p>
-                            <sup id="fnC">1. <a href="https://huggingface.co/cl-tohoku/bert-base-japanese-v2" target="_blank">Link to Pretrained Japanese BERT MLM Model</a><a href="#refC" title="Jump back to footnote 1 in the text.">↩</a></sup>
-                        </p>
-                        <br>
                     </div>
                     <div class="carousel-item cc-carousel-item">
                         <h5>Human Risk Text Classification</h5>
-                        <div class="row justify-content-center">
-                            <div class="col-12">
+                        <div class="row justify-content-center pb-4">
+                            <div class="col-12 col-md-7">
                                 <p>
                                     Since 715 out of the 716 firefighter text reports were labeled for the binary <strong>Human Risk/No Human Risk classes</strong>, we chose to focus our text classification
-                                    experiments on this classification task. Additional with the text analysis module, we aimed to develop a task that <strong>better met the information needs</strong> of crisis managers during
+                                    experiments on this classification task. Additionally, with the text analysis module, we aimed to develop a task that <strong>better met the information needs</strong> of crisis managers during
                                     a crisis event. We did this by using the labels our crisis management partners in Fukuchiyama provided to us directly.
                                 </p>
                             </div>
                             <h6>Task Description</h6>
-                            <div class="col-12">
+                            <div class="col-12 col-md-7">
                                 <p>
                                     <i>
                                         The Human Risk text classification task 
@@ -525,7 +540,7 @@
                             <div class="col-12 pb-2">
                                 <img id="human-risk-classification" class="img-fluid" src="../../../../public/assets/human-risk-diagram.png" alt="Second slide">
                             </div>
-                            <div class="col-12">
+                            <div class="col-12 col-md-7">
                                 <p>
                                     In addition to using labels/classes which better meet the information needs of crisis managers during crisis, 
                                     we aimed to develop the classification model for this task <strong>using a performance metric which better aligns with the priorities of the crisis managers</strong>
@@ -534,16 +549,18 @@
                                     performance metric to utilize for developing a model which considers both the <strong>properties of the data</strong> and the <strong>insights we gained from crisis managers</strong> is a <strong>novel contribution of this research.</strong>
                                 </p>
                             </div>
+                            <div class="col-12 col-md-7">
+                                <hr>
+                                <p>
+                                    <sup id="fnD">1. We acknowledge Saeko Baird of the Urban Risk Lab at MIT who determined these class definitions from examining the original Japanese reports.<a href="#refD" title="Jump back to footnote 1 in the text.">↩</a></sup>
+                                </p>
+                            </div>
                         </div>
-                        <p>
-                            <sup id="fnD">1. We acknowledge Saeko Baird of the Urban Risk Lab at MIT who determined these class definitions from examining the original Japanese reports.<a href="#refD" title="Jump back to footnote 1 in the text.">↩</a></sup>
-                        </p>
-                        <br>
                     </div>
                     <div class="carousel-item cc-carousel-item">
                         <div class="row align-items-center justify-content-around">
                             <h5>Human Risk Classification - Determination of the Performance Evaluation Metric</h5>
-                            <div class="col-12">
+                            <div class="col-12 col-md-7">
                                 <p>
                                     In our determination of the performance metric to use for assessing the performance of the Human Risk classifier we consider both the class imbalance of the task
                                     and insights we gained from the workshops conducted in the image analysis module.
@@ -598,11 +615,11 @@
                                    </ul> 
                                 </p>
                             </div>
-                            <div class="col-12 pb-5">
+                            <div class="col-12 col-md-7 pb-5">
                                 <p>
                                     ⇒ We thus used the <strong>properties of the data</strong> (i.e. class imbalance) & 
                                     <strong>the insights we gained from crisis experts</strong> to determine the performance metric to evaluate the model we develop for the Human Risk task 
-                                    → the <strong>F2 score</strong>
+                                    → the <strong><u>F2 score</u></strong>
                                 </p>
                             </div>
                         </div>
@@ -610,22 +627,24 @@
                     <div class="carousel-item cc-carousel-item">
                         <div class="row align-items-center justify-content-around">
                             <h5>Human Risk Classification - Data Splits & Algorithm Selection</h5>
-                            <div class="col-12 col-md-6 pt-3">
-                                <h5>Train/Test Splits</h5>
-                                <p>
-                                    We split the full dataset of 715 reports into non-overlapping train and test splits in percentages of 80%/20%, respectively. Additionally, we preserve
-                                    the class imbalance using stratified splitting. 
-                                </p>
+                            <div class="row align-items-center justify-content-center">
+                                <div class="col-12 col-md-6 pt-3">
+                                    <h5>Train/Test Splits</h5>
+                                    <p>
+                                        We split the full dataset of 715 reports into non-overlapping train and test splits in percentages of 80%/20%, respectively. Additionally, we preserve
+                                        the class imbalance using stratified splitting. 
+                                    </p>
+                                </div>
+                                <div class="col-12 col-md-4 pt-3 pb-md-5">
+                                    <img id="data-splitting" class="img-fluid" src="../../../../public/assets/human-risk-data-splits.png" alt="Second slide">
+                                </div>
                             </div>
-                            <div class="col-12 col-md-4 pt-3 pb-md-5">
-                                <img id="data-splitting" class="img-fluid" src="../../../../public/assets/human-risk-data-splits.png" alt="Second slide">
-                            </div>
-                            <div class="col-12">
+                            <div class="col-12 col-md-7">
                                 <h5>Nested Cross Validation for Algorithm Selection</h5>
                                 <p>
                                     We were interested in investigating multiple ML algorithms for the Human Risk classification task, each with their own set of tunable hyperparameters. We aimed to determine which
-                                    algorithm paired with a corresponding hyperparameter grid search procedure (e.g. Grid Search), i.e. fitting a model to each unique hyperparameter combination in the grid, had the best estimated generalization
-                                    performance and use that algorithm for the final model evaluation. We note that since we had insufficient data to use train/dev/test splits, we used a variation of K-fold Cross Validation (CV).
+                                    algorithm paired with a corresponding hyperparameter grid search procedure (e.g. Grid Search, i.e. fitting a model to each unique hyperparameter combination in the grid), had the best estimated generalization
+                                    performance and would use that algorithm for the final model evaluation. We note that since we had insufficient data to use train/dev/test splits, we used a variation of K-fold Cross Validation (CV).
                                 </p>
                                 <p>
                                     Since using the same K-fold CV procedure
@@ -637,9 +656,9 @@
                                     For the algorithm selection procedure, we investigated the following classification algorithms:
                                 </p>
                             </div>
-                            <div class="col-8 col-md-4">
-                                <p>
-                                    <ul>
+                            <div class="col-12">
+                                <div class="centered-list-parent">
+                                    <ul class="centered-list">
                                         <li>Logistic Regression</li>
                                         <li>Decision Tree</li>
                                         <li>Random Forest</li>
@@ -647,16 +666,16 @@
                                         <li>Multinomial Naive Bayes</li>
                                         <li>K-Nearest Neighbors</li>
                                     </ul>
-                                </p>
+                                </div>
                             </div>
-                            <div class="col-12">
+                            <div class="col-12 col-md-7">
                                 <p>
                                     We note that we perform 5 x 5 Nested CV on the train split data & treat the various text featurizations offered by our featurization pipeline as hyperparameters in the hyperparameter grid for each
                                     algorithm.
                                 </p>
                                 <p>
                                     For the model evaluation on the test set, we select the algorithm (and corresponding search procedure) which 
-                                    had the highest relative mean F2 score with the lowest variance across fold (low standard deviation) from the nested CV procedure.
+                                    had the highest relative mean F2 score with the lowest variance across folds (low standard deviation) from the nested CV procedure.
                                 </p>
                             </div>
                             <div class="col-12 col-md-8 pt-3 pb-5">
@@ -665,7 +684,7 @@
                         </div>
                     </div>
                     <div class="carousel-item cc-carousel-item">
-                        <div class="row align-items-center justify-content-around">
+                        <div class="row align-items-center justify-content-around pb-4">
                             <div class="col-12">
                                 <h5>Human Risk Classification</h5>
                                 <h5>Algorithm Selection Results</h5>
@@ -676,7 +695,7 @@
                             <div class="col-12 col-md-6 pt-3 pb-md-5 pb-3">
                                 <img id="algo-selection-graph" class="img-fluid" src="../../../../public/assets/nested-cv-graph.png" alt="Second slide">
                             </div>
-                            <div class="col-12">
+                            <div class="col-12 col-md-7">
                                 <p>
                                     The results presented above are determined from the generalization performance estimation found from 
                                     the performance (by F2 score) on the outer loop 5-fold CV in Nested CV. We make available the intermediate and final results of Nested CV for each algorithm and
@@ -685,27 +704,25 @@
                                 <p>
                                     From the results, we determined that the performance of the <strong>Support Vector Machine (SVM)</strong> algorithm with its
                                     corresponding hyperparameter search procedure yielded the highest mean F2 score,
-                                    82.0%, and the lowest standard deviation, 4.22%. We therefore select the Support
-                                    Vector Machine (SVM) algorithm and its corresponding hyperparameter grid for the
-                                    final human risk model evaluation on the test set.
+                                    82.0%, and the lowest standard deviation, 4.22%. <strong>We therefore select the SVM algorithm and its corresponding hyperparameter grid for the
+                                    final human risk model evaluation on the test set.</strong>
+                                </p>
+                            </div>
+                            <div class="col-12 col-md-7">
+                                <hr>
+                                <p>
+                                    <sup id="fnD">1. <a href="https://github.com/dyllew/towards-automated-assessment-of-crowdsourced-crisis-reporting/tree/main/Text%20Analysis%20Module/Classification/Nested%20CV" target="_blank">Link to Results & Hyperparameters of Nested CV</a><a href="#refD" title="Jump back to footnote 1 in the text.">↩</a></sup>
                                 </p>
                             </div>
                         </div>
-                        <p>
-                            <sup id="fnD">1. <a href="https://github.com/dyllew/towards-automated-assessment-of-crowdsourced-crisis-reporting/tree/main/Text%20Analysis%20Module/Classification/Nested%20CV" target="_blank">Link to Results & Hyperparameters of Nested CV</a><a href="#refD" title="Jump back to footnote 1 in the text.">↩</a></sup>
-                        </p>
-                        <br>
                     </div>
                     <div class="carousel-item cc-carousel-item">
-                        <div class="row align-items-center justify-content-around">
+                        <div class="row align-items-center justify-content-around pb-5">
                             <div class="col-12">
                                 <h5>Human Risk Classification</h5>
                                 <h5>Final Model Evaluation</h5>
                             </div>
-                            <div class="col-12 col-md-6 pt-3 pb-3">
-                                <img id="model-evalution-diagram" class="img-fluid" src="../../../../public/assets/human-risk-model-evaluation.png" alt="Second slide">
-                            </div>
-                            <div class="col-12">
+                            <div class="col-12 col-md-7">
                                 <h5>Tuning the SVM Model</h5>
                                 <p>
                                     Prior to performing the final evaluation of the SVM on the test split data, we performed 5-fold CV on the full train split data, applying grid search with the hyperparameter
@@ -715,7 +732,7 @@
                             <div class="col-12 col-md-6 pt-3 pb-3">
                                 <img id="svm-hyperparameters" class="img-fluid" src="../../../../public/assets/svm-hyperparameters.png" alt="Second slide">
                             </div>
-                            <div class="col-12 pb-5">
+                            <div class="col-12 col-md-7">
                                 <p>
                                     We report the estimated generalization performance of the tuned SVM found
                                     from the 5-fold CV mentioned above, noting that this is <strong>likely a biased estimate of
@@ -730,6 +747,9 @@
                                     Lastly, we report per-class performance metrics and the confusion matrix of the model's predictions.
                                 </p>
                             </div>
+                            <div class="col-12 col-md-6 pt-3">
+                                <img id="model-evalution-diagram" class="img-fluid" src="../../../../public/assets/human-risk-model-evaluation.png" alt="Second slide">
+                            </div>
                         </div>
                     </div>
                     <div class="carousel-item cc-carousel-item">
@@ -741,10 +761,10 @@
                             <div class="col-12">
                                 <h5>Aggregate Metrics & Comparison to Baseline Scores</h5>
                             </div>
-                            <div class="col-12">
+                            <div class="col-12 col-md-8">
                                 <p>
-                                    We report an <strong>F2 score of 92.8% on the test split data.</strong> The baseline classifier which always predicts "Human Risk", has an F2 score of
-                                    43.4%, so the <strong>trained classifier is a significant improvement over the baseline classifier</strong>.
+                                    We report an <strong>F2 score of 92.8% on the test split data.</strong> <strong>The baseline classifier which always predicts "Human Risk", has an F2 score of
+                                    43.4%</strong>, so the <strong>trained classifier is a significant improvement over the baseline classifier</strong>.
                                 </p>
                                 <p>
                                     In addition to F2, we plot the Precision-Recall curve, visualizing the tradeoff between precision and recall for different classification thresholds used by the classifier
@@ -753,29 +773,34 @@
                                     in the performance estimate, giving a misleadingly high estimate of performance.
                                 </p>
                             </div>
-                            <div class="col-12 col-md-4 pt-3 pb-3">
+                            <div class="col-12"></div>
+                            <div class="row align-items-center justify-content-center">
+                                <div class="col-12 col-md-4 pt-3 pb-3">
                                     <img id="aucpr-curve" class="img-fluid" src="../../../../public/assets/human-risk-aucpr.png" alt="Second slide">
-                            </div>
-                            <div class="col-12 col-md-8">
-                                <p>
-                                    The better the classifier (higher recall and higher precision), the closer the AUCPR score is to 1.
-                                    For AUCPR, the performance of a <strong>baseline model has a score which is given by the proportion of positive samples to the total number
-                                    of samples</strong> in the test dataset, which in this case is <strong>0.133</strong>.
-                                </p>
-                                <p>
-                                    We report an <strong>AUCPR of 0.919 for the SVM model</strong> on the test split data, a significant improvement over the baseline score.
-                                </p>
+                                </div>
+                                <div class="col-12 col-md-5">
+                                    <p>
+                                        The better the classifier (higher recall and higher precision), the closer the AUCPR score is to 1.
+                                        For AUCPR, the performance of a <strong>baseline model has a score which is given by the proportion of positive samples to the total number
+                                        of samples</strong> in the test dataset, which in this case is <strong>0.133</strong>.
+                                    </p>
+                                    <p>
+                                        We report an <strong>AUCPR of 0.919 for the SVM model</strong> on the test split data, a significant improvement over the baseline score.
+                                    </p>
+                                </div>
                             </div>
                             <div class="col-12">
                                 <h5>Confusion Matrix & Per-Class Metrics</h5>
                             </div>
-                            <div class="col-12 col-md-5 pt-3 pb-5">
-                                <img id="human-risk-confusion-matrix" class="img-fluid" src="../../../../public/assets/human-risk-cm-svm.png" alt="Second slide">
+                            <div class="row align-items-center justify-content-center">
+                                <div class="col-12 col-md-4 pt-3 pb-5">
+                                    <img id="human-risk-confusion-matrix" class="img-fluid" src="../../../../public/assets/human-risk-cm-svm.png" alt="Second slide">
+                                </div>
+                                <div class="col-12 col-md-4 pt-3 pb-5">
+                                    <img id="human-risk-per-class" class="img-fluid" src="../../../../public/assets/human-risk-per-class-metric.png" alt="Second slide">
+                                </div>
                             </div>
-                            <div class="col-12 col-md-5 pt-3 pb-md-5">
-                                <img id="human-risk-per-class" class="img-fluid" src="../../../../public/assets/human-risk-per-class-metric.png" alt="Second slide">
-                            </div>
-                            <div class="col-12 pb-5">
+                            <div class="col-12 col-md-8 pb-5">
                                 <p>
                                     From the confusion matrix, we see that the model made very few
                                     misclassifications on the test split data. Specifically, the model only misclassified one
@@ -795,8 +820,8 @@
                         </div>
                     </div>
                     <div class="carousel-item cc-carousel-item">
-                        <div class="row justify-content-around">
-                            <div class="carousel-text col-12">
+                        <div class="row justify-content-around pb-4">
+                            <div class="col-12 col-md-7">
                                 <h5>Human Risk Text Classification - Discussion</h5>
                                 <p>
                                     <ul>
@@ -868,12 +893,12 @@
                                 <h5>Clustering of Crowdsourced Japanese Crisis Text Data</h5>
                                 <h5>Overview</h5>
                             </div>
-                            <div class="col-12">
+                            <div class="col-12 col-md-7">
                                 <p>
                                     Beyond investigating the human risk classification task, we aimed to explore the
-                                    Fukuchiyama firefighter flood crisis report corpus to see if we could uncover other
-                                    coherent categories which may exist in the data. These uncovered categories could
-                                    inform the development of classification tasks in future work, in addition to any
+                                    Fukuchiyama firefighter flood crisis report corpus to see if we could <strong>uncover other
+                                    coherent categories which may exist in the data</strong>. These <strong>uncovered categories could
+                                    inform the development of classification tasks in future work</strong>, in addition to any
                                     of the humanitarian categories provided by crisis managers.
                                 </p>
                                 <p>
@@ -893,12 +918,12 @@
                             <div class="col-12">
                                 <h6>Evaluation Overview</h6>
                             </div>
-                            <div class="col-12 pb-5">
+                            <div class="col-12 col-md-7 pb-5">
                                 <p>
                                     The evaluation of our clustering experiments consisted of multiple stages. <strong>First, we perform quantitative analysis</strong>, producing <strong>Within-Cluster Sum of Squares (WCSS)</strong>, or "Elbow" plots for each combination of
                                     featurization type, dimensionality reduction technique, and clustering algorithm (12 combos in total). We refer to these as configuration combinations. Using these plots, we identify <strong>a query subset</strong> of the combinations to further investigate for our
                                     <strong>qualitative evaluation</strong>. In the first stage of our qualitative evaluation we used the <strong>english translations of the closest documents to each cluster center</strong> to select a configuration combination from the query subset 
-                                    for the <strong>final stage of qualitative assessment</strong>. In the final stage, a <strong>fluent Japanese speaker</strong> investigated the raw Japanese reports in the clusters made by the selected configuration combination and 
+                                    for the <strong>final stage of qualitative assessment</strong>. In the final stage, a <strong>fluent Japanese speaker</strong> investigated the raw Japanese reports for the clusters found by the selected configuration combination and 
                                     <strong>determined a human-interpretable label to describe the cluster overall</strong> for each cluster. 
                                 </p>
                             </div>
@@ -918,20 +943,20 @@
                                     Using the devised clustering pipeline, we can sequentially reduce the dimensions of the input features to <strong>2-dimensions</strong>, using
                                     <strong>Principle Component Analysis (PCA)</strong>, <strong>t-distributed Stochastic Neighbor Embedding (t-SNE)</strong>, or we <strong>do not apply dimensionality reduction</strong> at all. 
                                     We finally cluster the reduced data using either <strong>K-means</strong> or <strong>K-medoids</strong>, which is more robust to outliers present in the data. These hyperparameters to 
-                                    the clustering pipeline are summarized in the neighboring figure.
+                                    the clustering pipeline are summarized in the adjacent figure.
                                 </p>
                                 <div class="row justify-content-center pb-3">
                                     <img id="clustering-hyperparameters" class="img-fluid" src="../../../../public/assets/clustering-hyperparameters.png" alt="Hyperparameters for Clustering">
                                 </div>
                                 <h6>Outputs of Clustering Pipeline</h6>
                                 <p>
-                                    <strong>Having selected a configuration to use and a K-value to use</strong>, our clustering pipeline produces the clustered data points, the text associated with
-                                    the <strong>20 closest documents to the cluster center (in JA & EN translations)</strong> for each cluster, and the top 20 unigrams (in JA) by TF-IDF score for the 
+                                    <strong>Having selected a hyperparameter configuration and a K-value to use</strong>, our clustering pipeline produces the clustered data points, the text associated with
+                                    the <strong>20 closest documents to the cluster center (in raw JA text & EN translations)</strong> for each cluster, and the top 20 unigrams (in JA) by TF-IDF score for the 
                                     document formed from concatenating the documents in a cluster, for each cluster, forming a cluster-level document corpus. We note that our pipeline can take any positive values x & y for displaying the 
                                     top x unigrams or top y documents in a cluster.
                                 </p>
                             </div>
-                            <div class="col-12 pb-5">
+                            <div class="col-12 col-md-7 pb-5">
                                 <h5>Clustering Experiments - Identifying the Query Subset</h5>
                                 <p>
                                     <ol>
@@ -953,7 +978,7 @@
                                 <p>
                                     <ol>
                                         <li value="2">
-                                            Select a subset of combinations which have <strong>relatively lower WCSS scores</strong> across 
+                                            We selected a subset of combinations which have <strong>relatively lower WCSS scores</strong> across 
                                             all K values and <strong>have an “elbow” in the “elbow” plot</strong> to qualitatively investigate further. We call this the <strong>query subset</strong>.
                                         </li>
                                     </ol>
@@ -962,7 +987,7 @@
                         </div>
                     </div>
                     <div class="carousel-item cc-carousel-item">
-                        <div class="row justify-content-around">
+                        <div class="row justify-content-around pb-4">
                             <div class="col-12">
                                 <h5>Clustering Qualitative Evaluation & Results</h5>
                                 <h5>Preliminary Qualitative Assessment (in EN): Investigating the Query Subset</h5>
@@ -1036,14 +1061,16 @@
                                 <h6>Qualitative Summaries of Clusters and Possible Labels</h6>
                                 <img id="qualitative-summaries" class="img-fluid" src="../../../../public/assets/qualitative-summaries.png" alt="Qualitative Summaries of Resultant Clustering for Each Cluster">
                             </div>
+                            <div class="col-12 col-md-7">
+                                <hr>
+                                <p>
+                                    <sup id="fnE">1. <a href="https://www.deepl.com/en/translator" target="_blank">Link to DeepL.</a> We acknowledge Saeko Baird of the Urban Risk Lab at MIT who cleaned these translations of their inaccuracies.<a href="#refE" title="Jump back to footnote 1 in the text.">↩</a></sup>
+                                </p>
+                            </div>
                         </div>
-                        <p>
-                            <sup id="fnE">1. <a href="https://www.deepl.com/en/translator" target="_blank">Link to DeepL.</a> We acknowledge Saeko Baird of the Urban Risk Lab at MIT who cleaned these translations of their inaccuracies.<a href="#refE" title="Jump back to footnote 1 in the text.">↩</a></sup>
-                        </p>
-                        <br>
                     </div>
                     <div class="carousel-item cc-carousel-item">
-                        <div class="row justify-content-around">
+                        <div class="row justify-content-around pb-4">
                             <div class="col-12">
                                 <h5>Clustering Qualitative Evaluation & Results</h5>
                                 <h5>Final Qualitative Assessment (in JA): Investigating the Optimal Configuration Combination determined from the Preliminary Assessment</h5>
@@ -1066,7 +1093,7 @@
                                         <li>
                                             <p>
                                                 Using the selected optimal combination, for each resulting cluster found, we produce auxiliary outputs showing the 
-                                                <strong>top 20 closest reports</strong> within the cluster to the cluster center & the <strong>top 20 unigrams in by TF-IDF score for cluster-level document corpus</strong>.
+                                                <strong>top 20 closest reports</strong> within the cluster to the cluster center & the <strong>top 20 unigrams by TF-IDF score for each cluster document in the cluster-level document corpus</strong>.
                                             </p>
                                             <p>
                                                 Since dimensionality reduction was applied to 2-dimensions, we can visualize the clusters.
@@ -1085,7 +1112,7 @@
                                                 Using the auxiliary outputs in JA, a member of the Urban Risk Lab who is fluent in EN & JA<sup><a href="#fnF" id="refF">1</a></sup> investigated each cluster and assigned an interpretable label to it.
                                             </p>
                                             <p>
-                                                The interpretable label given for each cluster is depicted in the figure below:
+                                                The interpretable label given for each cluster is depicted in the figures below:
                                             </p>
                                         </li>
                                     </ol>
@@ -1100,7 +1127,7 @@
                                         <li>
                                             <p>
                                                 Using the selected optimal combination, for each resulting cluster found, we produce auxiliary outputs showing the 
-                                                <strong>top 20 closest reports</strong> within the cluster to the cluster center & the <strong>top 20 unigrams in by TF-IDF score for cluster-level document corpus</strong>.
+                                                <strong>top 20 closest reports</strong> within the cluster to the cluster center & the <strong>top 20 unigrams by TF-IDF score for each cluster document in the cluster-level document corpus</strong>.
                                             </p>
                                             <p>
                                                 Since dimensionality reduction was applied to 2-dimensions, we can visualize the clusters.
@@ -1111,7 +1138,7 @@
                                                 Using the auxiliary outputs in JA, a member of the Urban Risk Lab who is fluent in EN & JA<sup><a href="#fnF" id="refF">1</a></sup> investigated each cluster and assigned an interpretable label to it.
                                             </p>
                                             <p>
-                                                The interpretable label given for each cluster is depicted in the figure below:
+                                                The interpretable label given for each cluster is depicted in the figures below:
                                             </p>
                                         </li>
                                     </ol>
@@ -1125,13 +1152,15 @@
                                 <h6>Labeled Clusters</h6>
                                 <img id="labeled-clusters-img" class="img-fluid" src="../../../../public/assets/labeled-clusters.png" alt="Labeled Clusters">
                             </div>
+                            <div class="col-12 col-md-7">
+                                <hr>
+                                <p>
+                                    <sup id="fnF">1. We acknowledge Saeko Baird of the Urban Risk Lab at MIT who assigned an interpretable label
+                                        to each cluster.<a href="#refF" title="Jump back to footnote 1 in the text.">↩</a>
+                                    </sup>
+                                </p>
+                            </div>
                         </div>
-                        <p>
-                            <sup id="fnF">1. We acknowledge Saeko Baird of the Urban Risk Lab at MIT who assigned an interpretable label
-                                to each cluster.<a href="#refF" title="Jump back to footnote 1 in the text.">↩</a>
-                            </sup>
-                        </p>
-                        <br>
                     </div>
                     <div class="carousel-item cc-carousel-item">
                         <div class="row justify-content-around">
@@ -1140,10 +1169,10 @@
                                 <p>
                                     <ul>
                                         <li>
-                                            Suggests what is deemed important to report during flood crisis by FC firefighters on-the-ground.
+                                            Clustering results suggest what is deemed important to report during flood crisis by FC firefighters on-the-ground.
                                         </li>
                                         <li>
-                                            Since we applied the clustering on-the-ground firefighter reports, these results can be used to devise <strong>classification tasks with labels which better embed the information needs of EOC</strong> & can be cross-referenced with EOC.
+                                            Since we applied the clustering on-the-ground firefighter reports, these results can be used to devise <strong>classification tasks with labels which better embed the information needs of crisis managers</strong> & can be cross-referenced with crisis managers.
                                         </li>
                                         <li>
                                             Experiment can also be applied on Japanese RiskMap reports or crisis tweets to see if similar cluster labels are unveiled by resident reporting.
@@ -1204,6 +1233,15 @@ h1, h3, h5 {
 .carousel-text {
     margin-top: 10px;
     margin-bottom: 40px;
+}
+
+.centered-list-parent {
+    text-align: center;
+}
+
+.centered-list {
+    display: inline-block;
+    text-align: left;
 }
 
 #hagibis-details {

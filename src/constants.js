@@ -6,7 +6,7 @@ export const MAIN_PROJECTS = [
         link: "/projects/ml-for-crowdsourced-crisis-data", 
         src: {imgFilename: "masters-thesis-overview.png"},
         title: "Towards Automated Assessment of Crowdsourced Crisis Reporting for Enhanced Crisis Awareness and Response", 
-        desc: "Masters thesis/Research project on developing machine learning methodologies to assist crisis managers in gaining situational awareness from crowdsourced crisis data for enhanced crisis response.",
+        desc: "Research project focused on developing machine learning methodologies to assist crisis managers in gaining situational awareness from crowdsourced crisis data for enhanced crisis response.",
         projectWebsite: {
             id: "button-holder",
             btnText: "See Thesis Document",
@@ -18,7 +18,7 @@ export const MAIN_PROJECTS = [
         link: "/projects/nlp-for-int-dev-gray-lit", 
         src: {imgFilename: "int-dev-results.png"},
         title: "Information Extraction and Unsupervised Methods for Streamlining Evidence Synthesis in International Development Gray Literature", 
-        desc: "NLP project which investigates Named Entity Recognition (NER) and K-means Clustering on a corpus of 244 documents of International Development literature papers for streamlining evidence synthesis process on international development gray literature.",
+        desc: "NLP project which investigates Named Entity Recognition (NER) and K-means Clustering on a corpus of 244 documents of International Development literature papers for streamlining the evidence synthesis process on international development gray literature.",
         projectWebsite: {
             id: "button-holder",
             btnText: "Presentation PDF",
@@ -76,7 +76,7 @@ export const ML_MODULES = [
         link: "/projects/ml-for-crowdsourced-crisis-data/image-analysis-module", 
         src: {imgFilename: "image-analysis-module-modified.png"},
         title: "Image Analysis Module", 
-        desc: "ML Module focused on Constructing human-annotated image datasets and assessing the quality of the annotations, developing CNN models to classify the crowdsourced crisis image data for various classification tasks, and conducting image annotation workshops with crisis managers from various contexts.",
+        desc: "ML Module focused on constructing human-annotated image datasets and assessing the quality of the annotations, developing Convolutional Neural Network (CNN) models to classify the crowdsourced crisis image data for various classification tasks, and conducting image annotation workshops with crisis managers from various contexts for focus-group research / qualitative evaluation.",
         projectBtnText: "See Module Details",
         projectWebsite: {
             id: "button-holder",
@@ -89,7 +89,7 @@ export const ML_MODULES = [
         link: "/projects/ml-for-crowdsourced-crisis-data/text-analysis-module", 
         src: {imgFilename: "text-analysis-module.png"},
         title: "Text Analysis Module", 
-        desc: "ML Module focused on Classification of crowdsourced crisis text (in JA) for Human Risk informed from the identified information needs and priorities of crisis managers and Clustering of crisis text data for uncovering semantic categories in the data.",
+        desc: "ML Module focused on the classification of crowdsourced crisis text (in Japanese (JA)) for assessing Human Risk informed from the identified information needs and priorities of crisis managers and Clustering of crisis text data for uncovering semantic categories in the data for future classification tasks.",
         projectBtnText: "See Module Details",
         projectWebsite: {
             id: "button-holder",
