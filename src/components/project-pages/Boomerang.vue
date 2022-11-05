@@ -12,7 +12,7 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active boomerang-carousel-item">
-                        <img class="rounded img-fluid" src="../../../public/assets/boomerang-home.jpg" alt="First slide">
+                        <img class="rounded img-fluid pb-3" src="../../../public/assets/boomerang-home.jpg" alt="First slide">
                         <div class="row justify-content-center pb-4">
                             <div class="col-12 col-md-7">
                                 <h5>Sign Up/Login Page</h5>
@@ -25,7 +25,7 @@
                         </div>
                     </div>
                     <div class="carousel-item boomerang-carousel-item">
-                        <img class="rounded img-fluid" src="../../../public/assets/create-account.png" alt="Second slide">
+                        <img class="rounded img-fluid pb-3" src="../../../public/assets/create-account.png" alt="Second slide">
                         <div class="row justify-content-center pb-4">
                             <div class="col-12 col-md-7">
                                 <h5>Create Account Part I</h5>
@@ -40,7 +40,7 @@
                         </div>
                     </div>
                     <div class="carousel-item boomerang-carousel-item">
-                        <img class="rounded img-fluid" src="../../../public/assets/join-communities.png" alt="Third slide">
+                        <img class="rounded img-fluid pb-3" src="../../../public/assets/join-communities.png" alt="Third slide">
                         <div class="row justify-content-center pb-4">
                             <div class="col-12 col-md-7">
                                 <h5>Create Account Part II</h5>
