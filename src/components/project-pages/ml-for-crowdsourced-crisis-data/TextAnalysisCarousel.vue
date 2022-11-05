@@ -627,7 +627,7 @@
                     <div class="carousel-item cc-carousel-item">
                         <div class="row align-items-center justify-content-around">
                             <h5>Human Risk Classification - Data Splits & Algorithm Selection</h5>
-                            <div class="row align-items-center justify-content-center">
+                            <div class="row align-items-center justify-content-center pb-3">
                                 <div class="col-12 col-md-6 pt-3">
                                     <h5>Train/Test Splits</h5>
                                     <p>
