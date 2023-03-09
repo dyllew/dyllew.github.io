@@ -14,13 +14,13 @@
           src="../../public/assets/reptile.png"
         />
     </div>
-    <!-- <div class="col-8 pt-4 pt-md-2 col-md-3">
-        <h4></h4>
+    <div class="col-8 pt-4 pt-md-2 col-md-3">
+        <h4 class="header">Perfect Illusion</h4>
         <img
           class="rounded img-fluid"
-          src="../../public/assets/feelings.jpg"
+          src="../../public/assets/perfect_illusion.jpg"
         />
-    </div> -->
+    </div>
   </div>    
 </template>
 
